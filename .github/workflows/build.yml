@@ -21,6 +21,7 @@ jobs:
       fail-fast: false # запретить GH отменять все сборки матрицы, если одна не удалась
       matrix:
         recipe:
+          - recipe.yml
           #- recipe-sway.yml
           - recipe-hyprland.yml
           #- recipe-river.yml
