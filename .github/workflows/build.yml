@@ -23,7 +23,7 @@ jobs:
         recipe:
           - recipe.yml
           #- recipe-sway.yml
-          - recipe-hyprland.yml
+          #- recipe-hyprland.yml
           #- recipe-river.yml
           #- recipe-wayfire.yml
     steps:
