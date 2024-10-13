@@ -1,31 +1,50 @@
-name: bluebuild
+name: build-toxicblue
 on:
   schedule:
-    - cron: "00 06 * * *" # build at 06:00 UTC every day 
-                          # (20 minutes after last ublue images start building)
+    - cron: "00 06 * * *" # ежедневно в 06:00 по Гринвичу
+                          # (Через 20 минут после начала создания последних изображений ublue)
   push:
-    paths-ignore: # don't rebuild if only documentation has changed
+    paths-ignore: # Не перестраивайте, если изменилась только документация
       - "**.md"
       
   pull_request:
-  workflow_dispatch: # allow manually triggering builds
+  workflow_dispatch: # возможность запускать сборки вручную
 jobs:
   bluebuild:
-    name: Build Custom Image
+    name: Build toxicblue
     runs-on: ubuntu-latest
     permissions:
       contents: read
       packages: write
       id-token: write
     strategy:
-      fail-fast: false # stop GH from cancelling all matrix builds if one fails
+      fail-fast: false # запретить GH отменять все сборки матрицы, если одна не удалась
       matrix:
         recipe:
-          # !! Add your recipes here 
-          - recipe.yml
+          #- recipe-sway.yml
+          - recipe-hyprland.yml
+          #- recipe-river.yml
+          #- recipe-wayfire.yml
     steps:
-       # the build is fully handled by the reusable github action
-      - name: Build Custom Image
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Add yq (for reading recipe.yml)
+        uses: mikefarah/yq@v4.44.3
+
+      - name: Gather image data from recipe
+        run: |
+          echo "IMAGE_NAME=$(yq '.name' ./recipes/${{ matrix.recipe }})" >> $GITHUB_ENV
+          echo "IMAGE_MAJOR_VERSION=$(yq '.image-version' ./recipes/${{ matrix.recipe }})" >> $GITHUB_ENV
+          BASE_IMAGE=$(yq '.base-image' ./recipes/${{ matrix.recipe }})
+          echo "BASE_IMAGE_NAME=$(echo $BASE_IMAGE | sed 's/.*\/.*\///')" >> $GITHUB_ENV
+
+      - name: Verify base image
+        uses: EyeCantCU/cosign-action/verify@v0.3.0
+        with:
+          containers: ${{ env.BASE_IMAGE_NAME }}:${{ env.IMAGE_MAJOR_VERSION }}
+
+      - name: Build toxicblue
         uses: blue-build/github-action@v1.6
         with:
           recipe: ${{ matrix.recipe }}
@@ -33,5 +52,5 @@ jobs:
           registry_token: ${{ github.token }}
           pr_event_number: ${{ github.event.number }}
 
-          # enabled by default, disable if your image is small and you want faster builds      
-          maximize_build_space: true
+          # включено по умолчанию, отключите, если ваше изображение маленькое и вы хотите получить более быструю сборку     
+          #maximize_build_space: true
