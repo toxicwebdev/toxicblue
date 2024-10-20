@@ -1,14 +1,23 @@
 name: build-toxicblue
 on:
+  release:
+    types: [created, edited]
+    
   schedule:
     - cron: "00 06 * * *" # ежедневно в 06:00 по Гринвичу
                           # (Через 20 минут после начала создания последних изображений ublue)
-  push:
-    paths-ignore: # Не перестраивайте, если изменилась только документация
-      - "**.md"
-      
-  pull_request:
+  
   workflow_dispatch: # возможность запускать сборки вручную
+
+  push:
+    branches: [ master ]
+    paths-ignore: # Не перестраивайте, если изменилась только документация
+    - '**/*.md'
+  pull_request:
+    branches: [ master ]
+    paths-ignore: # Не перестраивайте, если изменилась только документация
+    - '**/*.md'
+    
 jobs:
   bluebuild:
     name: Build toxicblue
