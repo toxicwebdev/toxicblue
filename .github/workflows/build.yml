@@ -74,4 +74,4 @@ jobs:
           pr_event_number: ${{ github.event.number }}
 
           # включено по умолчанию, отключите, если ваше изображение маленькое и вы хотите получить более быструю сборку     
-          #maximize_build_space: true
+          maximize_build_space: true
