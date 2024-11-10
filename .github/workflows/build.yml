@@ -65,7 +65,7 @@ jobs:
             echo "KERNEL_VERSION=$linux" >> $GITHUB_ENV
 
       - name: Build toxicblue
-        uses: blue-build/github-action@v1.6.1
+        uses: blue-build/github-action@v1.6.2
         with:
           cli_version: v0.8.20
           recipe: ${{ matrix.recipe }}
