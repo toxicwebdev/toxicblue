@@ -32,14 +32,14 @@ jobs:
       matrix:
         recipe:
           - recipe.yml
-          #- recipe-sway.yml
           #- recipe-hyprland.yml
+          #- recipe-qtile.yml
           #- recipe-river.yml
+          #- recipe-sway.yml
           #- recipe-wayfire.yml
     steps:
       - name: Checkout repo
-        #uses: actions/checkout@v4
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        uses: actions/checkout@v4.2.2
 
       #- name: Add yq (for reading recipe.yml)
       #  uses: mikefarah/yq@v4.44.3
@@ -85,8 +85,7 @@ jobs:
           echo "KERNEL_VERSION=$linux" >> $GITHUB_ENV
 
       - name: Build toxicblue
-        #uses: blue-build/github-action@v1.6.2
-        uses: blue-build/github-action@4d8b4df657ec923574611eec6fd7e959416c47f0 # v1.8.1
+        uses: blue-build/github-action@v1.8.1
         with:
           cli_version: v0.9.0
           recipe: ${{ matrix.recipe }}
