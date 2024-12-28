@@ -169,5 +169,5 @@ modules:
         - settheming.sh
         - addbrewjustimport.sh
 
-    - type: wayblue-signing
+    - type: toxicblue-signing
       source: local
