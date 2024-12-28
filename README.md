@@ -1,19 +1,60 @@
-# toxicblue &nbsp; [![bluebuild build badge](https://github.com/toxicwebdev/toxicblue/actions/workflows/build.yml/badge.svg)](https://github.com/toxicwebdev/toxicblue/actions/workflows/build.yml)
+<h5 align="center">Notice: These images are considered beta.</h5>
 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
+<p align="center">
+  <a href="https://github.com/toxicwebdev/toxicblue">
+    <img src="https://github.com/toxicwebdev/toxicblue/blob/1c0dd53e42c4a8af766f2b9138208c1c51b7e1b2/assets/toxic.png" href="https://github.com/toxicwebdev/toxicblue" width=180 />
+  </a>
+</p>
 
-After setup, it is recommended you update this README to describe your custom image.
+<h1 align="center">toxicblue</h1>
+
+
+[![toxicblue](https://github.com/toxicwebdev/toxicblue/actions/workflows/build.yml/badge.svg)](https://github.com/toxicwebdev/toxicblue/actions/workflows/build.yml)
+[![trivy](https://github.com/toxicwebdev/toxicblue/actions/workflows/trivy.yml/badge.svg)](https://github.com/toxicwebdev/toxicblue/actions/workflows/trivy.yml)
+
+This repo takes the [BlueBuild](https://blue-build.org/) template and builds out minimally-opinionated [Fedora Atomic](https://fedoraproject.org/atomic-desktops/) operating system images for the following wayland compositors:
+
+- wayfire (with wf-shell)
+- hyprland (with waybar)
+- sway (with waybar)
+- river (with waybar)
+- qtile (experimental)
+
+## What
+
+Changes and decisions in the images:
+- Set saner SDDM defaults
+- Set saner wf-shell defaults
+- Set saner waybar defaults
+- Add a reasonable suite of tools that are needed to have a working desktop with a wayland compositor 
+- Build in a minimally opinionated config for each compositor and tools that work out of the box
+
+## Why
+
+The Fedora Atomic ecosystem provides excellent base images and tooling for immutable image building. Aside from sway however, there aren't images available for wayland compositors. This repo aims to provide those images and provide them with sane defaults.
+
+For more info on BlueBuild, check out the [BlueBuild homepage](https://blue-build.org/).
+
+
+## Customization
+
+If you want to add your own customizations on top of wayblue, you are advised strongly against forking. Instead, create a repo for your own image by using the [BlueBuild template](https://github.com/blue-build/template), then change your `base-image` to a wayblue image. This will allow you to apply your customizations to wayblue in a concise and maintainable way, without the need to constantly sync with upstream. 
+
 
 ## Installation
 
-> **Warning**  
-> [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable), try at your own discretion.
+### Rebasing
 
-To rebase an existing atomic Fedora installation to the latest build:
+To rebase an existing Silverblue/Kinoite/Sericea installation to the latest build: 
+> [!IMPORTANT] 
+> The **only** supported tag is `latest`.
+
+> [!NOTE] 
+> The two reboots described below are not optional. During installation, the initial boot into wayblue will provision the required sddm user. This is a one time step, all subsequent boots will succeed.
 
 - First rebase to the unsigned image, to get the proper signing keys and policies installed:
   ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/toxicwebdev/toxicblue:latest
+  rpm-ostree rebase ostree-unverified-registry:ghcr.io/toxicwebdev/$IMAGE_NAME:latest
   ```
 - Reboot to complete the rebase:
   ```
@@ -21,14 +62,12 @@ To rebase an existing atomic Fedora installation to the latest build:
   ```
 - Then rebase to the signed image, like so:
   ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/toxicwebdev/toxicblue:latest
+  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/toxicwebdev/$IMAGE_NAME:latest
   ```
 - Reboot again to complete the installation
   ```
   systemctl reboot
   ```
-
-The `latest` tag will automatically point to the latest build. That build will still always use the Fedora version specified in `recipe.yml`, so you won't get accidentally updated to the next major version.
 
 ## ISO
 
@@ -41,3 +80,7 @@ These images are signed with [Sigstore](https://www.sigstore.dev/)'s [cosign](ht
 ```bash
 cosign verify --key cosign.pub ghcr.io/toxicwebdev/toxicblue
 ```
+
+## Contributing
+
+Follow the [contributing documentation](CONTRIBUTING.md#contributing), and make sure to respect the [CoC](CODE_OF_CONDUCT.md).
