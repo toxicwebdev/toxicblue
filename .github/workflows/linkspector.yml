@@ -2,7 +2,7 @@ name: Linkspector
 on: 
   pull_request:
     branches:
-      - live
+      - main
 jobs:
   check-links:
     name: Linkspector
