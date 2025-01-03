@@ -2,7 +2,7 @@ name: build-pullrequest
 on:
   pull_request:
     branches:
-      - live
+      - main
     paths-ignore:
       - "**.md"
 jobs:
