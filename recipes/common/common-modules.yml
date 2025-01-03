@@ -39,6 +39,7 @@ modules:
         - rofi-wayland
 
       # environment
+        - fzf
         - tuned-ppd
         - xorg-x11-server-Xwayland
         - headsetcontrol
