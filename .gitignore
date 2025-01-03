@@ -1,4 +1,6 @@
 .idea
+.vscode
+.gitignore
 cosign.key
 cosign.private
 .directory
