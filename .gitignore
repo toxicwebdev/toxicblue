@@ -1,8 +1,8 @@
-.vscode
+.vscode/*
 .idea
 .gitignore
 cosign.key
 cosign.private
 .directory
 *.kate-swp
-Containerfile
+/Containerfile
