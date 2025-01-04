@@ -3,6 +3,7 @@ name: toxicblue
 description: This is my personal OS image.
 
 base-image: ghcr.io/wayblueorg/hyprland
+
 image-version: 41
 
 modules:
