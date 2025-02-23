@@ -36,6 +36,9 @@ if ! [ -d "/etc/pki/containers" ]; then
     mkdir -p "/etc/pki/containers"
 fi
 
+cp "$MODULE_DIRECTORY/toxicblue-signing/policy.json" $CONTAINER_DIR/policy.json
+cp "$MODULE_DIRECTORY/toxicblue-signing/policy.json" $ETC_CONTAINER_DIR/policy.json
+
 # covering our bases here since /usr/etc is technically unsupported, reevaluate once bootc is the primary deployment tool
 cp "/etc/pki/containers/$IMAGE_NAME.pub" "/usr/etc/pki/containers/$IMAGE_REGISTRY_TITLE.pub"
 cp "/etc/pki/containers/$IMAGE_NAME.pub" "/etc/pki/containers/$IMAGE_REGISTRY_TITLE.pub"
@@ -61,7 +64,7 @@ cp POLICY.tmp /usr/etc/containers/policy.json
 cp POLICY.tmp /etc/containers/policy.json
 rm POLICY.tmp
 
-sed -i "s ghcr.io/IMAGENAME $IMAGE_REGISTRY g" "$MODULE_DIRECTORY/wayblue-signing/registry-config.yaml"
+sed -i "s ghcr.io/IMAGENAME $IMAGE_REGISTRY g" "$MODULE_DIRECTORY/toxicblue-signing/registry-config.yaml"
 cp "$MODULE_DIRECTORY/toxicblue-signing/registry-config.yaml" "$CONTAINER_DIR/registries.d/$IMAGE_REGISTRY_TITLE.yaml"
 cp "$MODULE_DIRECTORY/toxicblue-signing/registry-config.yaml" "$ETC_CONTAINER_DIR/registries.d/$IMAGE_REGISTRY_TITLE.yaml"
 rm "$MODULE_DIRECTORY/toxicblue-signing/registry-config.yaml"
