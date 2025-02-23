@@ -62,7 +62,6 @@ modules:
         - just
         - alsa-firmware
         - p7zip
-        - unrar
         - distrobox
         
       # sound
