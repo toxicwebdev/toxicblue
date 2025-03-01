@@ -5,4 +5,6 @@ set -oue pipefail
 
 # Removing this for now since it breaks steam layering.
 # https://github.com/ublue-os/bluefin/issues/1258
-# sed -i 's/Inherits=Adwaita/Inherits=Papirus/' /usr/share/icons/default/index.theme 
+# sed -i 's/Inherits=Adwaita/Inherits=Papirus/' /usr/share/icons/default/index.theme
+
+sed -i 's/Inherits=Adwaita/Inherits=Flat-Remix-Blue-Dark/' /usr/share/icons/default/index.theme
