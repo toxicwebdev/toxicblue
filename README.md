@@ -43,31 +43,15 @@ If you want to add your own customizations on top of wayblue, you are advised st
 
 ## Installation
 
-### Available Images
-> [!NOTE] 
-> *`nvidia-open` images are recommended for systems with Nvidia GPUs Turing or newer.*
-> 
-> *`nvidia` images are recommended for systems with Nvidia GPUs Pascal or older.*
-
 #### SDDM images (recommended)
 
 | Name                     | WM       | Nvidia Support           |
 |--------------------------|----------|--------------------------|
 | `wayfire`                | Wayfire  | No                       |
-| `wayfire-nvidia`        | Wayfire  | Yes, closed drivers      |
-| `wayfire-nvidia-open`   | Wayfire  | Yes, open drivers        |
 | `sway`                   | Sway     | No                       |
-| `sway-nvidia`           | Sway     | Yes, closed drivers      |
-| `sway-nvidia-open`      | Sway     | Yes, open drivers        |
-| `hyprland`              | Hyprland | No                       |
-| `hyprland-nvidia`       | Hyprland | Yes, closed drivers      |
-| `hyprland-nvidia-open`  | Hyprland | Yes, open drivers        |
+| `hyprland`               | Hyprland | No                       |
 | `river`                  | River    | No                       |
-| `river-nvidia`          | River    | Yes, closed drivers      |
-| `river-nvidia-open`     | River    | Yes, open drivers        |
-| `qtile`                 | Qtile    | No                       |
-| `qtile-nvidia`          | Qtile    | Yes, closed drivers      |
-| `qtile-nvidia-open`     | Qtile    | Yes, open drivers        |
+| `qtile`                  | Qtile    | No                       |
 
 ### Rebasing
 
@@ -94,32 +78,6 @@ To rebase an existing Silverblue/Kinoite/Sericea installation to the latest buil
   ```
   systemctl reboot
   ```
-  
-### Post-install
-
-#### Nvidia
-If you are using an nvidia image, run this after installation:
-
-```
-rpm-ostree kargs \
-    --append-if-missing=rd.driver.blacklist=nouveau \
-    --append-if-missing=modprobe.blacklist=nouveau \
-    --append-if-missing=nvidia-drm.modeset=1 \
-    --append-if-missing=nvidia-drm.fbdev=1
-```
-
-You may also need this (solves flickering and LUKS issues on some nvidia hardware):
-```
-rpm-ostree kargs \
-    --append-if-missing=initcall_blacklist=simpledrm_platform_driver_init
-```
-
-#### Nvidia optimus laptop
-If you are using an nvidia image on an optimus laptop, run this after installation:
-
-```
-ujust configure-nvidia-optimus
-```
 
 ## Screenshots
 ![sway](https://github.com/wayblueorg/wayblue/assets/129108030/9dc4d4a2-843a-4598-9717-2be88e23498b)
