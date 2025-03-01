@@ -24,6 +24,11 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
+# This is the toxicblue configuration file for qtile.
+# Remove this comment before customizing or your config will be overwritten.
+# 
+# ORIGIN: TOXICBLUE
+
 from libqtile import bar, layout, qtile, widget
 from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy

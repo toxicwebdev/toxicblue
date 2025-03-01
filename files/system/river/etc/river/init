@@ -1,7 +1,10 @@
 #!/bin/sh
 
-# This is the example configuration file for river.
-#
+# This is the toxicblue configuration file for river.
+# Remove this comment before customizing or your config will be overwritten.
+# 
+# ORIGIN: TOXICBLUE
+
 # If you wish to edit this, you will probably want to copy it to
 # $XDG_CONFIG_HOME/river/init or $HOME/.config/river/init first.
 #
