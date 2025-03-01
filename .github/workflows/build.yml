@@ -21,12 +21,11 @@ jobs:
       fail-fast: false # запретить GH отменять все сборки матрицы, если одна не удалась
       matrix:
         recipe:
-          #- recipe.yml
           - recipe-hyprland.yml
-          #- recipe-qtile.yml
-          #- recipe-river.yml
-          #- recipe-sway.yml
-          #- recipe-wayfire.yml
+          - recipe-qtile.yml
+          - recipe-river.yml
+          - recipe-sway.yml
+          - recipe-wayfire.yml
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4.2.2
