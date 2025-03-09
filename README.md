@@ -14,7 +14,6 @@
 
 This repo takes the [BlueBuild](https://blue-build.org/) template and builds out minimally-opinionated [Fedora Atomic](https://fedoraproject.org/atomic-desktops/) operating system images for the following wayland compositors:
 
-- wayfire (with wf-shell)
 - hyprland (with waybar)
 - sway (with waybar)
 - river (with waybar)
@@ -24,7 +23,6 @@ This repo takes the [BlueBuild](https://blue-build.org/) template and builds out
 
 Changes and decisions in the images:
 - Set saner SDDM defaults
-- Set saner wf-shell defaults
 - Set saner waybar defaults
 - Add a reasonable suite of tools that are needed to have a working desktop with a wayland compositor 
 - Build in a minimally opinionated config for each compositor and tools that work out of the box
@@ -47,11 +45,10 @@ If you want to add your own customizations on top of wayblue, you are advised st
 
 | Name                     | WM       | Nvidia Support           |
 |--------------------------|----------|--------------------------|
-| `wayfire`                | Wayfire  | No                       |
-| `sway`                   | Sway     | No                       |
 | `hyprland`               | Hyprland | No                       |
-| `river`                  | River    | No                       |
 | `qtile`                  | Qtile    | No                       |
+| `river`                  | River    | No                       |
+| `sway`                   | Sway     | No                       |
 
 ### Rebasing
 

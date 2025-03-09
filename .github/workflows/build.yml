@@ -26,7 +26,6 @@ jobs:
           - recipe-qtile.yml
           - recipe-river.yml
           - recipe-sway.yml
-          - recipe-wayfire.yml
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4.2.2
