@@ -8,7 +8,6 @@
 
 <h1 align="center">toxicblue</h1>
 
-
 [![toxicblue](https://github.com/toxicwebdev/toxicblue/actions/workflows/build.yml/badge.svg)](https://github.com/toxicwebdev/toxicblue/actions/workflows/build.yml)
 [![trivy](https://github.com/toxicwebdev/toxicblue/actions/workflows/trivy.yml/badge.svg)](https://github.com/toxicwebdev/toxicblue/actions/workflows/trivy.yml)
 
@@ -22,9 +21,10 @@ This repo takes the [BlueBuild](https://blue-build.org/) template and builds out
 ## What
 
 Changes and decisions in the images:
+
 - Set saner SDDM defaults
 - Set saner waybar defaults
-- Add a reasonable suite of tools that are needed to have a working desktop with a wayland compositor 
+- Add a reasonable suite of tools that are needed to have a working desktop with a wayland compositor
 - Build in a minimally opinionated config for each compositor and tools that work out of the box
 
 ## Why
@@ -33,11 +33,9 @@ The Fedora Atomic ecosystem provides excellent base images and tooling for immut
 
 For more info on BlueBuild, check out the [BlueBuild homepage](https://blue-build.org/).
 
-
 ## Customization
 
-If you want to add your own customizations on top of wayblue, you are advised strongly against forking. Instead, create a repo for your own image by using the [BlueBuild template](https://github.com/blue-build/template), then change your `base-image` to a wayblue image. This will allow you to apply your customizations to wayblue in a concise and maintainable way, without the need to constantly sync with upstream. 
-
+If you want to add your own customizations on top of wayblue, you are advised strongly against forking. Instead, create a repo for your own image by using the [BlueBuild template](https://github.com/blue-build/template), then change your `base-image` to a wayblue image. This will allow you to apply your customizations to wayblue in a concise and maintainable way, without the need to constantly sync with upstream.
 
 ## Installation
 
@@ -52,31 +50,39 @@ If you want to add your own customizations on top of wayblue, you are advised st
 
 ### Rebasing
 
-To rebase an existing Silverblue/Kinoite/Sericea installation to the latest build: 
-> [!IMPORTANT] 
+To rebase an existing Silverblue/Kinoite/Sericea installation to the latest build:
+> [!IMPORTANT]
 > The **only** supported tag is `latest`.
 
-> [!NOTE] 
+> [!NOTE]
 > The two reboots described below are not optional. During installation, the initial boot into wayblue will provision the required sddm user. This is a one time step, all subsequent boots will succeed.
 
 - First rebase to the unsigned image, to get the proper signing keys and policies installed:
+
   ```
   rpm-ostree rebase ostree-unverified-registry:ghcr.io/toxicwebdev/$IMAGE_NAME:latest
   ```
+
 - Reboot to complete the rebase:
+
   ```
   systemctl reboot
   ```
+
 - Then rebase to the signed image, like so:
+
   ```
   rpm-ostree rebase ostree-image-signed:docker://ghcr.io/toxicwebdev/$IMAGE_NAME:latest
   ```
+
 - Reboot again to complete the installation
+
   ```
   systemctl reboot
   ```
 
 ## Screenshots
+
 ![sway](https://github.com/toxicwebdev/toxicblue/assets/sway.png)
 
 ![hyprland](https://github.com/toxicwebdev/toxicblue/assets/hyprland.png)
