@@ -1,10 +1,6 @@
-<p align="center">
-  <a href="https://github.com/toxicwebdev/toxicblue">
-    <img src="assets/toxic.png" href="https://github.com/toxicwebdev/toxicblue" width=180 />
-  </a>
-</p>
+# toxicblue
 
-<h1 align="center">toxicblue</h1>
+[![toxic](assets/toxic.png)](https://github.com/toxicwebdev/toxicblue)
 
 [![toxicblue](https://github.com/toxicwebdev/toxicblue/actions/workflows/build.yml/badge.svg)](https://github.com/toxicwebdev/toxicblue/actions/workflows/build.yml)
 [![trivy](https://github.com/toxicwebdev/toxicblue/actions/workflows/trivy.yml/badge.svg)](https://github.com/toxicwebdev/toxicblue/actions/workflows/trivy.yml)
@@ -49,11 +45,8 @@ If you want to add your own customizations on top of wayblue, you are advised st
 ### Rebasing
 
 To rebase an existing Silverblue/Kinoite/Sericea installation to the latest build:
-> [!IMPORTANT]
-> The **only** supported tag is `latest`.
-
-> [!NOTE]
-> The two reboots described below are not optional. During installation, the initial boot into wayblue will provision the required sddm user. This is a one time step, all subsequent boots will succeed.
+> [!IMPORTANT] The **only** supported tag is `latest`.
+> [!NOTE] The two reboots described below are not optional. During installation, the initial boot into wayblue will provision the required sddm user. This is a one time step, all subsequent boots will succeed.
 
 - First rebase to the unsigned image, to get the proper signing keys and policies installed:
 
