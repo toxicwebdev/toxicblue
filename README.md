@@ -51,6 +51,7 @@ If you want to add your own customizations on top of wayblue, you are advised st
 To rebase an existing Silverblue/Kinoite/Sericea installation to the latest build:
 > [!IMPORTANT]
 > The **only** supported tag is `latest`.
+
 > [!NOTE]
 > The two reboots described below are not optional. During installation, the initial boot into wayblue will provision the required sddm user. This is a one time step, all subsequent boots will succeed.
 
