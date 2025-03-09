@@ -52,6 +52,7 @@ To rebase an existing Silverblue/Kinoite/Sericea installation to the latest buil
 > [!IMPORTANT]
 > The **only** supported tag is `latest`.
 
+And also:
 > [!NOTE]
 > The two reboots described below are not optional. During installation, the initial boot into toxicblue will provision the required sddm user. This is a one time step, all subsequent boots will succeed.
 
