@@ -1,6 +1,6 @@
 # toxicblue
 
-[![toxic](assets/toxic.png)](https://github.com/toxicwebdev/toxicblue)
+[![toxic](assets/toxic.png?maxAge=259200)](https://github.com/toxicwebdev/toxicblue)
 
 [![toxicblue](https://github.com/toxicwebdev/toxicblue/actions/workflows/build.yml/badge.svg)](https://github.com/toxicwebdev/toxicblue/actions/workflows/build.yml)
 [![trivy](https://github.com/toxicwebdev/toxicblue/actions/workflows/trivy.yml/badge.svg)](https://github.com/toxicwebdev/toxicblue/actions/workflows/trivy.yml)
