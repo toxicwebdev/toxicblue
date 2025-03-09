@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://github.com/toxicwebdev/toxicblue">
-    <img src="https://github.com/toxicwebdev/toxicblue/assets/129108030/38139f2c-e91e-40dd-88b1-951c1021c51c" href="https://github.com/toxicwebdev/toxicblue" width=180 />
+    <img src="https://github.com/toxicwebdev/toxicblue/assets/38139f2c-e91e-40dd-88b1-951c1021c51c" href="https://github.com/toxicwebdev/toxicblue" width=180 />
   </a>
 </p>
 
@@ -77,9 +77,9 @@ To rebase an existing Silverblue/Kinoite/Sericea installation to the latest buil
   ```
 
 ## Screenshots
-![sway](https://github.com/toxicwebdev/toxicblue/assets/129108030/9dc4d4a2-843a-4598-9717-2be88e23498b)
+![sway](https://github.com/toxicwebdev/toxicblue/assets/9dc4d4a2-843a-4598-9717-2be88e23498b)
 
-![hyprland](https://github.com/toxicwebdev/toxicblue/assets/129108030/dc1422fd-efd5-4ec1-8a2d-e1a3887fe8b8)
+![hyprland](https://github.com/toxicwebdev/toxicblue/assets/dc1422fd-efd5-4ec1-8a2d-e1a3887fe8b8)
 
 ## ISO
 
