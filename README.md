@@ -1,5 +1,3 @@
-<h5 align="center">Notice: These images are considered beta.</h5>
-
 <p align="center">
   <a href="https://github.com/toxicwebdev/toxicblue">
     <img src="assets/toxic.png" href="https://github.com/toxicwebdev/toxicblue" width=180 />
@@ -39,7 +37,7 @@ If you want to add your own customizations on top of wayblue, you are advised st
 
 ## Installation
 
-#### SDDM images (recommended)
+### SDDM images (recommended)
 
 | Name                     | WM       | Nvidia Support           |
 |--------------------------|----------|--------------------------|
@@ -53,31 +51,30 @@ If you want to add your own customizations on top of wayblue, you are advised st
 To rebase an existing Silverblue/Kinoite/Sericea installation to the latest build:
 > [!IMPORTANT]
 > The **only** supported tag is `latest`.
-
 > [!NOTE]
 > The two reboots described below are not optional. During installation, the initial boot into wayblue will provision the required sddm user. This is a one time step, all subsequent boots will succeed.
 
 - First rebase to the unsigned image, to get the proper signing keys and policies installed:
 
-  ```
+  ```bash
   rpm-ostree rebase ostree-unverified-registry:ghcr.io/toxicwebdev/$IMAGE_NAME:latest
   ```
 
 - Reboot to complete the rebase:
 
-  ```
+  ```bash
   systemctl reboot
   ```
 
 - Then rebase to the signed image, like so:
 
-  ```
+  ```bash
   rpm-ostree rebase ostree-image-signed:docker://ghcr.io/toxicwebdev/$IMAGE_NAME:latest
   ```
 
 - Reboot again to complete the installation
 
-  ```
+  ```bash
   systemctl reboot
   ```
 
