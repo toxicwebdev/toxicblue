@@ -1,0 +1,29 @@
+[Desktop Entry]
+Name=Kali
+Comment=Kali Plasma Theme
+
+X-KDE-PluginInfo-Author=Kali Devel Team
+X-KDE-PluginInfo-Email=devel@kali.org
+X-KDE-PluginInfo-Name=Kali
+X-KDE-PluginInfo-Version=1.0
+X-KDE-PluginInfo-Website=https://kali.org
+X-KDE-PluginInfo-Category=
+X-KDE-PluginInfo-Depends=
+X-KDE-PluginInfo-License=GPL-3.0+
+X-KDE-PluginInfo-EnabledByDefault=true
+X-Plasma-API=5.0
+
+[Settings]
+FallbackTheme=default
+
+[Wallpaper]
+defaultWallpaperTheme=KaliMoto
+defaultWidth=3840
+defaultHeight=2160
+
+[ContrastEffect]
+enabled=true
+contrast=0.2
+#intensity is disabled, in order to auto adjust to the chosen theme color
+#intensity=2.0
+saturation=1.7

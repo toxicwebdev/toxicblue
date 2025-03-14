@@ -1,0 +1,12 @@
+[kdeglobals][General]
+ColorScheme=KaliDark
+
+[kwinrc][org.kde.kdecoration2]
+library=org.kali.kali
+theme=Kali
+
+[kdeglobals][Icons]
+Theme=Flat-Remix-Blue-Dark
+
+[plasmarc][Theme]
+name=kali

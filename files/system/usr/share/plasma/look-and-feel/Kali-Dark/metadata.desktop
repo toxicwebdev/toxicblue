@@ -1,0 +1,13 @@
+[Desktop Entry]
+Comment=Kali-Dark
+Name=Kali-Dark
+X-KDE-PluginInfo-Author=Kali Devel Team
+X-KDE-PluginInfo-Category=Plasma Look And Feel
+X-KDE-PluginInfo-Email=devel@kali.org
+X-KDE-PluginInfo-EnabledByDefault=true
+X-KDE-PluginInfo-License=GPL-3.0+
+X-KDE-PluginInfo-Name=Kali-Dark
+X-KDE-PluginInfo-Version=1.0
+X-KDE-PluginInfo-Website=https://kali.org
+X-KDE-ServiceTypes=Plasma/LookAndFeel
+
