@@ -160,7 +160,7 @@ modules:
 
     - type: gschema-overrides
       include:
-        - zz1-secureblue-theming.gschema.override
+        - zz1-toxicblue-theming.gschema.override
 
     - type: script
       scripts:
