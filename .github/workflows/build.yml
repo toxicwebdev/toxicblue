@@ -48,7 +48,7 @@ jobs:
       - name: Build toxicblue
         uses: blue-build/github-action@v1.8.1
         with:
-          cli_version: v0.9.9
+          cli_version: v0.9.10
           recipe: ${{ matrix.recipe }}
           cosign_private_key: ${{ secrets.SIGNING_SECRET }}
           registry_token: ${{ github.token }}
