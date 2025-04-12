@@ -4,9 +4,11 @@ modules:
         - hyprland
         - waybar
         - xdg-desktop-portal-hyprland
-        - hyprpaper
-        - hyprlock
-        - hypridle
+        #- hyprpaper
+        #- hyprlock
+        - swaylock
+        #- hypridle
+        - swayidle
 
     - type: files
       files:
