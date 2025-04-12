@@ -29,7 +29,7 @@ jobs:
           - recipe-wayfire.yml
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
 
       - name: Gather image data from recipe
         run: |
@@ -46,7 +46,7 @@ jobs:
           pubkey: 'https://gitlab.com/fedora/ostree/ci-test/-/raw/main/quay.io-fedora-ostree-desktops.pub'
 
       - name: Build toxicblue
-        uses: blue-build/github-action@v1.8.1
+        uses: blue-build/github-action@4d8b4df657ec923574611eec6fd7e959416c47f0 # v1.8.1
         with:
           cli_version: v0.9.10
           recipe: ${{ matrix.recipe }}
