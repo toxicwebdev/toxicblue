@@ -1,10 +1,13 @@
 name: build-pullrequest
 on:
+  merge_group:
   pull_request:
     branches:
       - main
+      - testing
     paths-ignore:
       - "**.md"
+
 jobs:
   bluebuild:
     name: PR build

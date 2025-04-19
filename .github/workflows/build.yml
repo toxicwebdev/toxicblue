@@ -1,15 +1,19 @@
 name: build-toxicblue
 on:
   schedule:
-    - cron: "00 06 * * *" # ежедневно в 06:00 по Гринвичу
-    # - cron: "00 06 * * 1,2,3,4,5,6" # 06:00 по Гринвичу всё, кроме Воскресенья
-    # - cron: "00 06 * * 0" # 06:00 по Гринвичу Воскресенье
+    - cron: "00 05 * * *" # Создается в 5:00 UTC каждый день
+    # - cron: "00 05 * * 1,2,3,4,5,6" # Создается в 5:00 UTC каждый день, кроме Воскресенья
+    # - cron: "00 05 * * 0" # Создается в 5:00 UTC по Воскресеньям
+  merge_group:
   push:
+    branches:
+      - main
+      - testing
     paths-ignore: # Не перестраивайте, если изменилась только документация
     - "**.md"
-
+  workflow_call:
   workflow_dispatch: # возможность запускать сборки вручную
-    
+
 jobs:
   bluebuild:
     name: Build toxicblue
@@ -53,8 +57,5 @@ jobs:
           cosign_private_key: ${{ secrets.SIGNING_SECRET }}
           registry_token: ${{ github.token }}
           pr_event_number: ${{ github.event.number }}
-
-          # включено по умолчанию, отключите, если ваше изображение маленькое и вы хотите получить более быструю сборку     
-          maximize_build_space: true
-          
+          maximize_build_space: true # включено по умолчанию, отключите, если ваше изображение маленькое и вы хотите получить более быструю сборку
           squash: true

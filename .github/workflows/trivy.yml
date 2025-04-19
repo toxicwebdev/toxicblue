@@ -1,13 +1,15 @@
 name: trivy
 on:
   schedule:
-    - cron: "00 8 * * *" # build at 8:00 UTC every day 
-
+    - cron: "00 8 * * *" # Создается в 8:00 UTC каждый день
+  merge_group:
   push:
     branches:
       - main
+      - testing
+  workflow_call:
+  workflow_dispatch: # возможность вручную запускать сборки
 
-  workflow_dispatch: # allow manually triggering builds
 jobs:
   build:
     name: Trivy

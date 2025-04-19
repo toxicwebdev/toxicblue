@@ -1,8 +1,11 @@
 name: Linkspector
 on: 
+  merge_group:
   pull_request:
     branches:
       - main
+      - testing
+
 jobs:
   check-links:
     name: Linkspector
