@@ -1,0 +1,3 @@
+docker:
+  ghcr.io/toxicwebdev:
+    use-sigstore-attachments: true

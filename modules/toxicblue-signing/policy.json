@@ -1,4 +1,3 @@
-
 {
     "default": [
         {
@@ -21,10 +20,46 @@
                     "keyPath": "/usr/etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release"
                 }
             ],
+            "ghcr.io/zelikos": [
+                {
+                    "type": "sigstoreSigned",
+                    "keyPath": "/usr/etc/pki/containers/davincibox.pub",
+                    "signedIdentity": {
+                        "type": "matchRepository"
+                    }
+                }
+            ],
+            "ghcr.io/jasonn3": [
+                {
+                    "type": "sigstoreSigned",
+                    "keyPath": "/usr/etc/pki/containers/build-container-installer.pub",
+                    "signedIdentity": {
+                        "type": "matchRepository"
+                    }
+                }
+            ],
             "quay.io/toolbx-images": [
                 {
                     "type": "sigstoreSigned",
                     "keyPath": "/usr/etc/pki/containers/quay.io-toolbx-images.pub",
+                    "signedIdentity": {
+                        "type": "matchRepository"
+                    }
+                }
+            ],
+            "ghcr.io/secureblue": [
+                {
+                    "type": "sigstoreSigned",
+                    "keyPath": "/usr/etc/pki/containers/secureblue.pub",
+                    "signedIdentity": {
+                        "type": "matchRepository"
+                    }
+                }
+            ],
+            "quay.io/fedora-ostree-desktops": [
+                {
+                    "type": "sigstoreSigned",
+                    "keyPath": "/usr/etc/pki/containers/quay.io-fedora-ostree-desktops.pub",
                     "signedIdentity": {
                         "type": "matchRepository"
                     }

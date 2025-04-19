@@ -1,5 +1,0 @@
-ublue_variants:
-  - label: toxicwebdev/toxicblue
-    ks: /kickstart/ublue-os.ks
-    flavors:
-      - label: toxicblue
