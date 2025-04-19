@@ -2,6 +2,6 @@
 #  (~/.config/swaylock/config).
 #
 # Image path supports environment variables and shell expansions,
-# e.g. image=$HOME/Pictures/default.png
-image=/usr/share/backgrounds/default.png
+# e.g. image=$HOME/Pictures/default.jxl
+image=/usr/share/backgrounds/default.jxl
 scaling=fill
