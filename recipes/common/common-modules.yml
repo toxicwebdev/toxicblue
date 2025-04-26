@@ -27,7 +27,8 @@ modules:
         - headsetcontrol
         - mediainfo
         - polkit
-        - xfce-polkit 
+        #- xfce-polkit 
+        - polkit-kde
         - fprintd-pam
         - xdg-user-dirs
         - dbus-tools
@@ -40,7 +41,8 @@ modules:
         - vulkan-validation-layers
         - vulkan-tools
         - google-noto-emoji-fonts
-        - gnome-disk-utility
+        #- gnome-disk-utility
+        - gparted
         - ddcutil
         - openssl
         - vim
@@ -48,6 +50,11 @@ modules:
         - alsa-firmware
         - p7zip
         - distrobox
+        - langpacks-ru
+        - fastfetch
+        - mpv
+        - yad
+        - zsh
         
       # sound
         - wireplumber
@@ -58,19 +65,21 @@ modules:
       # networking
         - network-manager-applet
         - NetworkManager-openvpn
-        - NetworkManager-openvpn-gnome
+        #- NetworkManager-openvpn-gnome
         - NetworkManager-openconnect
-        - NetworkManager-openconnect-gnome
+        #- NetworkManager-openconnect-gnome
         - bluez
         - bluez-tools
         - blueman
         - firewall-config
 
       # file manager
-        - thunar
-        - thunar-archive-plugin 
-        - thunar-volman
-        - xarchiver
+        #- thunar
+        #- thunar-archive-plugin 
+        #- thunar-volman
+        #- xarchiver
+        - dolphin
+        - arc
         - imv
         - p7zip
         - gvfs-mtp
@@ -96,11 +105,11 @@ modules:
 
       # theme and GUI
         - fontawesome-fonts-all
-        - gnome-themes-extra
-        - gnome-icon-theme
-        - paper-icon-theme
-        - breeze-icon-theme 
-        - papirus-icon-theme
+        #- gnome-themes-extra
+        #- gnome-icon-theme
+        #- paper-icon-theme
+        #- breeze-icon-theme 
+        #- papirus-icon-theme
 
     - type: script
       scripts:
