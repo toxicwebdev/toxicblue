@@ -19,6 +19,7 @@ jobs:
       matrix:
         recipe:
           - recipe-hyprland.yml
+          - recipe-hyprland-qt.yml
 
     steps:
       - name: Checkout repo

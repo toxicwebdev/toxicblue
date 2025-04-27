@@ -27,7 +27,7 @@ modules:
         - headsetcontrol
         - mediainfo
         - polkit
-        - xfce-polkit 
+        - polkit-kde
         - fprintd-pam
         - xdg-user-dirs
         - dbus-tools
@@ -40,7 +40,6 @@ modules:
         - vulkan-validation-layers
         - vulkan-tools
         - google-noto-emoji-fonts
-        #- gnome-disk-utility
         - gparted
         - ddcutil
         - openssl
@@ -66,19 +65,15 @@ modules:
       # networking
         - network-manager-applet
         - NetworkManager-openvpn
-        #- NetworkManager-openvpn-gnome
         - NetworkManager-openconnect
-        #- NetworkManager-openconnect-gnome
         - bluez
         - bluez-tools
         - blueman
         - firewall-config
 
       # file manager
-        - thunar
-        - thunar-archive-plugin 
-        - thunar-volman
-        - xarchiver
+        - dolphin
+        - arc
         - imv
         - p7zip
         - gvfs-mtp
@@ -104,8 +99,6 @@ modules:
 
       # theme and GUI
         - fontawesome-fonts-all
-        #- gnome-themes-extra
-        #- gnome-icon-theme
         #- paper-icon-theme
         #- breeze-icon-theme 
         #- papirus-icon-theme
