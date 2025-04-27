@@ -1,0 +1,13 @@
+modules:
+    - type: script
+      scripts:
+        - adddockerrepo.sh
+
+    - type: rpm-ostree
+      install:
+      # development tools
+        - adobe-source-code-pro-fonts
+        - bcc
+        - bpftop
+        - bpftrace
+        - cascadia-code-fonts

@@ -26,8 +26,6 @@ modules:
         - xorg-x11-server-Xwayland
         - headsetcontrol
         - mediainfo
-        - polkit
-        - xfce-polkit 
         - fprintd-pam
         - xdg-user-dirs
         - dbus-tools
@@ -41,7 +39,6 @@ modules:
         - vulkan-tools
         - google-noto-emoji-fonts
         #- gnome-disk-utility
-        - gparted
         - ddcutil
         - openssl
         - vim
@@ -49,13 +46,6 @@ modules:
         - alsa-firmware
         - p7zip
         - distrobox
-
-      # custom
-        - fastfetch
-        - langpacks-ru
-        - mpv
-        - yad
-        - zsh
         
       # sound
         - wireplumber
@@ -66,19 +56,23 @@ modules:
       # networking
         - network-manager-applet
         - NetworkManager-openvpn
-        #- NetworkManager-openvpn-gnome
+        - NetworkManager-openvpn-gnome
         - NetworkManager-openconnect
-        #- NetworkManager-openconnect-gnome
+        - NetworkManager-openconnect-gnome
         - bluez
         - bluez-tools
         - blueman
         - firewall-config
+        - wireguard-tools
+        - tailscale
 
       # file manager
         - thunar
         - thunar-archive-plugin 
         - thunar-volman
         - xarchiver
+        #- dolphin
+        #- arc
         - imv
         - p7zip
         - gvfs-mtp
@@ -104,6 +98,7 @@ modules:
 
       # theme and GUI
         - fontawesome-fonts-all
+        #- adw-gtk3-theme
         #- gnome-themes-extra
         #- gnome-icon-theme
         #- paper-icon-theme

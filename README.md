@@ -12,7 +12,6 @@
 This repo takes the [BlueBuild](https://blue-build.org/) template and builds out minimally-opinionated [Fedora Atomic](https://fedoraproject.org/atomic-desktops/) operating system images for the following wayland compositors:
 
 - hyprland (with waybar)
-- hyprland-qt (with waybar)
 - qtile (experimental)
 - river (with waybar)
 - sway (with waybar)
@@ -44,7 +43,6 @@ If you want to add your own customizations on top of wayblue, you are advised st
 | Name                     | WM       | Nvidia Support           |
 |--------------------------|----------|--------------------------|
 | `hyprland`               | Hyprland | No                       |
-| `hyprland-qt`            | Hyprland | No                       |
 | `qtile`                  | Qtile    | No                       |
 | `river`                  | River    | No                       |
 | `sway`                   | Sway     | No                       |
