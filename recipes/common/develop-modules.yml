@@ -1,8 +1,4 @@
 modules:
-    - type: script
-      scripts:
-        #- adddockerrepo.sh
-
     - type: rpm-ostree
       install:
       # development tools

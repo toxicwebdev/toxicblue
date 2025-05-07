@@ -1,8 +1,4 @@
 modules:
-    - type: script
-      scripts:
-        #- addvscoderepo.sh
-
     - type: rpm-ostree
       install:
       # base
