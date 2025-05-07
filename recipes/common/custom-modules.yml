@@ -78,7 +78,7 @@ modules:
       remove:
         #- firefox
         #- firefox-langpacks
-        - kcharselect
+        #- kcharselect
         - krfb
         - krfb-libs
         - plasma-welcome-fedora
