@@ -79,7 +79,7 @@ modules:
         #- firefox
         #- firefox-langpacks
         #- kcharselect
-        - krfb
-        - krfb-libs
+        #- krfb
+        #- krfb-libs
         - plasma-welcome-fedora
         - podman-docker
