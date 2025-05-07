@@ -140,7 +140,7 @@ modules:
 
     - type: script
       scripts:
-        - installrpmfusion.sh
+        #- installrpmfusion.sh
         - removeunusedrepos.sh
 
     - type: files
