@@ -26,6 +26,8 @@ modules:
         - xorg-x11-server-Xwayland
         - headsetcontrol
         - mediainfo
+        - polkit
+        - xfce-polkit 
         - fprintd-pam
         - xdg-user-dirs
         - dbus-tools
@@ -38,7 +40,7 @@ modules:
         - vulkan-validation-layers
         - vulkan-tools
         - google-noto-emoji-fonts
-        #- gnome-disk-utility
+        - gnome-disk-utility
         - ddcutil
         - openssl
         - vim
@@ -63,16 +65,12 @@ modules:
         - bluez-tools
         - blueman
         - firewall-config
-        - wireguard-tools
-        - tailscale
 
       # file manager
         - thunar
         - thunar-archive-plugin 
         - thunar-volman
         - xarchiver
-        #- dolphin
-        #- arc
         - imv
         - p7zip
         - gvfs-mtp
@@ -98,12 +96,11 @@ modules:
 
       # theme and GUI
         - fontawesome-fonts-all
-        #- adw-gtk3-theme
-        #- gnome-themes-extra
-        #- gnome-icon-theme
-        #- paper-icon-theme
-        #- breeze-icon-theme 
-        #- papirus-icon-theme
+        - gnome-themes-extra
+        - gnome-icon-theme
+        - paper-icon-theme
+        - breeze-icon-theme 
+        - papirus-icon-theme
 
     - type: script
       scripts:
@@ -123,6 +120,7 @@ modules:
         - gstreamer1-plugins-bad-free
         - gstreamer1-plugins-bad-free-libs
         - gstreamer1-plugins-ugly-free
+        - gstreamer1-plugin-vaapi-free
         - gstreamer1-plugin-vaapi
         - fdk-aac-free
         - ffmpeg-free

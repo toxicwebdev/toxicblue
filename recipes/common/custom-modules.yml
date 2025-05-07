@@ -1,19 +1,10 @@
 modules:
     - type: script
       scripts:
-        #- adddockerrepo.sh
-        - addvscoderepo.sh
+        #- addvscoderepo.sh
 
     - type: rpm-ostree
       install:
-      # polkit
-        - polkit
-        #- lxpolkit
-        #- lxqt-policykit
-        #- mate-polkit
-        #- polkit-kde
-        - xfce-polkit
-
       # base
         - adcli
         - bash-color-prompt
@@ -21,19 +12,24 @@ modules:
         - bootc
         - borgbackup
         - cryfs
+        #- epson-inkjet-printer-escpr
+        #- epson-inkjet-printer-escpr2
         - evtest
         - fastfetch
         - fish
         - foo2zjs
         - fuse-encfs
+        - fw-fanctrl
         - gcc
         - git-credential-libsecret
         - glow
+        - google-noto-fonts-all
         - gum
         - hplip
         - ifuse
         - input-remapper
         - jetbrains-mono-fonts-all
+        #- ksshaskpass
         - langpacks-ru
         - libimobiledevice
         - libsss_autofs
@@ -62,23 +58,32 @@ modules:
         - sssd-ipa
         - sssd-krb5
         - sssd-nfs-idmap
-        #- starship
+        ##- starship
+        - tailscale
         - tmux
         - udiskie
-        #- uld
+        ##- uld
         - usbmuxd
+        - wireguard-tools
         - wlogout
         - xprop
         - yad
-        - zenity
+        #- zenity
         - zsh
         - zstd
 
       # apps  
-        - code
         - geany
         - gparted
         #- kate
         #- kde-partitionmanager
         #- kompare
-        - meld  
+        - meld
+      remove:
+        #- firefox
+        #- firefox-langpacks
+        - kcharselect
+        - krfb
+        - krfb-libs
+        - plasma-welcome-fedora
+        - podman-docker

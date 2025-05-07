@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 ### Auto update the iconcache
 ### Do a manual update with following code in a terminal if you get errors
 ### Do check if you have used spaces in the naming of files or folders

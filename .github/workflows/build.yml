@@ -8,7 +8,6 @@ on:
   push:
     branches:
       - main
-      - testing
     paths-ignore: # Не перестраивайте, если изменилась только документация
     - "**.md"
   workflow_call:
@@ -27,6 +26,7 @@ jobs:
       matrix:
         recipe:
           - recipe-hyprland.yml
+          - recipe-hyprland-dx.yml
           - recipe-qtile.yml
           - recipe-river.yml
           - recipe-sway.yml

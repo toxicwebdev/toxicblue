@@ -1,7 +1,7 @@
 modules:
     - type: script
       scripts:
-        - adddockerrepo.sh
+        #- adddockerrepo.sh
 
     - type: rpm-ostree
       install:
@@ -11,3 +11,75 @@ modules:
         - bpftop
         - bpftrace
         - cascadia-code-fonts
+        - cascadia-code-nf-fonts
+        - cockpit-bridge
+        - cockpit-machines
+        - cockpit-networkmanager
+        - cockpit-ostree
+        - cockpit-podman
+        - cockpit-selinux
+        - cockpit-storaged
+        - cockpit-system
+        - code
+        - containerd.io
+        - dbus-x11
+        - docker-buildx-plugin
+        - docker-ce
+        - docker-ce-cli
+        - docker-compose-plugin
+        - edk2-ovmf
+        - flatpak-builder
+        - genisoimage
+        - google-droid-sans-mono-fonts
+        - google-go-mono-fonts
+        - ibm-plex-mono-fonts
+        - incus
+        - incus-agent
+        - intel-one-mono-fonts
+        - iotop
+        - kcli
+        - libvirt
+        - libvirt-nss
+        - lxc
+        - mozilla-fira-mono-fonts
+        - nicstat
+        - numactl
+        - osbuild-selinux
+        - p7zip
+        - p7zip-plugins
+        - podman-bootc
+        - podman-compose
+        - podman-machine
+        - podman-tui
+        - podmansh
+        - powerline-fonts
+        - python3-ramalama
+        - qemu
+        - qemu-char-spice
+        - qemu-device-display-virtio-gpu
+        - qemu-device-display-virtio-vga
+        - qemu-device-usb-redirect
+        - qemu-img
+        - qemu-system-x86-core
+        - qemu-user-binfmt
+        - qemu-user-static
+        - rocm-hip
+        - rocm-opencl
+        - rocm-smi
+        - sysprof
+        - tiptop
+        - trace-cmd
+        - ublue-os-libvirt-workarounds
+        - udica
+        - umoci
+        - virt-manager
+        - virt-v2v
+        - virt-viewer
+        - ydotool
+
+    - type: files
+      files:
+        - source: system/dx/usr
+          destination: /usr
+        - source: system/dx/etc
+          destination: /etc
