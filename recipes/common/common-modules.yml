@@ -40,7 +40,7 @@ modules:
         - vulkan-validation-layers
         - vulkan-tools
         - google-noto-emoji-fonts
-        - gnome-disk-utility
+        #- gnome-disk-utility
         - ddcutil
         - openssl
         - vim
@@ -96,11 +96,11 @@ modules:
 
       # theme and GUI
         - fontawesome-fonts-all
-        - gnome-themes-extra
-        - gnome-icon-theme
-        - paper-icon-theme
-        - breeze-icon-theme 
-        - papirus-icon-theme
+        #- gnome-themes-extra
+        #- gnome-icon-theme
+        #- paper-icon-theme
+        #- breeze-icon-theme 
+        #- papirus-icon-theme
 
     - type: script
       scripts:
