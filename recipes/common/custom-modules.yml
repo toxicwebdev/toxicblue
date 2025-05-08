@@ -15,7 +15,7 @@ modules:
         - fish
         - foo2zjs
         - fuse-encfs
-        - fw-fanctrl
+        #- fw-fanctrl
         - gcc
         - git-credential-libsecret
         - glow
