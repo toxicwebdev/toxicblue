@@ -1,4 +1,11 @@
 modules:
+    - type: files
+      files:
+        - source: system/dx/usr
+          destination: /usr
+        - source: system/dx/etc
+          destination: /etc
+
     - type: rpm-ostree
       install:
       # development tools
@@ -72,10 +79,4 @@ modules:
         - virt-v2v
         - virt-viewer
         - ydotool
-
-    - type: files
-      files:
-        - source: system/dx/usr
-          destination: /usr
-        - source: system/dx/etc
-          destination: /etc
+    
