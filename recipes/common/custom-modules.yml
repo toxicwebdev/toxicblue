@@ -75,7 +75,7 @@ modules:
         #- kde-partitionmanager
         #- kompare
         - meld
-      remove:
+      #remove:
         #- firefox
         #- firefox-langpacks
         #- kcharselect
