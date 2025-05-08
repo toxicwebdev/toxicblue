@@ -82,4 +82,4 @@ modules:
         #- krfb
         #- krfb-libs
         #- plasma-welcome-fedora
-        - podman-docker
+        #- podman-docker
