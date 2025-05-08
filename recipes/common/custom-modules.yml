@@ -81,5 +81,5 @@ modules:
         #- kcharselect
         #- krfb
         #- krfb-libs
-        - plasma-welcome-fedora
+        #- plasma-welcome-fedora
         - podman-docker
