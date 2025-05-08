@@ -40,7 +40,7 @@ modules:
         - incus-agent
         - intel-one-mono-fonts
         - iotop
-        - kcli
+        ##- kcli
         - libvirt
         - libvirt-nss
         - lxc
@@ -50,7 +50,7 @@ modules:
         - osbuild-selinux
         - p7zip
         - p7zip-plugins
-        - podman-bootc
+        ##- podman-bootc
         - podman-compose
         - podman-machine
         - podman-tui
@@ -72,9 +72,9 @@ modules:
         - sysprof
         - tiptop
         - trace-cmd
-        - ublue-os-libvirt-workarounds
+        ##- ublue-os-libvirt-workarounds
         - udica
-        - umoci
+        ##- umoci
         - virt-manager
         - virt-v2v
         - virt-viewer
