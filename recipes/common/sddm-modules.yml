@@ -8,6 +8,7 @@ modules:
         - qt5-qtsvg
         - kwallet
         - pam-kwallet
+        - ksshaskpass
 
     - type: script
       scripts:

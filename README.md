@@ -1,10 +1,6 @@
-<p align="center">
-  <a href="https://github.com/toxicwebdev/toxicblue">
-    <img src="https://github.com/toxicwebdev/toxicblue/blob/main/assets/toxic.png" href="https://github.com/toxicwebdev/toxicblue" width=180 />
-  </a>
-</p>
+# Toxicblue
 
-## Toxicblue
+![main-logo](assets/toxic.png)
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/2503a44c1105456483517f793af75ee7)](https://app.codacy.com/gh/toxicwebdev/toxicblue/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 [![toxicblue](https://github.com/toxicwebdev/toxicblue/actions/workflows/build.yml/badge.svg)](https://github.com/toxicwebdev/toxicblue/actions/workflows/build.yml)
@@ -15,7 +11,6 @@
 toxicblue is a project that leverages the [BlueBuild](https://blue-build.org/) template to create minimally-opinionated [Fedora Atomic](https://fedoraproject.org/atomic-desktops/) operating system images for various Wayland compositors. The project aims to provide ready-to-use images with sane defaults for the following compositors:
 
 - Hyprland (with waybar)
-- Hyprland DX (with waybar)
 - Qtile (experimental)
 - River (with waybar)
 - Sway (with waybar)
@@ -43,7 +38,6 @@ For custom modifications, it's recommended to create a new repo using the [BlueB
 | Name         | Compositor | Nvidia Support  |
 |--------------|------------|-----------------|
 | `hyprland`   | Hyprland   | No              |
-| `hyprland-dx`| Hyprland   | No              |
 | `qtile`      | Qtile      | No              |
 | `river`      | River      | No              |
 | `sway`       | Sway       | No              |
@@ -61,27 +55,27 @@ To rebase an existing Silverblue/Kinoite/Sericea installation to the latest toxi
 
 1. Rebase to the unsigned image:
 
-   ```bash
-   rpm-ostree rebase ostree-unverified-registry:ghcr.io/toxicwebdev/$IMAGE_NAME:latest
-   ```
+    ```bash
+    rpm-ostree rebase ostree-unverified-registry:ghcr.io/toxicwebdev/$IMAGE_NAME:latest
+    ```
 
 2. Reboot:
 
-   ```bash
-   systemctl reboot
-   ```
+    ```bash
+    systemctl reboot
+    ```
 
 3. Rebase to the signed image:
 
-   ```bash
-   rpm-ostree rebase ostree-image-signed:docker://ghcr.io/toxicwebdev/$IMAGE_NAME:latest
-   ```
+    ```bash
+    rpm-ostree rebase ostree-image-signed:docker://ghcr.io/toxicwebdev/$IMAGE_NAME:latest
+    ```
 
 4. Final reboot:
 
-   ```bash
-   systemctl reboot
-   ```
+    ```bash
+    systemctl reboot
+    ```
 
 ## Screenshots
 

@@ -9,7 +9,5 @@ image-version: 42
 modules:
   - from-file: common/sddm-modules.yml
   - from-file: common/common-modules.yml
-  - from-file: common/custom-modules.yml
-  #- from-file: common/develop-modules.yml
   - from-file: common/hyprland-modules.yml
   - from-file: common/final-modules.yml

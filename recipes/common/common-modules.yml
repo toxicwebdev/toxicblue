@@ -48,6 +48,13 @@ modules:
         - alsa-firmware
         - p7zip
         - distrobox
+        - langpacks-ru
+        - fastfetch
+        - gparted
+        - mpv
+        - yad
+        - tmux
+        - zsh
         
       # sound
         - wireplumber
@@ -58,9 +65,9 @@ modules:
       # networking
         - network-manager-applet
         - NetworkManager-openvpn
-        - NetworkManager-openvpn-gnome
+        #- NetworkManager-openvpn-gnome
         - NetworkManager-openconnect
-        - NetworkManager-openconnect-gnome
+        #- NetworkManager-openconnect-gnome
         - bluez
         - bluez-tools
         - blueman
@@ -96,6 +103,8 @@ modules:
 
       # theme and GUI
         - fontawesome-fonts-all
+        - google-noto-fonts-all
+        - jetbrains-mono-fonts-all
         #- gnome-themes-extra
         #- gnome-icon-theme
         #- paper-icon-theme
