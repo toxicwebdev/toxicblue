@@ -50,7 +50,7 @@ jobs:
           pubkey: 'https://gitlab.com/fedora/ostree/ci-test/-/raw/main/quay.io-fedora-ostree-desktops.pub'
 
       - name: Build toxicblue
-        uses: blue-build/github-action@ad830f3f1bd888c5e0b730c18a23388ffcb69022 # v1.8.2
+        uses: blue-build/github-action@968216e45d3f5f23de24f7804259e1384cf5f358 # v1.8.3
         with:
           cli_version: v0.9.16
           recipe: ${{ matrix.recipe }}
