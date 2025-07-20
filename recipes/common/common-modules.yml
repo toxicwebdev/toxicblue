@@ -27,7 +27,7 @@ modules:
         - headsetcontrol
         - mediainfo
         - polkit
-        - xfce-polkit 
+        - xfce-polkit
         - fprintd-pam
         - xdg-user-dirs
         - dbus-tools
@@ -35,12 +35,10 @@ modules:
         - wl-clipboard
         - pavucontrol
         - playerctl
-        - qt5-qtwayland
-        - qt6-qtwayland
         - vulkan-validation-layers
         - vulkan-tools
         - google-noto-emoji-fonts
-        #- gnome-disk-utility
+        - gnome-disk-utility
         - ddcutil
         - openssl
         - vim
@@ -48,13 +46,50 @@ modules:
         - alsa-firmware
         - p7zip
         - distrobox
-        - langpacks-ru
+        - cliphist
+        - wtype
+        - gnome-keyring
+        - xlsclients
+        - fcitx5
+
+
+      # locale
+        - glibc-common
+        - glibc-all-langpacks
+
+      # fonts
+        - google-noto-fonts-all
+        - jetbrains-mono-fonts-all
+
+      # my apps
+        - cmus
         - fastfetch
         - gparted
+        - langpacks-ru
+        - mesa-dri-drivers
+        - mesa-vulkan-drivers
         - mpv
-        - yad
+        - ncmpcpp
+        - sox
         - tmux
+        - udisks2
+        - vlc
+        - vlc-plugin-gstreamer
+        - yad
         - zsh
+
+      # QT
+        #- ark
+        #- dolphin
+        #- ffmpegthumbs
+        #- kate
+        #- kde-connect
+        - ksshaskpass
+        #- pcmanfm-qt
+        - qterminal
+        #- spectacle
+
+
         
       # sound
         - wireplumber
@@ -64,10 +99,15 @@ modules:
 
       # networking
         - network-manager-applet
+        - NetworkManager-l2tp-gnome
+        - NetworkManager-libreswan-gnome
         - NetworkManager-openvpn
-        #- NetworkManager-openvpn-gnome
+        - NetworkManager-openvpn-gnome
         - NetworkManager-openconnect
-        #- NetworkManager-openconnect-gnome
+        - NetworkManager-openconnect-gnome
+        - NetworkManager-pptp-gnome
+        - NetworkManager-sstp-gnome
+        - NetworkManager-vpnc-gnome
         - bluez
         - bluez-tools
         - blueman
@@ -80,6 +120,8 @@ modules:
         - xarchiver
         - imv
         - p7zip
+        - unrar-free
+        - lzip
         - gvfs-mtp
         - gvfs-gphoto2
         - gvfs-smb
@@ -88,28 +130,41 @@ modules:
         - gvfs-archive
         - android-tools
 
-      # screenshot
+      # screenshot/recording
         - slurp
         - grim
+        - grimshot
+        - wf-recorder
 
       # display
         - wlr-randr
         - wlsunset
         - brightnessctl
+        - light
         - kanshi
 
       # notifications
         - dunst
 
+      # CLI tools
+        - fd-find
+        - pass
+        - pass-otp
+        - wayland-utils
+
       # theme and GUI
         - fontawesome-fonts-all
-        - google-noto-fonts-all
-        - jetbrains-mono-fonts-all
         #- gnome-themes-extra
         #- gnome-icon-theme
+        #- adwaita-icon-theme
         #- paper-icon-theme
         #- breeze-icon-theme 
-        #- papirus-icon-theme
+        - papirus-icon-theme
+
+      # print and scan
+        - printer-driver-brlaser
+        - sane-frontends
+        - sane-backends
 
     - type: script
       scripts:

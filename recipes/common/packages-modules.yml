@@ -1,0 +1,63 @@
+modules: 
+    - type: rpm-ostree
+      repos:
+        files:
+          - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
+          - https://download.docker.com/linux/fedora/docker-ce.repo
+          - https://cli.github.com/packages/rpm/gh-cli.repo
+        copr:
+          - goncalossilva/act
+          - tofik/nwg-shell
+          - solopasha/hyprland
+          - alebastr/swayr
+          - ilyaz/LACT
+      install:
+
+    # GTK shell
+        - nwg-look
+        - nwg-clipman
+        - xdg-desktop-portal-gtk
+        - astal
+        - aylurs-gtk-shell2
+
+    # launcher -- to reorganize
+        #- fuzzel
+        - swayr
+
+      # utilities
+        - tailscale
+
+      # hardware management
+        - amdsmi
+        - corectrl
+        - lact
+
+      # virtualization
+        - qemu-kvm
+        - libvirt-daemon
+        - libvirt-daemon-config-network
+        - libvirt-daemon-driver-interface
+        - libvirt-daemon-driver-network
+        - libvirt-daemon-driver-nwfilter
+        - libvirt-daemon-driver-qemu
+        - libvirt-daemon-driver-secret
+        - libvirt-daemon-driver-storage-core
+        - libvirt-daemon-driver-storage-disk
+        - libvirt-daemon-driver-storage-scsi
+        - libvirt-daemon-kvm
+        - libvirt-client
+        - virt-install
+        - virt-manager
+        - waydroid
+        - podman-compose
+
+      # docker
+        - docker-ce
+        - docker-ce-cli
+        - containerd.io
+        - docker-buildx-plugin
+        - docker-compose-plugin
+
+      # gh and act
+        - gh
+        - act-cli

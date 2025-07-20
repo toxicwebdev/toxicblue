@@ -3,12 +3,23 @@ modules:
       install:
         - sddm
         - sddm-themes
-        - qt5-qtgraphicaleffects
-        - qt5-qtquickcontrols2
-        - qt5-qtsvg
         - kwallet
         - pam-kwallet
-        - ksshaskpass
+
+      # QT
+        - qt5-qtgraphicaleffects
+        - qt5-qtquickcontrols2
+        - qt5-qtvirtualkeyboard
+        - qt6-qtvirtualkeyboard
+        - qt5-qtsvg
+        - qt6-qtsvg
+        - qt5-qtwayland
+        - qt6-qtwayland
+        - qt5-qtbase
+        - qt6-qtbase
+        - qt5ct
+        - qt6ct
+        - kvantum
 
     - type: script
       scripts:
