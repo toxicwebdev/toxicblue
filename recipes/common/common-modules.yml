@@ -46,7 +46,6 @@ modules:
         - alsa-firmware
         - p7zip
         - distrobox
-        #- cliphist
         - wtype
         - gnome-keyring
         - xlsclients
@@ -74,7 +73,6 @@ modules:
         - tmux
         - udisks2
         - vlc
-        #- vlc-plugin-gstreamer
         - yad
         - zsh
 
