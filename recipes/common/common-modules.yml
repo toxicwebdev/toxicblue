@@ -15,13 +15,13 @@ modules:
         - fixupstreamicdloaderbug.sh
         - addimageinfo.sh
 
+    - type: script
+      scripts:
+        - installrpmfusion-free.sh
+        #- installrpmfusion-nonfree.sh
+        - removeunusedrepos.sh
+
     - type: rpm-ostree
-      repos:
-        - repos/fedora-42
-        - repos/fedora-42-updates
-        - repos/fedora-cisco-openh264
-        - rpmfusion-free
-        - rpmfusion-free-updates
       install:
       # launcher
         - rofi-wayland
@@ -194,12 +194,7 @@ modules:
         - libavutil-free  
         - libpostproc-free  
         - libswresample-free  
-        - libswscale-free  
-
-    - type: script
-      scripts:
-        #- installrpmfusion.sh
-        - removeunusedrepos.sh
+        - libswscale-free
 
     - type: files
       files:
