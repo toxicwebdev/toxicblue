@@ -4,9 +4,10 @@ modules:
         - qtile
         - xdg-desktop-portal-wlr
         - xdg-desktop-portal-gtk
-        - foot
+        - xfce4-terminal
         - swaylock
         - swayidle
+        - swaybg
         - python3-pywlroots
         - python3-mypy
 

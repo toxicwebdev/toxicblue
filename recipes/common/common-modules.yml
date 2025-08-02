@@ -16,6 +16,12 @@ modules:
         - addimageinfo.sh
 
     - type: rpm-ostree
+      repos:
+        - repos/fedora-42
+        - repos/fedora-42-updates
+        - repos/fedora-cisco-openh264
+        - repos/rpmfusion-free
+        - repos/rpmfusion-free-updates
       install:
       # launcher
         - rofi-wayland
