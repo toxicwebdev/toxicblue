@@ -20,8 +20,8 @@ modules:
         - repos/fedora-42
         - repos/fedora-42-updates
         - repos/fedora-cisco-openh264
-        - repos/rpmfusion-free
-        - repos/rpmfusion-free-updates
+        - rpmfusion-free
+        - rpmfusion-free-updates
       install:
       # launcher
         - rofi-wayland
