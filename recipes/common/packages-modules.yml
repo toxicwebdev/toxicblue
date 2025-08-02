@@ -22,9 +22,10 @@ modules:
 
     # launcher -- to reorganize
         #- fuzzel
-        - swayr
+        #- swayr
 
       # utilities
+         #- cliphist
         - tailscale
 
       # hardware management

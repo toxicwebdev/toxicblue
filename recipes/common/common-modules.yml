@@ -52,7 +52,6 @@ modules:
         - alsa-firmware
         - p7zip
         - distrobox
-        #- cliphist
         - wtype
         - gnome-keyring
         - xlsclients
@@ -68,19 +67,19 @@ modules:
         - jetbrains-mono-fonts-all
 
       # my apps
-        #- cmus
+        - cmus
         - fastfetch
         - gparted
         - langpacks-ru
         - mesa-dri-drivers
         - mesa-vulkan-drivers
+        - mpd
         - mpv
         - ncmpcpp
         - sox
         - tmux
         - udisks2
         - vlc
-        #- vlc-plugin-gstreamer
         - yad
         - zsh
 
@@ -160,11 +159,6 @@ modules:
 
       # theme and GUI
         - fontawesome-fonts-all
-        #- gnome-themes-extra
-        #- gnome-icon-theme
-        #- adwaita-icon-theme
-        #- paper-icon-theme
-        #- breeze-icon-theme 
         - papirus-icon-theme
 
       # print and scan
