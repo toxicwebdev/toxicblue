@@ -272,7 +272,7 @@ modules:
         - libpostproc-free  
         - libswresample-free  
         - libswscale-free
-        - OpenCL-ICD-Loader
+        ##- OpenCL-ICD-Loader
 
     - type: rpm-ostree
       remove:
