@@ -159,7 +159,7 @@ modules:
         - pamixer
         - pavucontrol
         - pipewire
-        - pipewire-libs-extra
+        ##- pipewire-libs-extra
         - playerctl
         - pulseaudio-utils
         - sox
@@ -255,7 +255,6 @@ modules:
         - mesa-dri-drivers
         - mesa-vulkan-drivers
         - ocl-icd
-        - pipewire-libs-extra
         
       remove:
         - fdk-aac-free
