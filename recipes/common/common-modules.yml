@@ -198,7 +198,7 @@ modules:
         - gvfs-archive
         - pcmanfm-qt
         - thunar
-        - thunar-archive-plugin
+        - thunar-archive-plugin 
         - thunar-volman
         - unrar-free
         - xarchiver
@@ -255,8 +255,8 @@ modules:
         - mesa-dri-drivers
         - mesa-vulkan-drivers
         - ocl-icd
-        ##- pipewire-libs-extra
-
+        - pipewire-libs-extra
+        
       remove:
         - fdk-aac-free
         - ffmpeg-free
@@ -264,14 +264,14 @@ modules:
         - gstreamer1-plugins-bad-free-libs
         - gstreamer1-plugins-ugly-free
         - gstreamer1-plugin-vaapi
-        - libavcodec-free
+        - libavcodec-free  
         - libavdevice-free
         - libavfilter-free
-        - libavformat-free
-        - libavutil-free
+        - libavformat-free  
+        - libavutil-free  
         - libfdk-aac-free
-        - libpostproc-free
-        - libswresample-free
+        - libpostproc-free  
+        - libswresample-free  
         - libswscale-free
         - OpenCL-ICD-Loader
 
