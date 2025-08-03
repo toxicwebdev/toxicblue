@@ -159,7 +159,6 @@ modules:
         - pamixer
         - pavucontrol
         - pipewire
-        ##- pipewire-libs-extra
         - playerctl
         - pulseaudio-utils
         - sox
@@ -210,9 +209,9 @@ modules:
         #- wf-recorder
 
       # fonts
-        - dejavu-sans-fonts
-        - dejavu-serif-fonts
-        - dejavu-sans-mono-fonts
+        #- dejavu-sans-fonts
+        #- dejavu-serif-fonts
+        #- dejavu-sans-mono-fonts
         - fontawesome-fonts
         - google-noto-emoji-color-fonts
         - jetbrains-mono-fonts
@@ -248,7 +247,6 @@ modules:
         - libavcodec
         - libavdevice
         - libfdk-aac
-        #- libva-utils
         - ocl-icd
         
       remove:
