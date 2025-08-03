@@ -244,7 +244,7 @@ modules:
         - gstreamer1-libav
         - gstreamer1-plugins-bad
         - gstreamer1-plugins-good
-        - gstreamer1-plugin-openh264
+        ##- gstreamer1-plugin-openh264
         - gstreamer1-plugins-ugly
         - heif-pixbuf-loader
         - libavcodec
