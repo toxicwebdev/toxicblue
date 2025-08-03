@@ -1,9 +1,16 @@
 modules:
     - type: rpm-ostree
       install:
+        - sway
+        #- sway-config-fedora
+        #- sddm-wayland-sway
+        - waybar
+        - xdg-desktop-portal-wlr
+        - xdg-desktop-portal-gtk
         - foot
         - swaylock
         - swayidle
+        - swaybg
 
     - type: files
       files:

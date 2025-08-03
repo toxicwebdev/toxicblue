@@ -18,91 +18,159 @@ modules:
     - type: script
       scripts:
         - installrpmfusion-free.sh
-        - removeunusedrepos.sh
 
     - type: rpm-ostree
       install:
       # launcher
         - rofi-wayland
 
+      # notifications
+        - dunst
+
       # environment
-        - fzf
-        - tuned-ppd
-        - xorg-x11-server-Xwayland
-        - headsetcontrol
-        - mediainfo
-        - polkit
-        - xfce-polkit
-        - fprintd-pam
-        - xdg-user-dirs
+        - acl
+        - attr
+        - bash-completion
+        - bc
+        - bolt
+        - brightnessctl
+        - btrfs-progs
+        - bzip2
+        - cryptsetup
+        - curl
+        - cyrus-sasl-plain
         - dbus-tools
         - dbus-daemon
-        - wl-clipboard
-        - pavucontrol
-        - playerctl
-        - vulkan-validation-layers
-        - vulkan-tools
-        #- gnome-disk-utility
         - ddcutil
-        - openssl
-        - vim
-        - just
-        - alsa-firmware
-        - p7zip
         - distrobox
-        - wtype
-        - gnome-keyring
-        - xlsclients
+        - dnsmasq
+        - exfatprogs
         - fcitx5
-
-
-      # locale
+        - fd-find
+        - fedora-workstation-backgrounds
+        - fpaste
+        - fprintd-pam
+        - fzf
+        - git
         - glibc-common
-        - glibc-all-langpacks
-
-      # fonts
-        - fontawesome-fonts-all
-        #- google-noto-fonts-all
-        - google-noto-emoji-fonts
-        - jetbrains-mono-fonts-all
-
-      # my apps
-        - cmus
-        - fastfetch
-        - gparted
+        - glibc-langpack-en
+        - gnome-keyring-pam
+        - gnupg2
+        - headsetcontrol
+        - hostname
+        - imv
+        - iproute
+        - isync
+        - just
+        - jq
+        - kanshi
+        - kernel
+        - kernel-modules-extra
+        - krb5-workstation
+        - ksshaskpass
         - langpacks-ru
-        #- mesa-dri-drivers
-        #- mesa-vulkan-drivers
+        - libratbag-ratbagd
+        - light
+        - lsof
+        - lxqt-policykit
+        - lzip
+        - mediainfo
         - mpd
         - mpv
-        - ncmpcpp
-        - sox
+        - mtr
+        - mutt
+        - nmap-ncat
+        - nss-altfiles
+        - openrgb-udev-rules
+        - openssh-server
+        - openssl
+        - openvpn
+        - p7zip
+        - pass
+        - pass-otp
+        - pciutils
+        - pinentry-gnome3
+        - plymouth-system-theme
+        - podman
+        - polkit
+        - powertop
+        - restic
+        - rsync
+        - selinux-policy-targeted
+        - solaar-udev
+        - strace
+        - sudo
+        - systemd-container
         - tmux
+        - toolbox
+        - tree
+        - tuned-ppd
         - udisks2
-        - vlc
+        - upower
+        - usbutils
+        - vulkan-tools
+        - vulkan-validation-layers
+        - w3m
+        - wayland-utils
+        - wev
+        - wget
+        - wireguard-tools
+        - wl-clipboard
+        - wlr-randr
+        - wlsunset
+        - wtype
+        - xdg-user-dirs
+        #- xfce-polkit
+        - xlsclients
+        - xorg-x11-server-Xwayland
         - yad
+        - yt-dlp
         - zsh
+        - zsh-autosuggestions
+        - zsh-syntax-highlighting
+        - zstd
 
-      # QT
+      # apps
         #- ark
-        #- dolphin
-        #- ffmpegthumbs
+        - cmus
+        - fastfetch
+        - gnome-disk-utility
+        - gparted
         #- kate
         #- kde-connect
-        - ksshaskpass
-        #- pcmanfm-qt
+        - neovim
         - qterminal
+        - rhythmbox
+        - rofimoji
         #- spectacle
+        - syncthing
+        - vlc
+        - zathura
+        - zathura-cb
+        - zathura-djvu
+        - zathura-pdf-mupdf
+        - zathura-ps
 
-
-        
       # sound
-        - wireplumber
-        - pipewire
+        - alsa-firmware
+        - alsa-plugins-pulseaudio
+        - alsa-sof-firmware
+        - ncmpcpp
         - pamixer
+        - pavucontrol
+        - pipewire
+        - pipewire-libs-extra
+        - playerctl
         - pulseaudio-utils
+        - sox
+        - wireplumber
 
       # networking
+        - blueman
+        - bluez
+        - bluez-tools
+        - firewall-config
+        - iwlwifi-mvm-firmware
         - network-manager-applet
         - NetworkManager-l2tp-gnome
         - NetworkManager-libreswan-gnome
@@ -113,57 +181,56 @@ modules:
         - NetworkManager-pptp-gnome
         - NetworkManager-sstp-gnome
         - NetworkManager-vpnc-gnome
-        - bluez
-        - bluez-tools
-        - blueman
-        - firewall-config
+        - NetworkManager-wifi
+        - nm-connection-editor
+        - wpa_supplicant
 
       # file manager
-        - thunar
-        - thunar-archive-plugin 
-        - thunar-volman
-        - xarchiver
-        - imv
-        - p7zip
-        - unrar-free
-        - lzip
+        - android-tools
+        #- dolphin
+        #- ffmpegthumbs
+        - gvfs
         - gvfs-mtp
         - gvfs-gphoto2
         - gvfs-smb
         - gvfs-nfs
         - gvfs-fuse
         - gvfs-archive
-        - android-tools
+        - pcmanfm-qt
+        - thunar
+        - thunar-archive-plugin 
+        - thunar-volman
+        - unrar-free
+        - xarchiver
 
       # screenshot/recording
-        - slurp
         - grim
-        - grimshot
-        - wf-recorder
+        #- grimshot
+        - slurp
+        #- wf-recorder
 
-      # display
-        - wlr-randr
-        - wlsunset
-        - brightnessctl
-        - light
-        - kanshi
-
-      # notifications
-        - dunst
-
-      # CLI tools
-        - fd-find
-        - pass
-        - pass-otp
-        - wayland-utils
+      # fonts
+        - dejavu-sans-fonts
+        - dejavu-serif-fonts
+        - dejavu-sans-mono-fonts
+        - fontawesome-fonts
+        - google-noto-emoji-color-fonts
+        - jetbrains-mono-fonts
 
       # theme and GUI
         - papirus-icon-theme
 
       # print and scan
         - printer-driver-brlaser
-        - sane-frontends
         - sane-backends
+        - sane-frontends
+        - system-config-printer
+
+      # Yubikey stuff
+        - pam-u2f
+        - pam_yubico
+        - pamu2fcfg
+        - yubikey-manager
 
     - type: script
       scripts:
@@ -171,29 +238,66 @@ modules:
 
     - type: rpm-ostree
       install:
-        - heif-pixbuf-loader
         - ffmpeg
         - ffmpeg-libs
         - ffmpegthumbnailer
-        - pipewire-libs-extra
-        - libfdk-aac
+        - gstreamer1-libav
         - gstreamer1-plugins-bad
-        - gstreamer1-plugins-ugly 
+        - gstreamer1-plugins-good
+        - gstreamer1-plugin-openh264
+        - gstreamer1-plugins-ugly
+        - heif-pixbuf-loader
+        - libavcodec
+        - libavdevice
+        - libfdk-aac
+        - libva
+        - libva-utils
+        - mesa-dri-drivers
+        - mesa-vulkan-drivers
+        - ocl-icd
+        - pipewire-libs-extra
+        
       remove:
+        - fdk-aac-free
+        - ffmpeg-free
         - gstreamer1-plugins-bad-free
         - gstreamer1-plugins-bad-free-libs
         - gstreamer1-plugins-ugly-free
         - gstreamer1-plugin-vaapi
-        - fdk-aac-free
-        - ffmpeg-free
         - libavcodec-free  
         - libavdevice-free
         - libavfilter-free
         - libavformat-free  
         - libavutil-free  
+        - libfdk-aac-free
         - libpostproc-free  
         - libswresample-free  
         - libswscale-free
+        - OpenCL-ICD-Loader
+
+    - type: rpm-ostree
+      remove:
+        - gnome-classic-session
+        - gnome-initial-setup
+        - gnome-shell-extension-apps-menu
+        - gnome-shell-extension-background-logo
+        - gnome-shell-extension-launch-new-instance
+        - gnome-shell-extension-places-menu
+        - gnome-shell-extension-window-list
+        - gnome-software-rpm-ostree
+        - gnome-system-monitor
+        - gnome-tour
+        - default-fonts-cjk-sans
+        - fedora-third-party
+        - fedora-flathub-remote
+        - fedora-workstation-repositories
+        - firefox
+        - firefox-langpacks
+        - google-noto-sans-cjk-vf-fonts
+
+    - type: script
+      scripts:
+        - removeunusedrepos.sh
 
     - type: files
       files:
