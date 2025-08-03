@@ -241,19 +241,14 @@ modules:
         - ffmpeg
         - ffmpeg-libs
         - ffmpegthumbnailer
-        - gstreamer1-libav
         - gstreamer1-plugins-bad
         - gstreamer1-plugins-good
-        ##- gstreamer1-plugin-openh264
         - gstreamer1-plugins-ugly
         - heif-pixbuf-loader
         - libavcodec
         - libavdevice
         - libfdk-aac
-        - libva
-        - libva-utils
-        - mesa-dri-drivers
-        - mesa-vulkan-drivers
+        #- libva-utils
         - ocl-icd
         
       remove:
@@ -268,24 +263,12 @@ modules:
         - libavfilter-free
         - libavformat-free  
         - libavutil-free  
-        ##- libfdk-aac-free
         - libpostproc-free  
         - libswresample-free  
         - libswscale-free
-        ##- OpenCL-ICD-Loader
 
     - type: rpm-ostree
       remove:
-        ##- gnome-classic-session
-        ##- gnome-initial-setup
-        ##- gnome-shell-extension-apps-menu
-        ##- gnome-shell-extension-background-logo
-        ##- gnome-shell-extension-launch-new-instance
-        ##- gnome-shell-extension-places-menu
-        ##- gnome-shell-extension-window-list
-        ##- gnome-software-rpm-ostree
-        ##- gnome-system-monitor
-        ##- gnome-tour
         - default-fonts-cjk-sans
         - fedora-third-party
         - fedora-flathub-remote
