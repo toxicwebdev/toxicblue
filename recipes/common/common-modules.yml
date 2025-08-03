@@ -268,7 +268,7 @@ modules:
         - libavfilter-free
         - libavformat-free  
         - libavutil-free  
-        - libfdk-aac-free
+        ##- libfdk-aac-free
         - libpostproc-free  
         - libswresample-free  
         - libswscale-free
