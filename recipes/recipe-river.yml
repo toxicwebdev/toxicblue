@@ -9,6 +9,6 @@ image-version: 42
 modules:
   - from-file: common/sddm-modules.yml
   - from-file: common/common-modules.yml
-  #- from-file: common/packages-modules.yml
+  #- from-file: common/extra-modules.yml
   - from-file: common/river-modules.yml
   - from-file: common/final-modules.yml
