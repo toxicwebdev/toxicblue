@@ -9,9 +9,20 @@ modules:
       scripts:
         - installsignedkernel.sh
 
+    - type: rpm-ostree
+      repos:
+        - https://copr.fedorainfracloud.org/coprs/ublue-os/packages/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
+      install:
+        - ublue-os-udev-rules
+        - ublue-os-update-services
+        - ublue-os-signing
+        - ublue-os-luks
+        - ublue-os-just
+
     - type: script
       scripts:
         - installandroidudev.sh
+        - ensureautoupdates.sh
         - fixupstreamicdloaderbug.sh
         - addimageinfo.sh
 
@@ -291,7 +302,6 @@ modules:
 
     - type: script
       scripts:
-        - ensureautoupdates.sh
         - settheming.sh
 
     - type: toxicblue-signing
