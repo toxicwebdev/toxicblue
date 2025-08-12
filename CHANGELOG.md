@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.5.0](https://github.com/toxicwebdev/toxicblue/compare/v0.4.4...v0.5.0) (2025-08-11)
+## [0.4.4](https://github.com/toxicwebdev/toxicblue/compare/v0.4.3...v0.4.4) (2025-08-11)
 
 
 ### Features
@@ -30,14 +30,6 @@
 * remove rpmfusion-nonfree ([83dfa2a](https://github.com/toxicwebdev/toxicblue/commit/83dfa2adf7f66f6347cf75ed90a5c1ff1b69e416))
 * remove unmaintained hypr packages ([455b97a](https://github.com/toxicwebdev/toxicblue/commit/455b97a1dc2ee87f904fb01fbe2c72b0b57e38ce))
 * temporarily pin kernel to 6.12.15 to shield users from a kernel regression ([d0a2d36](https://github.com/toxicwebdev/toxicblue/commit/d0a2d36dc1dacb5e9af5216992ce6d93d1c78f0d))
-* ublue repo change ([b77ff62](https://github.com/toxicwebdev/toxicblue/commit/b77ff62b60c7b0d88637ec670f442b10aab749d7))
-* ublue repo change ([8b9eec0](https://github.com/toxicwebdev/toxicblue/commit/8b9eec09acd0b9443773e477782c1f9ce0d9b243))
-
-## [0.4.4](https://github.com/toxicwebdev/toxicblue/compare/v0.4.3...v0.4.4) (2025-08-11)
-
-
-### Bug Fixes
-
 * ublue repo change ([b77ff62](https://github.com/toxicwebdev/toxicblue/commit/b77ff62b60c7b0d88637ec670f442b10aab749d7))
 * ublue repo change ([8b9eec0](https://github.com/toxicwebdev/toxicblue/commit/8b9eec09acd0b9443773e477782c1f9ce0d9b243))
 
