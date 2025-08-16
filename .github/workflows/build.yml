@@ -27,10 +27,15 @@ jobs:
       matrix:
         recipe:
           - recipe-hyprland.yml
+          - recipe-hyprland-dx.yml
           - recipe-qtile.yml
+          - recipe-qtile-dx.yml
           - recipe-river.yml
+          - recipe-river-dx.yml
           - recipe-sway.yml
+          - recipe-sway-dx.yml
           - recipe-wayfire.yml
+          - recipe-wayfire-dx.yml
     steps:
       - name: Checkout repo
         uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0

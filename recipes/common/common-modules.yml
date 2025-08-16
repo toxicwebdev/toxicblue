@@ -11,8 +11,8 @@ modules:
 
     - type: rpm-ostree
       install:
-        - just
-        - powerstat
+        ##- just
+        ##- powerstat
 
     - type: rpm-ostree
       repos:
@@ -27,7 +27,6 @@ modules:
     - type: script
       scripts:
         - installandroidudev.sh
-        - ensureautoupdates.sh
         - fixupstreamicdloaderbug.sh
         - addimageinfo.sh
 
@@ -58,7 +57,7 @@ modules:
         - dbus-tools
         - dbus-daemon
         - ddcutil
-        - distrobox
+        ##- distrobox
         - dnsmasq
         - exfatprogs
         - fcitx5
@@ -66,29 +65,28 @@ modules:
         - fedora-workstation-backgrounds
         - fpaste
         - fprintd-pam
-        - fzf
+        ##- fzf
         - git
         - glibc-common
         - glibc-langpack-en
-        - gnome-keyring-pam
+        #- gnome-keyring-pam
         - gnupg2
         - headsetcontrol
         - hostname
         - imv
         - iproute
         - isync
-        - just
+        ##- just
         - jq
         - kanshi
         - kernel
         - kernel-modules-extra
         - krb5-workstation
-        - ksshaskpass
+        #- ksshaskpass
         - langpacks-ru
         - libratbag-ratbagd
         - light
         - lsof
-        - lxqt-policykit
         - lzip
         - mediainfo
         - mpd
@@ -117,7 +115,7 @@ modules:
         - strace
         - sudo
         - systemd-container
-        - tmux
+        ##- tmux
         - toolbox
         - tree
         - tuned-ppd
@@ -130,13 +128,13 @@ modules:
         - wayland-utils
         - wev
         - wget
-        - wireguard-tools
-        - wl-clipboard
+        ##- wireguard-tools
+        ##- wl-clipboard
         - wlr-randr
         - wlsunset
         - wtype
         - xdg-user-dirs
-        #- xfce-polkit
+        - xfce-polkit
         - xlsclients
         - xorg-x11-server-Xwayland
         - yad
@@ -144,13 +142,13 @@ modules:
         - zsh
         - zsh-autosuggestions
         - zsh-syntax-highlighting
-        - zstd
+        ##- zstd
 
       # apps
         #- ark
         - cmus
         - fastfetch
-        - gnome-disk-utility
+        #- gnome-disk-utility
         - gparted
         #- kate
         #- kde-connect
@@ -167,7 +165,7 @@ modules:
         - zathura-ps
 
       # sound
-        - alsa-firmware
+        ##- alsa-firmware
         - alsa-plugins-pulseaudio
         - alsa-sof-firmware
         - ncmpcpp
@@ -201,19 +199,20 @@ modules:
 
       # file manager
         - android-tools
+        - clipman
         #- dolphin
         #- ffmpegthumbs
-        - gvfs
         - gvfs-mtp
-        - gvfs-gphoto2
-        - gvfs-smb
+        #- gvfs-gphoto2
+        #- gvfs-smb
         - gvfs-nfs
-        - gvfs-fuse
-        - gvfs-archive
+        #- gvfs-fuse
+        #- gvfs-archive
         - pcmanfm-qt
         - thunar
-        - thunar-archive-plugin 
+        - thunar-archive-plugin
         - thunar-volman
+        - tumbler
         - unrar-free
         - xarchiver
 
@@ -234,36 +233,23 @@ modules:
       # theme and GUI
         #- papirus-icon-theme
 
-      # print and scan
-        - printer-driver-brlaser
-        - sane-backends
-        - sane-frontends
-        - system-config-printer
-
-      # Yubikey stuff
-        - pam-u2f
-        - pam_yubico
-        - pamu2fcfg
-        - yubikey-manager
-
     - type: script
       scripts:
         - installproprietarypackages.sh
 
     - type: rpm-ostree
       install:
-        - ffmpeg
-        - ffmpeg-libs
-        - ffmpegthumbnailer
+        ##- ffmpeg
+        ##- ffmpeg-libs
+        ##- ffmpegthumbnailer
         - gstreamer1-plugins-bad
         - gstreamer1-plugins-good
         - gstreamer1-plugins-ugly
-        - heif-pixbuf-loader
-        - libavcodec
+        ##- heif-pixbuf-loader
+        ##- libavcodec
         - libavdevice
-        - libfdk-aac
+        ##- libfdk-aac
         - ocl-icd
-        
       remove:
         - fdk-aac-free
         - ffmpeg-free
@@ -271,13 +257,13 @@ modules:
         - gstreamer1-plugins-bad-free-libs
         - gstreamer1-plugins-ugly-free
         - gstreamer1-plugin-vaapi
-        - libavcodec-free  
+        - libavcodec-free
         - libavdevice-free
         - libavfilter-free
-        - libavformat-free  
-        - libavutil-free  
-        - libpostproc-free  
-        - libswresample-free  
+        - libavformat-free
+        - libavutil-free
+        - libpostproc-free
+        - libswresample-free
         - libswscale-free
 
     - type: rpm-ostree
@@ -307,6 +293,7 @@ modules:
 
     - type: script
       scripts:
+        - ensureautoupdates.sh
         - settheming.sh
 
     - type: toxicblue-signing
