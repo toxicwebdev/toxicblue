@@ -232,7 +232,7 @@ modules:
         - jetbrains-mono-fonts
 
       # theme and GUI
-        - papirus-icon-theme
+        #- papirus-icon-theme
 
       # print and scan
         - printer-driver-brlaser
