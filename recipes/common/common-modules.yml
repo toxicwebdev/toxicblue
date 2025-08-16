@@ -9,8 +9,8 @@ modules:
       scripts:
         - installsignedkernel.sh
 
-    - type: rpm-ostree
-      install:
+    #- type: rpm-ostree
+      #install:
         ##- just
         ##- powerstat
 
