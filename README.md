@@ -4,6 +4,7 @@
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/2503a44c1105456483517f793af75ee7)](https://app.codacy.com/gh/toxicwebdev/toxicblue/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 [![toxicblue](https://github.com/toxicwebdev/toxicblue/actions/workflows/build.yml/badge.svg)](https://github.com/toxicwebdev/toxicblue/actions/workflows/build.yml)
+[![toxicblue-dx](https://github.com/toxicwebdev/toxicblue/actions/workflows/build-dx.yml/badge.svg)](https://github.com/toxicwebdev/toxicblue/actions/workflows/build-dx.yml)
 [![trivy](https://github.com/toxicwebdev/toxicblue/actions/workflows/trivy.yml/badge.svg)](https://github.com/toxicwebdev/toxicblue/actions/workflows/trivy.yml)
 
 ## Overview
@@ -15,6 +16,10 @@ toxicblue is a project that leverages the [BlueBuild](https://blue-build.org/) t
 - River (with waybar)
 - Sway (with waybar)
 - Wayfire (with wf-shell)
+
+## DX Images
+
+A developer workstation that provides a container-focused experience.
 
 ## Features
 
@@ -38,10 +43,15 @@ For custom modifications, it's recommended to create a new repo using the [BlueB
 | Name         | Compositor | Nvidia Support  |
 |--------------|------------|-----------------|
 | `hyprland`   | Hyprland   | No              |
+| `hyprland-dx`| Hyprland   | No              |
 | `qtile`      | Qtile      | No              |
+| `qtile-dx`   | Qtile      | No              |
 | `river`      | River      | No              |
+| `river-dx`   | River      | No              |
 | `sway`       | Sway       | No              |
+| `sway-dx`    | Sway       | No              |
 | `wayfire`    | Wayfire    | No              |
+| `wayfire-dx` | Wayfire    | No              |
 
 ### Rebasing Process
 
