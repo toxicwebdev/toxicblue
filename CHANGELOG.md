@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.6.0](https://github.com/toxicwebdev/toxicblue/compare/v0.5.0...v0.6.0) (2025-08-23)
+
+
+### Features
+
+* add niri compositor ([66892f6](https://github.com/toxicwebdev/toxicblue/commit/66892f612b95430f9da2b5bdc1e67248b43f9462))
+* add niri compositor ([c834dc8](https://github.com/toxicwebdev/toxicblue/commit/c834dc8e211184281eb04802cafa22d263aace4e))
+
 ## [0.4.4](https://github.com/toxicwebdev/toxicblue/compare/v0.4.3...v0.4.4) (2025-08-11)
 
 
