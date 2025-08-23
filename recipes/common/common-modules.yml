@@ -1,8 +1,8 @@
 modules:
     - type: containerfile
       snippets:
-        - COPY --from=ghcr.io/ublue-os/akmods:main-42  /rpms /tmp/rpms
-        - COPY --from=ghcr.io/ublue-os/akmods:main-42  /kernel-rpms /tmp/rpms/kernel
+        - COPY --from=ghcr.io/ublue-os/akmods:main-42 /rpms /tmp/rpms
+        - COPY --from=ghcr.io/ublue-os/akmods:main-42 /kernel-rpms /tmp/rpms/kernel
         - RUN find /tmp/rpms
         - RUN rpm -q ublue-os-akmods-addons || rpm-ostree install /tmp/rpms/ublue-os/ublue-os-akmods-addons*.rpm
     - type: script
@@ -24,6 +24,7 @@ modules:
         - ublue-os-luks
         - ublue-os-just
 
+
     - type: script
       scripts:
         - installandroidudev.sh
@@ -31,220 +32,92 @@ modules:
         - fixupstreamicdloaderbug.sh
         - addimageinfo.sh
 
-    - type: script
-      scripts:
-        - installrpmfusion-free.sh
-
     - type: rpm-ostree
       install:
       # launcher
         - rofi-wayland
 
-      # notifications
-        - dunst
-
       # environment
-        - acl
-        - attr
-        - bash-completion
-        - bc
-        - bolt
-        - brightnessctl
-        - btrfs-progs
-        - bzip2
-        - cryptsetup
-        - curl
-        - cyrus-sasl-plain
+        - fzf
+        - tuned-ppd
+        - xorg-x11-server-Xwayland
+        - headsetcontrol
+        - mediainfo
+        - polkit
+        - xfce-polkit 
+        - fprintd-pam
+        - xdg-user-dirs
         - dbus-tools
         - dbus-daemon
-        - ddcutil
-        - distrobox
-        - dnsmasq
-        - exfatprogs
-        - fcitx5
-        - fd-find
-        - fedora-workstation-backgrounds
-        - fpaste
-        - fprintd-pam
-        - fzf
-        - git
-        - glibc-common
-        - glibc-langpack-en
-        - gnome-keyring-pam
-        - gnupg2
-        - headsetcontrol
-        - hostname
-        - imv
-        - iproute
-        - isync
-        - just
-        - jq
-        - kanshi
-        - kernel
-        - kernel-modules-extra
-        - krb5-workstation
-        - ksshaskpass
-        - langpacks-ru
-        - libratbag-ratbagd
-        - light
-        - lsof
-        - lxqt-policykit
-        - lzip
-        - mediainfo
-        - mpd
-        - mpv
-        - mtr
-        - mutt
-        - nmap-ncat
-        - nss-altfiles
-        - openrgb-udev-rules
-        - openssh-server
-        - openssl
-        - openvpn
-        - p7zip
-        - pass
-        - pass-otp
-        - pciutils
-        - pinentry-gnome3
-        - plymouth-system-theme
-        - podman
-        - polkit
-        - powertop
-        - restic
-        - rsync
-        - selinux-policy-targeted
-        - solaar-udev
-        - strace
-        - sudo
-        - systemd-container
-        - tmux
-        - toolbox
-        - tree
-        - tuned-ppd
-        - udisks2
-        - upower
-        - usbutils
-        - vulkan-tools
-        - vulkan-validation-layers
-        - w3m
-        - wayland-utils
-        - wev
-        - wget
-        - wireguard-tools
         - wl-clipboard
-        - wlr-randr
-        - wlsunset
-        - wtype
-        - xdg-user-dirs
-        #- xfce-polkit
-        - xlsclients
-        - xorg-x11-server-Xwayland
-        - yad
-        - yt-dlp
-        - zsh
-        - zsh-autosuggestions
-        - zsh-syntax-highlighting
-        - zstd
-
-      # apps
-        #- ark
-        - cmus
-        - fastfetch
-        - gnome-disk-utility
-        - gparted
-        #- kate
-        #- kde-connect
-        - neovim
-        - qterminal
-        - rhythmbox
-        - rofimoji
-        #- spectacle
-        - vlc
-        - zathura
-        - zathura-cb
-        - zathura-djvu
-        - zathura-pdf-mupdf
-        - zathura-ps
-
-      # sound
-        - alsa-firmware
-        - alsa-plugins-pulseaudio
-        - alsa-sof-firmware
-        - ncmpcpp
-        - pamixer
         - pavucontrol
-        - pipewire
         - playerctl
-        - pulseaudio-utils
-        - sox
+        - qt5-qtwayland
+        - qt6-qtwayland
+        - vulkan-validation-layers
+        - vulkan-tools
+        - google-noto-emoji-fonts
+        #- gnome-disk-utility
+        - ddcutil
+        - openssl
+        - vim
+        - just
+        - alsa-firmware
+        - p7zip
+        - distrobox
+        
+      # sound
         - wireplumber
+        - pipewire
+        - pamixer
+        - pulseaudio-utils
 
       # networking
-        - blueman
+        - network-manager-applet
+        - NetworkManager-openvpn
+        #- NetworkManager-openvpn-gnome
+        - NetworkManager-openconnect
+        #- NetworkManager-openconnect-gnome
         - bluez
         - bluez-tools
+        - blueman
         - firewall-config
-        - iwlwifi-mvm-firmware
-        - network-manager-applet
-        - NetworkManager-l2tp-gnome
-        - NetworkManager-libreswan-gnome
-        - NetworkManager-openvpn
-        - NetworkManager-openvpn-gnome
-        - NetworkManager-openconnect
-        - NetworkManager-openconnect-gnome
-        - NetworkManager-pptp-gnome
-        - NetworkManager-sstp-gnome
-        - NetworkManager-vpnc-gnome
-        - NetworkManager-wifi
-        - nm-connection-editor
-        - wpa_supplicant
 
       # file manager
-        - android-tools
-        #- dolphin
-        #- ffmpegthumbs
-        - gvfs
-        - gvfs-mtp
-        - gvfs-gphoto2
-        - gvfs-smb
-        - gvfs-nfs
-        - gvfs-fuse
-        - gvfs-archive
-        - pcmanfm-qt
         - thunar
         - thunar-archive-plugin 
         - thunar-volman
-        - unrar-free
         - xarchiver
+        - imv
+        - p7zip
+        - gvfs-mtp
+        #- gvfs-gphoto2
+        #- gvfs-smb
+        #- gvfs-nfs
+        #- gvfs-fuse
+        #- gvfs-archive
+        - android-tools
 
-      # screenshot/recording
-        - grim
-        #- grimshot
+      # screenshot
         - slurp
-        #- wf-recorder
+        - grim
 
-      # fonts
-        #- dejavu-sans-fonts
-        #- dejavu-serif-fonts
-        #- dejavu-sans-mono-fonts
-        - fontawesome-fonts
-        - google-noto-emoji-color-fonts
-        - jetbrains-mono-fonts
+      # display
+        - wlr-randr
+        - wlsunset
+        - brightnessctl
+        - kanshi
+
+      # notifications
+        - dunst
 
       # theme and GUI
+        - fontawesome-fonts-all
+        #- gnome-themes-extra
+        #- gnome-icon-theme
+        #- paper-icon-theme
+        #- breeze-icon-theme 
         #- papirus-icon-theme
-
-      # print and scan
-        - printer-driver-brlaser
-        - sane-backends
-        - sane-frontends
-        - system-config-printer
-
-      # Yubikey stuff
-        - pam-u2f
-        - pam_yubico
-        - pamu2fcfg
-        - yubikey-manager
 
     - type: script
       scripts:
@@ -252,25 +125,21 @@ modules:
 
     - type: rpm-ostree
       install:
+        - heif-pixbuf-loader
         - ffmpeg
         - ffmpeg-libs
         - ffmpegthumbnailer
-        - gstreamer1-plugins-bad
-        - gstreamer1-plugins-good
-        - gstreamer1-plugins-ugly
-        - heif-pixbuf-loader
-        - libavcodec
-        - libavdevice
+        - pipewire-libs-extra
         - libfdk-aac
-        - ocl-icd
-        
+        - gstreamer1-plugins-bad
+        - gstreamer1-plugins-ugly 
       remove:
-        - fdk-aac-free
-        - ffmpeg-free
         - gstreamer1-plugins-bad-free
         - gstreamer1-plugins-bad-free-libs
         - gstreamer1-plugins-ugly-free
         - gstreamer1-plugin-vaapi
+        - fdk-aac-free
+        - ffmpeg-free
         - libavcodec-free  
         - libavdevice-free
         - libavfilter-free
@@ -278,20 +147,11 @@ modules:
         - libavutil-free  
         - libpostproc-free  
         - libswresample-free  
-        - libswscale-free
-
-    - type: rpm-ostree
-      remove:
-        - default-fonts-cjk-sans
-        - fedora-third-party
-        - fedora-flathub-remote
-        - fedora-workstation-repositories
-        - firefox
-        - firefox-langpacks
-        - google-noto-sans-cjk-vf-fonts
+        - libswscale-free  
 
     - type: script
       scripts:
+        #- installrpmfusion-free.sh
         - removeunusedrepos.sh
 
     - type: files

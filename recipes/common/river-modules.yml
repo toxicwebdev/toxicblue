@@ -8,7 +8,6 @@ modules:
         - foot
         - swaylock
         - swayidle
-        - swaybg
 
     - type: files
       files:
