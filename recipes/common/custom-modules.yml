@@ -79,7 +79,7 @@ modules:
       # fonts
         #- google-noto-emoji-color-fonts
         - jetbrains-mono-fonts
-        - jetbrains-mono-nl-fonts
+        #- jetbrains-mono-nl-fonts
 
       # Yubikey stuff
         - pam-u2f

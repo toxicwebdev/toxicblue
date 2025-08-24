@@ -16,7 +16,7 @@ install:
     - aylurs-gtk-shell2
 
     # launcher -- to reorganize
-    - fuzzel
+    #- fuzzel
     #- swayr
 
     # utilities
