@@ -22,6 +22,7 @@ jobs:
       matrix:
         recipe:
           - recipe-hyprland-dx.yml
+          - recipe-niri-dx.yml
           - recipe-qtile-dx.yml
           - recipe-river-dx.yml
           - recipe-sway-dx.yml
