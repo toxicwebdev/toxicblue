@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.6.1](https://github.com/toxicwebdev/toxicblue/compare/v0.6.0...v0.6.1) (2025-08-24)
+
+
+### Features
+
+* add custom-modules ([85c993c](https://github.com/toxicwebdev/toxicblue/commit/85c993c82dfc60b3e91f26fc94ab7aebc2431d6c))
+
+
+### Bug Fixes
+
+* add niri build ([8d27bf8](https://github.com/toxicwebdev/toxicblue/commit/8d27bf8570a267390a2f6a9d2ae7634a77df4bc0))
+* update modules ([10022ec](https://github.com/toxicwebdev/toxicblue/commit/10022eca0aeac30b110dfad406dc254cd6fc809d))
+
 ## [0.6.0](https://github.com/toxicwebdev/toxicblue/compare/v0.5.0...v0.6.0) (2025-08-23)
 
 
