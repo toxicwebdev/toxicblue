@@ -5,7 +5,7 @@ modules:
         - waybar
         - xdg-desktop-portal-wlr
         - xdg-desktop-portal-gtk
-        - alacritty
+        - kitty
         - fuzzel
         - swaylock
         - swayidle

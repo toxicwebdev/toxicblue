@@ -4,7 +4,6 @@ modules:
         - hyprland
         - waybar
         - xdg-desktop-portal-hyprland
-        - foot
         - swaylock
         - swayidle
         - swaybg

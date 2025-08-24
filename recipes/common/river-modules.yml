@@ -5,9 +5,10 @@ modules:
         - waybar
         - xdg-desktop-portal-wlr
         - xdg-desktop-portal-gtk
-        - foot
+        - kitty
         - swaylock
         - swayidle
+        - swaybg
 
     - type: files
       files:

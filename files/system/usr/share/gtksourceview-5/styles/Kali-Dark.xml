@@ -92,4 +92,3 @@
 	<style name="latex:command" foreground="green" bold="true"/>
 	<style name="latex:include" use-style="def:preprocessor"/>
 </style-scheme>
-
