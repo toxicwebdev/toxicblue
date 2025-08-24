@@ -70,7 +70,7 @@ modules:
         - wireplumber
         - pipewire
         - pamixer
-        - pulseaudio-utils
+        - pulseaudio-utilsz
 
       # networking
         - network-manager-applet

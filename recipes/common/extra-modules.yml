@@ -12,12 +12,11 @@ install:
     # GTK shell
     - nwg-look
     - nwg-clipman
-    - xdg-desktop-portal-gtk
     - astal
     - aylurs-gtk-shell2
 
     # launcher -- to reorganize
-    #- fuzzel
+    - fuzzel
     #- swayr
 
     # utilities
@@ -28,16 +27,3 @@ install:
     - amdsmi
     - corectrl
     - lact
-
-    # Yubikey stuff
-    ##- pam-u2f
-    ##- pam_yubico
-    ##- pamu2fcfg
-    ##- yubikey-manager
-
-    # print and scan
-    #- printer-driver-brlaser
-    #- sane-backends
-    #- sane-frontends
-    #- system-config-printer
-

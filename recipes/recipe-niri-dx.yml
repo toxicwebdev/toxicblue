@@ -9,6 +9,7 @@ image-version: 42
 modules:
   - from-file: common/sddm-modules.yml
   - from-file: common/common-modules.yml
+  - from-file: common/custom-modules.yml
   #- from-file: common/extra-modules.yml
   - from-file: common/dx-modules.yml
   - from-file: common/niri-modules.yml
