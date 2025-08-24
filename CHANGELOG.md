@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.7.0](https://github.com/toxicwebdev/toxicblue/compare/v0.6.0...v0.7.0) (2025-08-24)
+## [0.6.1](https://github.com/toxicwebdev/toxicblue/compare/v0.6.0...v0.6.1) (2025-08-24)
 
 
 ### Features
