@@ -2,7 +2,7 @@ name: qtile-dx
 
 description: ublue images for wayland compositors
 
-base-image: ghcr.io/toxicwebdevv/qtile
+base-image: ghcr.io/toxicwebdev/qtile
 
 image-version: latest
 
