@@ -3,7 +3,7 @@
 # Tell build process to exit if there are any errors.
 set -oue pipefail
 
-rm /etc/sway/environment
+#rm /etc/sway/environment
 
 echo '
 
