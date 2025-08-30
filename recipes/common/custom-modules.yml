@@ -34,7 +34,7 @@ modules:
         - pass
         - pass-otp
         - powertop
-        - restic
+        #- restic
         - sane-frontends
         - solaar-udev
         - sox
