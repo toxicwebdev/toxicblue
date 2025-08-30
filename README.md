@@ -126,28 +126,28 @@ To rebase an existing Silverblue/Kinoite/Sericea installation to the latest toxi
 
 If you are using an nvidia image, run this after installation:
 
-'''
+```bash
 rpm-ostree kargs \
     --append-if-missing=rd.driver.blacklist=nouveau \
     --append-if-missing=modprobe.blacklist=nouveau \
     --append-if-missing=nvidia-drm.modeset=1 \
     --append-if-missing=nvidia-drm.fbdev=1
-'''
+```
 
 You may also need this (solves flickering and LUKS issues on some nvidia hardware):
 
-'''
+```bash
 rpm-ostree kargs \
     --append-if-missing=initcall_blacklist=simpledrm_platform_driver_init
-'''
+```
 
 #### Nvidia optimus laptop
 
 If you are using an nvidia image on an optimus laptop, run this after installation:
 
-'''
+```bash
 ujust configure-nvidia-optimus
-'''
+```
 
 ## Screenshots
 
