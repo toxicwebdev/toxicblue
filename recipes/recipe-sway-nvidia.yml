@@ -1,0 +1,14 @@
+name: sway-nvidia
+
+description: ublue images for wayland compositors
+
+base-image: ghcr.io/toxicwebdev/sway
+
+image-version: 42
+
+modules:
+  - from-file: common/nvidia-modules.yml
+  - type: script
+    scripts:
+      - setswaynvidiaenvironment.sh
+  - from-file: common/final-modules.yml

@@ -1,7 +1,7 @@
-name: build-toxicblue-dx
+name: build-toxicblue-nvidia
 on:
   schedule:
-    - cron: "00 06 * * 1" # Создается в 6:00 UTC по Понедельникам
+    - cron: "30 05 * * 1" # Создается в 5:30 UTC по Понедельникам
 
   push:
     paths-ignore: # Не перестраивайте, если изменилась только документация
@@ -21,24 +21,18 @@ jobs:
       fail-fast: false # запретить GH отменять все сборки матрицы, если одна не удалась
       matrix:
         recipe:
-          - recipe-hyprland-dx.yml
-          - recipe-hyprland-nvidia-dx.yml
-          - recipe-hyprland-nvidia-open-dx.yml
-          - recipe-niri-dx.yml
-          - recipe-niri-nvidia-dx.yml
-          - recipe-niri-nvidia-open-dx.yml
-          - recipe-qtile-dx.yml
-          - recipe-qtile-nvidia-dx.yml
-          - recipe-qtile-nvidia-open-dx.yml
-          - recipe-river-dx.yml
-          - recipe-river-nvidia-dx.yml
-          - recipe-river-nvidia-open-dx.yml
-          - recipe-sway-dx.yml
-          - recipe-sway-nvidia-yml
-          - recipe-sway-nvidia-open-dx.yml
-          - recipe-wayfire-dx.yml
-          - recipe-wayfire-nvidia-dx.yml
-          - recipe-wayfire-nvidia-open-dx.yml
+          - recipe-hyprland-nvidia.yml
+          - recipe-hyprland-nvidia-open.yml
+          - recipe-niri-nvidia.yml
+          - recipe-niri-nvidia-open.yml
+          - recipe-qtile-nvidia.yml
+          - recipe-qtile-nvidia-open.yml
+          - recipe-river-nvidia.yml
+          - recipe-river-nvidia-open.yml
+          - recipe-sway-nvidia.yml
+          - recipe-sway-nvidia-open.yml
+          - recipe-wayfire-nvidia.yml
+          - recipe-wayfire-nvidia-open.yml
     steps:
       - name: Checkout repo
         uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
