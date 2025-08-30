@@ -1,6 +1,8 @@
 # Toxicblue
 
-![main-logo](assets/toxic.png){:style="float: center;margin-right: 7px;margin-top: 7px;"}
+<p align="center">
+  <img src="assets/toxic.png" href="[https://github.com/toxicwebdev/toxicblue](https://github.com/toxicwebdev/toxicblue)" width=180/>
+</p>
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/2503a44c1105456483517f793af75ee7)](https://app.codacy.com/gh/toxicwebdev/toxicblue/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 [![toxicblue](https://github.com/toxicwebdev/toxicblue/actions/workflows/build.yml/badge.svg)](https://github.com/toxicwebdev/toxicblue/actions/workflows/build.yml)
