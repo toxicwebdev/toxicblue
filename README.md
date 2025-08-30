@@ -1,7 +1,7 @@
 # Toxicblue
 
 <p align="center">
-  <img src="assets/toxic.png" href="[https://github.com/toxicwebdev/toxicblue](https://github.com/toxicwebdev/toxicblue)" width=180/>
+  <img src="assets/toxic.png" href="[https://github.com/toxicwebdev/toxicblue](https://github.com/toxicwebdev/toxicblue)" width=600/>
 </p>
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/2503a44c1105456483517f793af75ee7)](https://app.codacy.com/gh/toxicwebdev/toxicblue/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
