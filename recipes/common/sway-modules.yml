@@ -1,9 +1,14 @@
 modules:
     - type: rpm-ostree
       install:
-        - foot
+        - sway
+        - waybar
+        - xdg-desktop-portal-wlr
+        - xdg-desktop-portal-gtk
+        - kitty
         - swaylock
         - swayidle
+        - swaybg
 
     - type: files
       files:

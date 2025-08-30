@@ -163,4 +163,3 @@ if (Plymouth.GetMode() == "boot") {
 
   Plymouth.SetBootProgressFunction(bootProgressCallback);
 }
-

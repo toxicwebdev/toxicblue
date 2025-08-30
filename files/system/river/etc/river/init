@@ -14,7 +14,7 @@
 # Note: the "Super" modifier is also known as Logo, GUI, Windows, Mod4, etc.
 
 # Super+Shift+Return to start an instance of foot
-riverctl map normal Super+Shift Return spawn foot
+riverctl map normal Super+Shift Return spawn kitty
 
 # launcher
 riverctl map normal Super D spawn "rofi -show drun"
