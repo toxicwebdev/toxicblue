@@ -4,7 +4,7 @@ description: ublue images for wayland compositors
 
 base-image: ghcr.io/toxicwebdev/niri
 
-image-version: latest 
+image-version: 42 
 
 modules:
   - from-file: common/dx-modules.yml
