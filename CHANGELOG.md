@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.3](https://github.com/toxicwebdev/toxicblue/compare/v0.6.2...v0.6.3) (2025-08-30)
+
+
+### Bug Fixes
+
+* remove obsolete package replacements & update ([5666a0e](https://github.com/toxicwebdev/toxicblue/commit/5666a0ee4923156b601a4892481b50ffb20a28cd))
+
 ## [0.6.2](https://github.com/toxicwebdev/toxicblue/compare/v0.6.1...v0.6.2) (2025-08-26)
 
 
