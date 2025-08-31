@@ -2,10 +2,11 @@ name: river-nvidia-open
 
 description: ublue images for wayland compositors
 
-base-image: ghcr.io/toxicwebdev/river
+base-image: ghcr.io/toxicwebdev/main-tox
 
-image-version: 42
+image-version: latest
 
 modules:
+  - from-file: common/river-modules.yml
   - from-file: common/nvidia-open-modules.yml
   - from-file: common/final-modules.yml

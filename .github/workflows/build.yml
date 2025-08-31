@@ -1,7 +1,7 @@
 name: build-toxicblue
 on:
   schedule:
-    - cron: "00 05 * * 1" # Создается в 5:00 UTC по Понедельникам
+    - cron: "00 06 * * 1" # Создается в 6:00 UTC по Понедельникам
 
   push:
     paths-ignore: # Не перестраивайте, если изменилась только документация
@@ -42,8 +42,8 @@ jobs:
         uses: EyeCantCU/cosign-action/verify@58722a084c82190b57863002d494c91eabbe9e79 # v0.3.0
         with:
           containers: ${{ env.BASE_IMAGE_NAME }}:${{ env.IMAGE_MAJOR_VERSION }}
-          registry: 'quay.io/fedora-ostree-desktops'
-          pubkey: 'https://gitlab.com/fedora/ostree/ci-test/-/raw/main/quay.io-fedora-ostree-desktops.pub'
+          registry: 'ghcr.io/toxicwebdev'
+          pubkey: 'https://github.com/toxicwebdev/toxicblue/raw/main/cosign.pub'
 
       - name: Build toxicblue
         uses: blue-build/github-action@968216e45d3f5f23de24f7804259e1384cf5f358 # v1.8.3

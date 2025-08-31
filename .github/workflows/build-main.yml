@@ -1,17 +1,18 @@
-name: build-toxicblue-dx
+name: build-toxicblue-main
 on:
   schedule:
-    - cron: "00 06 * * 1" # Создается в 6:00 UTC по Понедельникам
+    - cron: "00 05 * * *" # Создается в 5:00 UTC каждый день
 
   push:
     paths-ignore: # Не перестраивайте, если изменилась только документация
     - "**.md"
 
+  pull_request:
   workflow_dispatch: # возможность запускать сборки вручную
 
 jobs:
   bluebuild:
-    name: Build toxicblue
+    name: Build toxicblue main
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -21,24 +22,7 @@ jobs:
       fail-fast: false # запретить GH отменять все сборки матрицы, если одна не удалась
       matrix:
         recipe:
-          - recipe-hyprland-dx.yml
-          - recipe-hyprland-nvidia-dx.yml
-          - recipe-hyprland-nvidia-open-dx.yml
-          - recipe-niri-dx.yml
-          #- recipe-niri-nvidia-dx.yml
-          #- recipe-niri-nvidia-open-dx.yml
-          - recipe-qtile-dx.yml
-          #- recipe-qtile-nvidia-dx.yml
-          #- recipe-qtile-nvidia-open-dx.yml
-          - recipe-river-dx.yml
-          #- recipe-river-nvidia-dx.yml
-          #- recipe-river-nvidia-open-dx.yml
-          - recipe-sway-dx.yml
-          #- recipe-sway-nvidia-yml
-          #- recipe-sway-nvidia-open-dx.yml
-          - recipe-wayfire-dx.yml
-          #- recipe-wayfire-nvidia-dx.yml
-          #- recipe-wayfire-nvidia-open-dx.yml
+          - recipe-main.yml
     steps:
       - name: Checkout repo
         uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
@@ -54,10 +38,10 @@ jobs:
         uses: EyeCantCU/cosign-action/verify@58722a084c82190b57863002d494c91eabbe9e79 # v0.3.0
         with:
           containers: ${{ env.BASE_IMAGE_NAME }}:${{ env.IMAGE_MAJOR_VERSION }}
-          registry: 'ghcr.io/toxicwebdev'
-          pubkey: 'https://github.com/toxicwebdev/toxicblue/raw/main/cosign.pub'
+          registry: 'quay.io/fedora-ostree-desktops'
+          pubkey: 'https://gitlab.com/fedora/ostree/ci-test/-/raw/main/quay.io-fedora-ostree-desktops.pub'
 
-      - name: Build toxicblue
+      - name: Build toxicblue main
         uses: blue-build/github-action@968216e45d3f5f23de24f7804259e1384cf5f358 # v1.8.3
         with:
           cli_version: v0.9.20

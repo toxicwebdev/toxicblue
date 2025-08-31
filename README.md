@@ -20,16 +20,13 @@ toxicblue is a project that leverages the [BlueBuild](https://blue-build.org/) t
 - Sway (with waybar)
 - Wayfire (with wf-shell)
 
-## DX Images
-
-A developer workstation that provides a container-focused experience.
-
 ## Features
 
 - Saner SDDM defaults
 - Optimized waybar defaults
 - Comprehensive toolkit for a functional Wayland compositor desktop
 - Pre-configured, minimally opinionated setups for each supported compositor
+- Developer workstation that provides a container-focused experience.
 
 ## Purpose
 
@@ -51,41 +48,23 @@ For custom modifications, it's recommended to create a new repo using the [BlueB
 | Name                      | Compositor | Nvidia Support      |
 |---------------------------|------------|---------------------|
 | `hyprland`                | Hyprland   | No                  |
-| `hyprland-dx`             | Hyprland   | No                  |
 | `hyprland-nvidia`         | Hyprland   | Yes, closed drivers |
-| `hyprland-nvidia-dx`      | Hyprland   | Yes, closed drivers |
 | `hyprland-nvidia-open`    | Hyprland   | Yes, open drivers   |
-| `hyprland-nvidia-open-dx` | Hyprland   | Yes, open drivers   |
 | `niri`                    | Niri       | No                  |
-| `niri-dx`                 | Niri       | No                  |
 | `niri-nvidia`             | Niri       | Yes, closed drivers |
-| `niri-nvidia-dx`          | Niri       | Yes, closed drivers |
 | `niri-nvidia-open`        | Niri       | Yes, open drivers   |
-| `niri-nvidia-open-dx`     | Niri       | Yes, open drivers   |
 | `qtile`                   | Qtile      | No                  |
-| `qtile-dx`                | Qtile      | No                  |
 | `qtile-nvidia`            | Qtile      | Yes, closed drivers |
-| `qtile-nvidia-dx`         | Qtile      | Yes, closed drivers |
 | `qtile-nvidia-open`       | Qtile      | Yes, open drivers   |
-| `qtile-nvidia-open-dx`    | Qtile      | Yes, open drivers   |
 | `river`                   | River      | No                  |
-| `river-dx`                | River      | No                  |
 | `river-nvidia`            | River      | Yes, closed drivers |
-| `river-nvidia-dx`         | River      | Yes, closed drivers |
 | `river-nvidia-open`       | River      | Yes, open drivers   |
-| `river-nvidia-open-dx`    | River      | Yes, open drivers   |
 | `sway`                    | Sway       | No                  |
-| `sway-dx`                 | Sway       | No                  |
 | `sway-nvidia`             | Sway       | Yes, closed drivers |
-| `sway-nvidia-dx`          | Sway       | Yes, closed drivers |
 | `sway-nvidia-open`        | Sway       | Yes, open drivers   |
-| `sway-nvidia-open-dx`     | Sway       | Yes, open drivers   |
 | `wayfire`                 | Wayfire    | No                  |
-| `wayfire-dx`              | Wayfire    | No                  |
 | `wayfire-nvidia`          | Wayfire    | Yes, closed drivers |
-| `wayfire-nvidia-dx`       | Wayfire    | Yes, closed drivers |
 | `wayfire-nvidia-open`     | Wayfire    | Yes, open drivers   |
-| `wayfire-nvidia-open-dx`  | Wayfire    | Yes, open drivers   |
 
 ### Rebasing Process
 

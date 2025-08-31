@@ -1,7 +1,7 @@
 name: build-toxicblue-nvidia
 on:
   schedule:
-    - cron: "30 05 * * 1" # Создается в 5:30 UTC по Понедельникам
+    - cron: "30 06 * * 1" # Создается в 6:30 UTC по Понедельникам
 
   push:
     paths-ignore: # Не перестраивайте, если изменилась только документация
@@ -11,7 +11,7 @@ on:
 
 jobs:
   bluebuild:
-    name: Build toxicblue
+    name: Build toxicblue nvidia
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -51,7 +51,7 @@ jobs:
           registry: 'ghcr.io/toxicwebdev'
           pubkey: 'https://github.com/toxicwebdev/toxicblue/raw/main/cosign.pub'
 
-      - name: Build toxicblue
+      - name: Build toxicblue nvidia
         uses: blue-build/github-action@968216e45d3f5f23de24f7804259e1384cf5f358 # v1.8.3
         with:
           cli_version: v0.9.20
