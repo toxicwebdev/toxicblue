@@ -25,20 +25,20 @@ jobs:
           - recipe-hyprland-nvidia-dx.yml
           - recipe-hyprland-nvidia-open-dx.yml
           - recipe-niri-dx.yml
-          - recipe-niri-nvidia-dx.yml
-          - recipe-niri-nvidia-open-dx.yml
+          #- recipe-niri-nvidia-dx.yml
+          #- recipe-niri-nvidia-open-dx.yml
           - recipe-qtile-dx.yml
-          - recipe-qtile-nvidia-dx.yml
-          - recipe-qtile-nvidia-open-dx.yml
+          #- recipe-qtile-nvidia-dx.yml
+          #- recipe-qtile-nvidia-open-dx.yml
           - recipe-river-dx.yml
-          - recipe-river-nvidia-dx.yml
-          - recipe-river-nvidia-open-dx.yml
+          #- recipe-river-nvidia-dx.yml
+          #- recipe-river-nvidia-open-dx.yml
           - recipe-sway-dx.yml
-          - recipe-sway-nvidia-yml
-          - recipe-sway-nvidia-open-dx.yml
+          #- recipe-sway-nvidia-yml
+          #- recipe-sway-nvidia-open-dx.yml
           - recipe-wayfire-dx.yml
-          - recipe-wayfire-nvidia-dx.yml
-          - recipe-wayfire-nvidia-open-dx.yml
+          #- recipe-wayfire-nvidia-dx.yml
+          #- recipe-wayfire-nvidia-open-dx.yml
     steps:
       - name: Checkout repo
         uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
