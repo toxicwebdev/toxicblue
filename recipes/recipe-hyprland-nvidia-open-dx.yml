@@ -4,7 +4,7 @@ description: ublue images for wayland compositors
 
 base-image: ghcr.io/toxicwebdev/hyprland-nvidia-open
 
-image-version: 42
+image-version: latest
 
 modules:
   - from-file: common/dx-modules.yml
