@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.7.0](https://github.com/toxicwebdev/toxicblue/compare/v0.6.3...v0.7.0) (2025-09-02)
+
+
+### Features
+
+* add main-images & remove dx-images ([57ead20](https://github.com/toxicwebdev/toxicblue/commit/57ead20a3d01d8cf2b57f2ba8a53bfbcabaf9cec))
+* add main-images & remove dx-images ([c2eafcc](https://github.com/toxicwebdev/toxicblue/commit/c2eafccedd36ee070f4205dfb3a1f8d900342f8f))
+* add nvidia-images ([a71bedc](https://github.com/toxicwebdev/toxicblue/commit/a71bedc7e55639401c59d15e69e6bbc1db248f73))
+
+
+### Bug Fixes
+
+* modified setswaynvidiaenvironment.sh ([eb01753](https://github.com/toxicwebdev/toxicblue/commit/eb0175396651653e56b2b97009444ac32e8ab0aa))
+
 ## [0.6.3](https://github.com/toxicwebdev/toxicblue/compare/v0.6.2...v0.6.3) (2025-08-30)
 
 
