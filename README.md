@@ -1,6 +1,8 @@
 # Toxicblue
 
-![main-logo](assets/toxic.png)
+<p align="center">
+  <img src="assets/toxic.png" href="[https://github.com/toxicwebdev/toxicblue](https://github.com/toxicwebdev/toxicblue)" width=300/>
+</p>
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/2503a44c1105456483517f793af75ee7)](https://app.codacy.com/gh/toxicwebdev/toxicblue/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 [![toxicblue](https://github.com/toxicwebdev/toxicblue/actions/workflows/build.yml/badge.svg)](https://github.com/toxicwebdev/toxicblue/actions/workflows/build.yml)
@@ -18,16 +20,13 @@ toxicblue is a project that leverages the [BlueBuild](https://blue-build.org/) t
 - Sway (with waybar)
 - Wayfire (with wf-shell)
 
-## DX Images
-
-A developer workstation that provides a container-focused experience.
-
 ## Features
 
 - Saner SDDM defaults
 - Optimized waybar defaults
 - Comprehensive toolkit for a functional Wayland compositor desktop
 - Pre-configured, minimally opinionated setups for each supported compositor
+- Developer workstation that provides a container-focused experience.
 
 ## Purpose
 
@@ -41,20 +40,31 @@ For custom modifications, it's recommended to create a new repo using the [BlueB
 
 ### Available Images
 
-| Name         | Compositor | Nvidia Support  |
-|--------------|------------|-----------------|
-| `hyprland`   | Hyprland   | No              |
-| `hyprland-dx`| Hyprland   | No              |
-| `niri`       | Niri       | No              |
-| `niri-dx`    | Niri       | No              |
-| `qtile`      | Qtile      | No              |
-| `qtile-dx`   | Qtile      | No              |
-| `river`      | River      | No              |
-| `river-dx`   | River      | No              |
-| `sway`       | Sway       | No              |
-| `sway-dx`    | Sway       | No              |
-| `wayfire`    | Wayfire    | No              |
-| `wayfire-dx` | Wayfire    | No              |
+> [!NOTE]
+> *`nvidia-open` images are recommended for systems with Nvidia GPUs Turing or newer.*
+>
+> *`nvidia` images are recommended for systems with Nvidia GPUs Pascal or older.*
+
+| Name                      | Compositor | Nvidia Support      |
+|---------------------------|------------|---------------------|
+| `hyprland`                | Hyprland   | No                  |
+| `hyprland-nvidia`         | Hyprland   | Yes, closed drivers |
+| `hyprland-nvidia-open`    | Hyprland   | Yes, open drivers   |
+| `niri`                    | Niri       | No                  |
+| `niri-nvidia`             | Niri       | Yes, closed drivers |
+| `niri-nvidia-open`        | Niri       | Yes, open drivers   |
+| `qtile`                   | Qtile      | No                  |
+| `qtile-nvidia`            | Qtile      | Yes, closed drivers |
+| `qtile-nvidia-open`       | Qtile      | Yes, open drivers   |
+| `river`                   | River      | No                  |
+| `river-nvidia`            | River      | Yes, closed drivers |
+| `river-nvidia-open`       | River      | Yes, open drivers   |
+| `sway`                    | Sway       | No                  |
+| `sway-nvidia`             | Sway       | Yes, closed drivers |
+| `sway-nvidia-open`        | Sway       | Yes, open drivers   |
+| `wayfire`                 | Wayfire    | No                  |
+| `wayfire-nvidia`          | Wayfire    | Yes, closed drivers |
+| `wayfire-nvidia-open`     | Wayfire    | Yes, open drivers   |
 
 ### Rebasing Process
 
@@ -62,7 +72,6 @@ To rebase an existing Silverblue/Kinoite/Sericea installation to the latest toxi
 
 > [!IMPORTANT]
 > Only the `latest` tag is supported.
-
 > [!NOTE]
 > Two reboots are required. The first boot into toxicblue provisions the necessary SDDM user, a one-time step.
 
@@ -90,15 +99,40 @@ To rebase an existing Silverblue/Kinoite/Sericea installation to the latest toxi
     systemctl reboot
     ```
 
+### Post-install
+
+#### Nvidia
+
+If you are using an nvidia image, run this after installation:
+
+```bash
+rpm-ostree kargs \
+    --append-if-missing=rd.driver.blacklist=nouveau \
+    --append-if-missing=modprobe.blacklist=nouveau \
+    --append-if-missing=nvidia-drm.modeset=1 \
+    --append-if-missing=nvidia-drm.fbdev=1
+```
+
+You may also need this (solves flickering and LUKS issues on some nvidia hardware):
+
+```bash
+rpm-ostree kargs \
+    --append-if-missing=initcall_blacklist=simpledrm_platform_driver_init
+```
+
+#### Nvidia optimus laptop
+
+If you are using an nvidia image on an optimus laptop, run this after installation:
+
+```bash
+ujust configure-nvidia-optimus
+```
+
 ## Screenshots
 
 ![sway](assets/sway.png)
 
 ![hyprland](assets/hyprland.png)
-
-## ISO Creation
-
-For Fedora Atomic builds, you can generate an offline ISO following the instructions [here](https://blue-build.org/learn/universal-blue/#fresh-install-from-an-iso). Note that free distribution on GitHub is not possible due to size limitations.
 
 ## Verification
 
@@ -111,5 +145,3 @@ cosign verify --key cosign.pub ghcr.io/toxicwebdev/$IMAGE_NAME:latest
 ## Contributing
 
 Please refer to the [contributing documentation](CONTRIBUTING.md#contributing) and adhere to the [Code of Conduct](CODE_OF_CONDUCT.md).
-
-For more information on BlueBuild, visit the [BlueBuild homepage](https://blue-build.org/).

@@ -1,4 +1,4 @@
-name: river
+name: wayfire-nvidia
 
 description: ublue images for wayland compositors
 
@@ -7,5 +7,6 @@ base-image: ghcr.io/toxicwebdev/main-tox
 image-version: latest
 
 modules:
-  - from-file: common/river-modules.yml
+  - from-file: common/wayfire-modules.yml
+  - from-file: common/nvidia-modules.yml
   - from-file: common/final-modules.yml
