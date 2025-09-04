@@ -46,7 +46,7 @@ jobs:
           pubkey: 'https://github.com/toxicwebdev/toxicblue/raw/main/cosign.pub'
 
       - name: Build toxicblue
-        uses: blue-build/github-action@5a97103ace2f497d15a68d47818eacfe5ff7aefc # v1.9.0
+        uses: blue-build/github-action@785ecb253aee6ead01454ed5bd070c2921010602 # v1.9.1
         with:
           cli_version: v0.9.20
           recipe: ${{ matrix.recipe }}
