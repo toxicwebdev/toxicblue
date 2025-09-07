@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-# Tell build process to exit if there are any errors.
 set -oue pipefail
 
 LATEST_ANDROID_UDEV_RULES_COMMIT="e23e31266740b0dc550d636c68b6724620c0299e" # 20250314

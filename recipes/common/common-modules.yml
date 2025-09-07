@@ -24,7 +24,6 @@ modules:
         - ublue-os-luks
         - ublue-os-just
 
-
     - type: script
       scripts:
         - installandroidudev.sh
@@ -160,10 +159,6 @@ modules:
     - type: gschema-overrides
       include:
         - zz1-toxicblue-theming.gschema.override
-
-    - type: script
-      scripts:
-        - settheming.sh
 
     - type: toxicblue-signing
       source: local
