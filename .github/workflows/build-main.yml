@@ -22,7 +22,7 @@ jobs:
       fail-fast: false # запретить GH отменять все сборки матрицы, если одна не удалась
       matrix:
         recipe:
-          - recipe-main.yml
+          - recipe-base-main.yml
     steps:
       - name: Checkout repo
         uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
