@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 
-# Tell build process to exit if there are any errors.
 set -oue pipefail
 
+RPMFUSION_NONFREE="https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-${OS_VERSION}.noarch.rpm"
+
+curl --retry 3 --retry-delay 5 -LO "${RPMFUSION_NONFREE}"
+
 rpm-ostree install \
-    https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-${OS_VERSION}.noarch.rpm
+    "rpmfusion-nonfree-release-${OS_VERSION}.noarch.rpm"

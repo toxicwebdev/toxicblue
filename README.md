@@ -6,7 +6,8 @@
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/2503a44c1105456483517f793af75ee7)](https://app.codacy.com/gh/toxicwebdev/toxicblue/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 [![toxicblue](https://github.com/toxicwebdev/toxicblue/actions/workflows/build.yml/badge.svg)](https://github.com/toxicwebdev/toxicblue/actions/workflows/build.yml)
-[![toxicblue-dx](https://github.com/toxicwebdev/toxicblue/actions/workflows/build-dx.yml/badge.svg)](https://github.com/toxicwebdev/toxicblue/actions/workflows/build-dx.yml)
+[![toxicblue-nvidia](https://github.com/toxicwebdev/toxicblue/actions/workflows/build-nvidia.yml/badge.svg)](https://github.com/toxicwebdev/toxicblue/actions/workflows/build-nvidia.yml)
+[![toxicblue-main](https://github.com/toxicwebdev/toxicblue/actions/workflows/build-main.yml/badge.svg)](https://github.com/toxicwebdev/toxicblue/actions/workflows/build-main.yml)
 [![trivy](https://github.com/toxicwebdev/toxicblue/actions/workflows/trivy.yml/badge.svg)](https://github.com/toxicwebdev/toxicblue/actions/workflows/trivy.yml)
 
 ## Overview
