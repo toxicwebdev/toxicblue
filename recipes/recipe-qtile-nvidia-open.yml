@@ -2,7 +2,7 @@ name: qtile-nvidia-open
 
 description: ublue images for wayland compositors
 
-base-image: ghcr.io/toxicwebdev/main-tox
+base-image: ghcr.io/toxicwebdev/base-main
 
 image-version: latest
 

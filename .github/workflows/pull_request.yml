@@ -16,7 +16,7 @@ jobs:
       fail-fast: false 
       matrix:
         recipe:
-          - recipe-hyprland.yml
+          - recipe-base-main.yml
 
     steps:
       - name: Checkout repo
