@@ -111,11 +111,12 @@ modules:
         - dunst
 
       # theme and GUI
+        - adw-gtk3-theme
+        #- breeze-icon-theme
         - fontawesome-fonts-all
         - gnome-themes-extra
         #- gnome-icon-theme
         #- paper-icon-theme
-        #- breeze-icon-theme 
         #- papirus-icon-theme
 
     - type: script
@@ -146,7 +147,6 @@ modules:
 
     - type: script
       scripts:
-        #- installrpmfusion-free.sh
         - removeunusedrepos.sh
 
     - type: files

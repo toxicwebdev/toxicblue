@@ -1,4 +1,9 @@
 modules:
+    - type: script
+      scripts:
+        - installrpmfusion-free.sh
+        - installterra.sh
+
     - type: rpm-ostree
       install:
       # base
@@ -25,6 +30,7 @@ modules:
         - lzip
         #- lxqt-archiver
         #- lxqt-openssh-askpass
+        - micro
         #- mpd
         - mpv
         - mutt
@@ -67,6 +73,7 @@ modules:
       # apps
         - audacious
         - celluloid
+        - clapper
         #- deadbeef
         #- deadbeef-mpris2-plugin
         - geany
@@ -82,6 +89,7 @@ modules:
         - qalculate
         - qbittorrent
         - qterminal
+        - qutebrowser
         #- radiotray-ng
         - rofimoji
         #- smplayer
@@ -89,8 +97,15 @@ modules:
         #- vlc
 
       # fonts
+        - adobe-source-code-pro-fonts
+        - cascadia-code-fonts
+        - google-droid-sans-mono-fonts
+        - google-go-mono-fonts
         #- google-noto-emoji-color-fonts
+        - ibm-plex-mono-fonts
         - jetbrains-mono-fonts
+        - mozilla-fira-mono-fonts
+        - powerline-fonts
 
       # Yubikey stuff
         - pam-u2f
@@ -111,3 +126,7 @@ modules:
         - google-noto-sans-cjk-vf-fonts
         - google-noto-sans-mono-cjk-vf-fonts
         - google-noto-serif-cjk-vf-fonts
+
+    - type: script
+      scripts:
+        - removeunusedrepos.sh

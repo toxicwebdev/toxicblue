@@ -2,12 +2,23 @@ type: dnf
 repos:
   files:
     - https://download.docker.com/linux/fedora/docker-ce.repo
+    - https://packages.microsoft.com/yumrepos/vscode/config.repo
     - https://cli.github.com/packages/rpm/gh-cli.repo
   copr:
-    - goncalossilva/act 
+    - goncalossilva/act
+    - scottames/ghostty
+    #- wezfurlong/wezterm-nightly
 install:
   packages:
+    # terminals
+    - ghostty
+    #- wezterm
+
+    # IDE
+    - code
+
     # virtualization
+    #- edk2-ovmf
     - qemu-kvm
     - libvirt-daemon
     - libvirt-daemon-config-network
@@ -23,16 +34,47 @@ install:
     - libvirt-client
     - virt-install
     - virt-manager
+    #- virt-v2v
+    #- virt-viewer
+    
+    # android
+    - android-tools
     - waydroid
+
+    # podman
+    #- podman-bootc
     - podman-compose
+    #- podman-machine
+    #- podman-tui
+    #- podmansh
 
     # docker
+    - containerd.io
     - docker-ce
     - docker-ce-cli
-    - containerd.io
     - docker-buildx-plugin
     - docker-compose-plugin
+    - docker-model-plugin
+
+    # Cockpit
+    #- cockpit-bridge
+    #- cockpit-machines
+    #- cockpit-networkmanager
+    #- cockpit-ostree
+    #- cockpit-podman
+    #- cockpit-selinux
+    #- cockpit-storaged
+    #- cockpit-system
+
+    # Incus
+    #- incus
+    #- incus-agent
 
     # gh and act
     - gh
     - act-cli
+
+    # Rocm
+    #- rocm-hip
+    #- rocm-opencl
+    #- rocm-smi
