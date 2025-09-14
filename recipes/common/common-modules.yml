@@ -147,6 +147,7 @@ modules:
 
     - type: script
       scripts:
+        - installrpmfusion-free.sh
         - removeunusedrepos.sh
 
     - type: files
