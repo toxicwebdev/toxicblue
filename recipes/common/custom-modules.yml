@@ -3,22 +3,29 @@ modules:
       install:
       # base
         - alsa-plugins-pulseaudio
+        - android-udev-rules
         - bat
         - bolt
         - btop
         - fastfetch
         - fd-find
+        - fedora-release
+        - fedora-release-ostree-desktop
         - fish
-        #- gnome-keyring-pam
+        - gnome-keyring-pam
         - htop
         - isync
         - krb5-workstation
         - ksshaskpass
+        - kvantum
         - langpacks-ru
+        #- libqtxdg
         - libratbag-ratbagd
         - light
         - lm_sensors
         - lzip
+        #- lxqt-archiver
+        #- lxqt-openssh-askpass
         #- mpd
         - mpv
         - mutt
@@ -33,14 +40,17 @@ modules:
         - openrgb-udev-rules
         - pass
         - pass-otp
+        - pinentry-gnome3
         - powertop
-        #- restic
+        - qt5ct
+        - qt6ct
         - sane-frontends
         - solaar-udev
         - sox
         - strace
         - system-config-printer
         - tmux
+        - tuned-switcher
         - unrar-free
         - w3m
         - wayland-utils
@@ -50,36 +60,38 @@ modules:
         - xlsclients
         - yad
         - yt-dlp
-        - zathura
-        - zathura-cb
-        - zathura-djvu
-        - zathura-pdf-mupdf
-        - zathura-ps
         - zsh
         - zsh-autosuggestions
         - zsh-syntax-highlighting
         - zstd
 
       # apps
-        #- celluloid
-        #- geany
+        - audacious
+        - celluloid
+        #- deadbeef
+        #- deadbeef-mpris2-plugin
+        - geany
+        #- goodvibes
         - gparted
+        #- haruna
         #- kate
         #- kde-partitionmanager
         #- kompare
-        #- meld
-        - pcmanfm-qt
+        - meld
+        - lximage-qt
+        #- okular
+        - qalculate
+        - qbittorrent
         - qterminal
-        - rhythmbox
+        #- radiotray-ng
         - rofimoji
         #- smplayer
         #- spectacle
-        - vlc
+        #- vlc
 
       # fonts
         #- google-noto-emoji-color-fonts
         - jetbrains-mono-fonts
-        #- jetbrains-mono-nl-fonts
 
       # Yubikey stuff
         - pam-u2f
@@ -89,14 +101,14 @@ modules:
 
     - type: rpm-ostree
       remove:
-        - default-fonts-cjk-mono
-        - default-fonts-cjk-sans
-        - default-fonts-cjk-serif
         - fedora-third-party
         - fedora-flathub-remote
         - fedora-workstation-repositories
         #- firefox
         #- firefox-langpacks
+        - default-fonts-cjk-mono
+        - default-fonts-cjk-sans
+        - default-fonts-cjk-serif
         - google-noto-sans-cjk-vf-fonts
         - google-noto-sans-mono-cjk-vf-fonts
         - google-noto-serif-cjk-vf-fonts

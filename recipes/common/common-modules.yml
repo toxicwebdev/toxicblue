@@ -43,7 +43,7 @@ modules:
         - headsetcontrol
         - mediainfo
         - polkit
-        - xfce-polkit 
+        - lxqt-policykit
         - fprintd-pam
         - xdg-user-dirs
         - dbus-tools
@@ -73,10 +73,9 @@ modules:
 
       # networking
         - network-manager-applet
-        - NetworkManager-openvpn
-        #- NetworkManager-openvpn-gnome
-        - NetworkManager-openconnect
-        #- NetworkManager-openconnect-gnome
+        - NetworkManager-openvpn-gnome
+        - NetworkManager-openconnect-gnome
+        - nm-connection-editor
         - bluez
         - bluez-tools
         - blueman
@@ -85,14 +84,14 @@ modules:
       # file manager
         - thunar
         - thunar-archive-plugin 
-        - thunar-volman
+        #- thunar-volman
         - xarchiver
         - imv
         - p7zip
         - gvfs-mtp
         #- gvfs-gphoto2
-        #- gvfs-smb
-        #- gvfs-nfs
+        - gvfs-smb
+        - gvfs-nfs
         #- gvfs-fuse
         #- gvfs-archive
         - android-tools
@@ -100,6 +99,7 @@ modules:
       # screenshot
         - slurp
         - grim
+        - grimshot
 
       # display
         - wlr-randr
@@ -112,7 +112,7 @@ modules:
 
       # theme and GUI
         - fontawesome-fonts-all
-        #- gnome-themes-extra
+        - gnome-themes-extra
         #- gnome-icon-theme
         #- paper-icon-theme
         #- breeze-icon-theme 

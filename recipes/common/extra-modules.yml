@@ -7,6 +7,7 @@ repos:
     - solopasha/hyprland
     #- alebastr/swayr
     - ilyaz/LACT
+    #- atim/glide-rs
 install:
   packages:
     # GTK shell
@@ -22,6 +23,9 @@ install:
     # utilities
     - cliphist
     - tailscale
+
+    # media
+    #- glide-rs
 
     # hardware management
     - amdsmi
