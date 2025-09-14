@@ -15,6 +15,7 @@ install:
     - nwg-clipman
     - astal
     - aylurs-gtk-shell2
+    - waypaper
 
     # launcher -- to reorganize
     #- fuzzel

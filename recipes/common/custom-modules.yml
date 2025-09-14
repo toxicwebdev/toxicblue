@@ -3,7 +3,6 @@ modules:
       install:
       # base
         - alsa-plugins-pulseaudio
-        - android-udev-rules
         - bat
         - bolt
         - btop
