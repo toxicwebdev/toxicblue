@@ -43,7 +43,7 @@ modules:
         - headsetcontrol
         - mediainfo
         - polkit
-        - lxqt-policykit
+        - xfce-polkit
         - fprintd-pam
         - xdg-user-dirs
         - dbus-tools
