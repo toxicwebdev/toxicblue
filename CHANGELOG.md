@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.8.0](https://github.com/toxicwebdev/toxicblue/compare/v0.7.1...v0.8.0) (2025-11-09)
+
+
+### Features
+
+* f43 ([ba16913](https://github.com/toxicwebdev/toxicblue/commit/ba16913785bb70683bb2ff5ad5b75163e9bc2b89))
+
 ## [0.7.0](https://github.com/toxicwebdev/toxicblue/compare/v0.6.3...v0.7.0) (2025-09-02)
 
 
