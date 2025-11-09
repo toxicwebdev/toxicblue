@@ -1,12 +1,19 @@
 modules:
-    - type: rpm-ostree
+    - type: dnf
+      repos:
+        copr:
+          enable:
+            - solopasha/hyprland
       install:
+        install-weak-deps: false
+        packages:
+        - kitty
         - hyprland
         - waybar
         - xdg-desktop-portal-hyprland
-        - swaylock
-        - swayidle
-        - swaybg
+        - hyprpaper
+        - hyprlock
+        - hypridle
 
     - type: files
       files:

@@ -1,13 +1,15 @@
 modules:
-    - type: rpm-ostree
+    - type: dnf
       install:
-        - qtile
-        - xdg-desktop-portal-wlr
-        - xdg-desktop-portal-gtk
-        - kitty
-        - swayidle
-        - python3-pywlroots
-        - python3-mypy
+        install-weak-deps: false
+        packages:
+          - qtile
+          - xdg-desktop-portal-wlr
+          - xdg-desktop-portal-gtk
+          - kitty
+          - swayidle
+          - python3-pywlroots
+          - python3-mypy
 
     - type: files
       files:

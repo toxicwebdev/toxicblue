@@ -27,7 +27,6 @@ toxicblue is a project that leverages the [BlueBuild](https://blue-build.org/) t
 - Optimized waybar defaults
 - Comprehensive toolkit for a functional Wayland compositor desktop
 - Pre-configured, minimally opinionated setups for each supported compositor
-- Developer workstation that provides a container-focused experience.
 
 ## Purpose
 
@@ -42,30 +41,22 @@ For custom modifications, it's recommended to create a new repo using the [BlueB
 ### Available Images
 
 > [!NOTE]
-> *`nvidia-open` images are recommended for systems with Nvidia GPUs Turing or newer.*
->
-> *`nvidia` images are recommended for systems with Nvidia GPUs Pascal or older.*
+> *`nvidia` images are recommended for systems with Nvidia GPUs Turing or newer (RTX Series | GTX 16xx Series+).*
 
 | Name                      | Compositor | Nvidia Support      |
 |---------------------------|------------|---------------------|
 | `hyprland`                | Hyprland   | No                  |
-| `hyprland-nvidia`         | Hyprland   | Yes, closed drivers |
-| `hyprland-nvidia-open`    | Hyprland   | Yes, open drivers   |
+| `hyprland-nvidia`         | Hyprland   | Yes, open drivers   |
 | `niri`                    | Niri       | No                  |
-| `niri-nvidia`             | Niri       | Yes, closed drivers |
-| `niri-nvidia-open`        | Niri       | Yes, open drivers   |
+| `niri-nvidia`             | Niri       | Yes, open drivers   |
 | `qtile`                   | Qtile      | No                  |
-| `qtile-nvidia`            | Qtile      | Yes, closed drivers |
-| `qtile-nvidia-open`       | Qtile      | Yes, open drivers   |
+| `qtile-nvidia`            | Qtile      | Yes, open drivers   |
 | `river`                   | River      | No                  |
-| `river-nvidia`            | River      | Yes, closed drivers |
-| `river-nvidia-open`       | River      | Yes, open drivers   |
+| `river-nvidia`            | River      | Yes, open drivers   |
 | `sway`                    | Sway       | No                  |
-| `sway-nvidia`             | Sway       | Yes, closed drivers |
-| `sway-nvidia-open`        | Sway       | Yes, open drivers   |
+| `sway-nvidia`             | Sway       | Yes, open drivers   |
 | `wayfire`                 | Wayfire    | No                  |
-| `wayfire-nvidia`          | Wayfire    | Yes, closed drivers |
-| `wayfire-nvidia-open`     | Wayfire    | Yes, open drivers   |
+| `wayfire-nvidia`          | Wayfire    | Yes, open drivers   |
 
 ### Rebasing Process
 

@@ -1,15 +1,15 @@
 modules:
-    - type: rpm-ostree
+    - type: dnf
       install:
-        - niri
-        - waybar
-        - xdg-desktop-portal-wlr
-        - xdg-desktop-portal-gtk
-        - kitty
-        - fuzzel
-        - swaylock
-        - swayidle
-        - swaybg
+        install-weak-deps: false
+        packages:
+          - niri
+          - waybar
+          - xdg-desktop-portal-wlr
+          - xdg-desktop-portal-gtk
+          - kitty
+          - swaylock
+          - swayidle
 
     - type: files
       files:

@@ -22,20 +22,34 @@ jobs:
       matrix:
         recipe:
           - recipe-hyprland-nvidia.yml
-          - recipe-hyprland-nvidia-open.yml
           - recipe-niri-nvidia.yml
-          - recipe-niri-nvidia-open.yml
           - recipe-qtile-nvidia.yml
-          - recipe-qtile-nvidia-open.yml
           - recipe-river-nvidia.yml
-          - recipe-river-nvidia-open.yml
           - recipe-sway-nvidia.yml
-          - recipe-sway-nvidia-open.yml
           - recipe-wayfire-nvidia.yml
-          - recipe-wayfire-nvidia-open.yml
     steps:
+      - name: Optimize build times
+        shell: bash
+        run: |
+          echo 'set man-db/auto-update false' | sudo debconf-communicate
+          sudo dpkg-reconfigure man-db
+          sudo rm -f /var/lib/man-db/auto-update
+          sudo sed -i 's/^update_initramfs=.*/update_initramfs=no/' /etc/initramfs-tools/update-initramfs.conf
+
+      - name: Free disk space
+        shell: bash
+        run: |
+          sudo rm -rf /usr/share/dotnet || true
+          sudo rm -rf /opt/ghc || true
+          sudo rm -rf /usr/local/.ghcup || true
+          sudo docker image prune --all --force || true
+          sudo swapoff -a || true
+          sudo rm -f /mnt/swapfile || true
+
       - name: Checkout repo
         uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+        with:
+          persist-credentials: false
 
       - name: Gather image data from recipe
         run: |
@@ -54,10 +68,13 @@ jobs:
       - name: Build toxicblue nvidia
         uses: blue-build/github-action@785ecb253aee6ead01454ed5bd070c2921010602 # v1.9.1
         with:
-          cli_version: v0.9.23
+          cli_version: v0.9.24
           recipe: ${{ matrix.recipe }}
           cosign_private_key: ${{ secrets.SIGNING_SECRET }}
           registry_token: ${{ github.token }}
           pr_event_number: ${{ github.event.number }}
-          maximize_build_space: true # включено по умолчанию, отключите, если ваше изображение маленькое и вы хотите получить более быструю сборку
+          maximize_build_space: false # включено по умолчанию, отключите, если ваше изображение маленькое и вы хотите получить более быструю сборку
           squash: true
+          skip_checkout: true
+          use_cache: false
+          retry_push_count: 3

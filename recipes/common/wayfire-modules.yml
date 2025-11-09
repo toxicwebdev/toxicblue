@@ -1,18 +1,19 @@
 modules:
-    - type: rpm-ostree
+    - type: dnf
       install:
-        - wayfire
-        - sddm-wayland-generic
-        - wf-shell
-        - wayfire-config-manager
-        - wf-config
-        - xdg-desktop-portal-wlr
-        - xdg-desktop-portal-gtk
-        - adw-gtk3-theme
-        - kitty
-        - swaylock
-        - swayidle
-        - swaybg
+        install-weak-deps: false
+        packages:
+          - wayfire
+          - sddm-wayland-generic
+          - wf-shell
+          - wayfire-config-manager
+          - wf-config
+          - xdg-desktop-portal-wlr
+          - xdg-desktop-portal-gtk
+          - adw-gtk3-theme
+          - kitty
+          - swaylock
+          - swayidle
         
     - type: files
       files:
