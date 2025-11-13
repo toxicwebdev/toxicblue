@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.8.1](https://github.com/toxicwebdev/toxicblue/compare/v0.8.0...v0.8.1) (2025-11-13)
+
+
+### Bug Fixes
+
+* add hyprland-qtutils ([30476fb](https://github.com/toxicwebdev/toxicblue/commit/30476fbca3d4b8a01af062ed0bf53cb6c4f2b14c))
+* add hyprland-qtutils ([5d88b71](https://github.com/toxicwebdev/toxicblue/commit/5d88b7155a55ae62e923b614bd146695d0133ee3))
+
 ## [0.8.0](https://github.com/toxicwebdev/toxicblue/compare/v0.7.1...v0.8.0) (2025-11-09)
 
 
