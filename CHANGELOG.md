@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.9.0](https://github.com/toxicwebdev/toxicblue/compare/v0.8.1...v0.9.0) (2025-11-16)
+
+
+### Features
+
+* add base-main-nvidia images ([c8dc6fb](https://github.com/toxicwebdev/toxicblue/commit/c8dc6fbdf5ff8b86719a46547acf12a57de4b746))
+
+
+### Bug Fixes
+
+* build failure build-toxicblue-main-nvidia ([ea1300c](https://github.com/toxicwebdev/toxicblue/commit/ea1300cdc2d66f99567ab27c65bfbc7067dae654))
+
 ## [0.8.1](https://github.com/toxicwebdev/toxicblue/compare/v0.8.0...v0.8.1) (2025-11-13)
 
 
