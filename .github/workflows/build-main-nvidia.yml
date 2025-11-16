@@ -1,17 +1,18 @@
-name: build-toxicblue-nvidia
+name: build-toxicblue-main-nvidia
 on:
   schedule:
-    - cron: "00 06 * * 1" # Создается в 6:00 UTC по Понедельникам
+    - cron: "30 05 * * *" # Создается в 5:30 UTC каждый день
 
   push:
     paths-ignore: # Не перестраивайте, если изменилась только документация
     - "**.md"
 
+  pull_request:
   workflow_dispatch: # возможность запускать сборки вручную
 
 jobs:
   bluebuild:
-    name: Build toxicblue nvidia
+    name: Build toxicblue main nvidia
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -21,12 +22,7 @@ jobs:
       fail-fast: false # запретить GH отменять все сборки матрицы, если одна не удалась
       matrix:
         recipe:
-          - recipe-hyprland-nvidia.yml
-          - recipe-niri-nvidia.yml
-          - recipe-qtile-nvidia.yml
-          - recipe-river-nvidia.yml
-          - recipe-sway-nvidia.yml
-          - recipe-wayfire-nvidia.yml
+          - recipe-base-main-nvidia.yml
     steps:
       - name: Optimize build times
         shell: bash
@@ -62,10 +58,10 @@ jobs:
         uses: EyeCantCU/cosign-action/verify@58722a084c82190b57863002d494c91eabbe9e79 # v0.3.0
         with:
           containers: ${{ env.BASE_IMAGE_NAME }}:${{ env.IMAGE_MAJOR_VERSION }}
-          registry: 'ghcr.io/toxicwebdev'
-          pubkey: 'https://github.com/toxicwebdev/toxicblue/raw/main/cosign.pub'
+          registry: 'quay.io/fedora-ostree-desktops'
+          pubkey: 'https://gitlab.com/fedora/ostree/ci-test/-/raw/main/quay.io-fedora-ostree-desktops.pub'
 
-      - name: Build toxicblue nvidia
+      - name: Build toxicblue main nvidia
         uses: blue-build/github-action@785ecb253aee6ead01454ed5bd070c2921010602 # v1.9.1
         with:
           cli_version: v0.9.24
