@@ -8,6 +8,7 @@
 [![toxicblue](https://github.com/toxicwebdev/toxicblue/actions/workflows/build.yml/badge.svg)](https://github.com/toxicwebdev/toxicblue/actions/workflows/build.yml)
 [![toxicblue-nvidia](https://github.com/toxicwebdev/toxicblue/actions/workflows/build-nvidia.yml/badge.svg)](https://github.com/toxicwebdev/toxicblue/actions/workflows/build-nvidia.yml)
 [![toxicblue-main](https://github.com/toxicwebdev/toxicblue/actions/workflows/build-main.yml/badge.svg)](https://github.com/toxicwebdev/toxicblue/actions/workflows/build-main.yml)
+[![toxicblue-main-nvidia](https://github.com/toxicwebdev/toxicblue/actions/workflows/build-main-nvidia.yml/badge.svg)](https://github.com/toxicwebdev/toxicblue/actions/workflows/build-main-nvidia.yml)
 [![trivy](https://github.com/toxicwebdev/toxicblue/actions/workflows/trivy.yml/badge.svg)](https://github.com/toxicwebdev/toxicblue/actions/workflows/trivy.yml)
 
 ## Overview

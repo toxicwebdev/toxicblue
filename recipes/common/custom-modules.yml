@@ -14,7 +14,6 @@ modules:
           - fedora-release-ostree-desktop
           - fish
           - gnome-keyring-pam
-          - htop
           - isync
           - krb5-workstation
           - ksshaskpass
@@ -24,11 +23,8 @@ modules:
           - light
           - lm_sensors
           - lzip
-          - micro
-          #- mpd
           - mpv
           - mutt
-          #- ncmpcpp
           - neovim
           - nmap-ncat
           - openrgb-udev-rules
@@ -60,40 +56,23 @@ modules:
           - zstd
 
         # apps
-          - audacious
-          #- celluloid
-          - clapper
-          #- deadbeef
-          #- deadbeef-mpris2-plugin
-          - deluge
           - geany
-          #- goodvibes
+          - geany-plugins-addons
+          - geany-plugins-git-changebar
+          - geany-plugins-markdown
+          - geany-plugins-overview
+          - geany-plugins-spellcheck
+          - geany-plugins-treebrowser
+          - geany-plugins-vimode
           - gparted
-          #- haruna
-          #- kate
-          #- kde-partitionmanager
-          #- kompare
           - meld
-          #- okular
-          - qalculate
-          #- qbittorrent
-          #- qterminal
-          #- qutebrowser
-          #- radiotray-ng
-          #- rofimoji
-          #- smplayer
-          #- spectacle
-          #- vlc
 
         # fonts
           - adobe-source-code-pro-fonts
           - cascadia-code-fonts
-          #- google-droid-sans-mono-fonts
-          #- google-go-mono-fonts
-          #- google-noto-emoji-color-fonts
-          #- ibm-plex-mono-fonts
+          - cascadia-code-nf-fonts
+          - fira-code-fonts
           - jetbrains-mono-fonts
-          #- mozilla-fira-mono-fonts
           - powerline-fonts
 
         # Yubikey stuff
@@ -101,6 +80,18 @@ modules:
           - pam_yubico
           - pamu2fcfg
           - yubikey-manager
+
+    - type: dnf
+      repos:
+        files:
+          - https://packages.microsoft.com/yumrepos/vscode/config.repo
+        copr:
+          - scottames/ghostty
+      install:
+        install-weak-deps: false
+        packages:
+          - code
+          - ghostty
 
     - type: dnf
       remove:
