@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.9.1](https://github.com/toxicwebdev/toxicblue/compare/v0.9.0...v0.9.1) (2025-11-22)
+
+
+### Bug Fixes
+
+* code injection via template expansion ([264bb5a](https://github.com/toxicwebdev/toxicblue/commit/264bb5ac570f9e54b6ce7d837e9cc271cf466718))
+* insufficient cooldown in Dependabot updates ([689a26a](https://github.com/toxicwebdev/toxicblue/commit/689a26acc5501a9989e414293006c9ac21eff74b))
+* insufficient job-level concurrency limits ([13346cc](https://github.com/toxicwebdev/toxicblue/commit/13346cc1f0d03454c2fd514b80154e022c18a486))
+* insufficient job-level concurrency limits ([8df56ea](https://github.com/toxicwebdev/toxicblue/commit/8df56eadbcea489a2f12aca6ca4a613d54d7318b))
+* overly broad permissions ([9fd07c1](https://github.com/toxicwebdev/toxicblue/commit/9fd07c1b75f1bfae5e853742cc0268cda2d0b4d6))
+* permissions without explanatory comments ([66391da](https://github.com/toxicwebdev/toxicblue/commit/66391da95f94a165091af69ec460a14c8ced8f69))
+* permissions without explanatory comments ([bfd84d9](https://github.com/toxicwebdev/toxicblue/commit/bfd84d94a3c013ec58089c40b6c3f2589c138230))
+* workflow or action definition without a name ([65540b5](https://github.com/toxicwebdev/toxicblue/commit/65540b50a82bd8ceabbe5ab743c56ed03015e1f3))
+
 ## [0.9.0](https://github.com/toxicwebdev/toxicblue/compare/v0.8.1...v0.9.0) (2025-11-16)
 
 
