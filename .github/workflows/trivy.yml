@@ -10,7 +10,7 @@ on:
   workflow_dispatch: # возможность вручную запускать сборки
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  group: ${{ github.workflow }}-${{ github.ref || github.run_id }}
   cancel-in-progress: true
 
 permissions: {}
