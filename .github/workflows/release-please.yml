@@ -6,16 +6,18 @@ on:
 
 jobs:
   release-please:
+    name: Release
+    runs-on: ubuntu-latest
     permissions:
       contents: write
       pull-requests: write
-    runs-on: ubuntu-latest
     outputs:
       releases_created: ${{ steps.release-please.outputs.releases_created }}
       tag: ${{ steps.release-please.outputs.tag_name }}
       upload_url: ${{ steps.release-please.outputs.upload_url }}
     steps:
-      - uses: googleapis/release-please-action@16a9c90856f42705d54a6fda1823352bdc62cf38 # v4.4.0
+      - name: Run release-please
+        uses: googleapis/release-please-action@16a9c90856f42705d54a6fda1823352bdc62cf38 # v4.4.0
         id: release-please
         with:
           release-type: simple
