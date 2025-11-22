@@ -73,7 +73,7 @@ jobs:
       - name: Build toxicblue main nvidia
         uses: blue-build/github-action@785ecb253aee6ead01454ed5bd070c2921010602 # v1.9.1
         with:
-          cli_version: v0.9.25
+          #cli_version: v0.9.25 # если нужно использовать эту конкретную версию инструмента CLI
           recipe: ${{ matrix.recipe }}
           cosign_private_key: ${{ secrets.SIGNING_SECRET }}
           registry_token: ${{ github.token }}
