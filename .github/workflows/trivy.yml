@@ -13,7 +13,7 @@ jobs:
     name: Trivy
     runs-on: ubuntu-latest
     permissions:
-      security-events: write # требуется только для прав доступа к репозиторию
+      security-events: write # требуется для настройки прав доступа к репозиторию
     steps:
       - name: Checkout code
         uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0

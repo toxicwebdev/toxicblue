@@ -9,8 +9,8 @@ jobs:
     name: Release
     runs-on: ubuntu-latest
     permissions:
-      contents: write # required only for repository permissions
-      pull-requests: write
+      contents: write # требуется для настройки прав доступа к репозиторию
+      pull-requests: write # требуется для настройки прав доступа к репозиторию
     outputs:
       releases_created: ${{ steps.release-please.outputs.releases_created }}
       tag: ${{ steps.release-please.outputs.tag_name }}

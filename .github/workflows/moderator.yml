@@ -12,10 +12,10 @@ jobs:
     name: ai-moderator
     runs-on: ubuntu-latest
     permissions:
-      issues: write # требуется только для прав доступа к репозиторию
-      pull-requests: write
-      models: read
-      contents: read
+      issues: write # требуется для настройки прав доступа к репозиторию
+      pull-requests: write # требуется для настройки прав доступа к репозиторию
+      models: read # требуется для настройки прав доступа к репозиторию
+      contents: read # требуется для настройки прав доступа к репозиторию
     steps:
       - name: Checkout code
         uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0

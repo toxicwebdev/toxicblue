@@ -11,7 +11,7 @@ jobs:
     name: PR build
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: read # требуется для настройки прав доступа к репозиторию
     strategy:
       fail-fast: false 
       matrix:

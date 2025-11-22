@@ -14,9 +14,9 @@ jobs:
     name: Build toxicblue
     runs-on: ubuntu-latest
     permissions:
-      contents: read
-      packages: write # требуется только для прав доступа к репозиторию
-      id-token: write
+      contents: read # требуется для настройки прав доступа к репозиторию
+      packages: write # требуется для настройки прав доступа к репозиторию
+      id-token: write # требуется для настройки прав доступа к репозиторию
     strategy:
       fail-fast: false # запретить GH отменять все сборки матрицы, если одна не удалась
       matrix:
