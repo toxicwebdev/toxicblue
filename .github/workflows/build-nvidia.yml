@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-      packages: write
+      packages: write # требуется только для прав доступа к репозиторию
       id-token: write
     strategy:
       fail-fast: false # запретить GH отменять все сборки матрицы, если одна не удалась

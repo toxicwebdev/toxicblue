@@ -12,7 +12,7 @@ jobs:
     name: ai-moderator
     runs-on: ubuntu-latest
     permissions:
-      issues: write
+      issues: write # требуется только для прав доступа к репозиторию
       pull-requests: write
       models: read
       contents: read
