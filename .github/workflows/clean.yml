@@ -11,6 +11,7 @@ permissions: {}
 
 jobs:
   delete-older-than-90:
+    name: Cleanup
     runs-on: ubuntu-latest
     permissions:
       packages: write # требуется для настройки прав доступа к репозиторию
