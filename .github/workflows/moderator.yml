@@ -16,7 +16,7 @@ permissions: {}
 jobs:
   spam-detection:
     name: ai-moderator
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     permissions:
       issues: write # требуется для настройки прав доступа к репозиторию
       pull-requests: write # требуется для настройки прав доступа к репозиторию

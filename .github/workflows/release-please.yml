@@ -13,7 +13,7 @@ permissions: {}
 jobs:
   release-please:
     name: Release
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     permissions:
       contents: write # требуется для настройки прав доступа к репозиторию
       pull-requests: write # требуется для настройки прав доступа к репозиторию

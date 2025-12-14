@@ -15,7 +15,7 @@ permissions: {}
 jobs:
   bluebuild:
     name: PR build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     permissions:
       contents: read # требуется для настройки прав доступа к репозиторию
     strategy:
@@ -23,6 +23,7 @@ jobs:
       matrix:
         recipe:
           - recipe-base-main.yml
+          - recipe-base-main-nvidia.yml
 
     steps:
       - name: Checkout repo
@@ -54,7 +55,7 @@ jobs:
         run: |
           docker create \
             --name blue-build-installer \
-            ghcr.io/blue-build/cli:latest-installer
+            ghcr.io/blue-build/cli:v0.9.27-installer
           docker cp blue-build-installer:/out/bluebuild /usr/local/bin/bluebuild
           docker rm blue-build-installer
           bluebuild --version
