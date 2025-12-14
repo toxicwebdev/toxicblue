@@ -1,109 +1,138 @@
 modules:
-    - type: dnf
-      install:
-        install-weak-deps: false
-        packages:
-        # base
-          - alsa-plugins-pulseaudio
-          - bat
-          - bolt
-          - btop
-          - fastfetch
-          - fd-find
-          - fedora-release
-          - fedora-release-ostree-desktop
-          - fish
-          - gnome-keyring-pam
-          - isync
-          - krb5-workstation
-          - ksshaskpass
-          - kvantum
-          - langpacks-ru
-          - libratbag-ratbagd
-          - light
-          - lm_sensors
-          - lzip
-          - mpv
-          - mutt
-          - neovim
-          - nmap-ncat
-          - openrgb-udev-rules
-          - pass
-          - pass-otp
-          - pinentry-gnome3
-          - powertop
-          - qt5ct
-          - qt6ct
-          - sane-frontends
-          - solaar-udev
-          - sox
-          - strace
-          - system-config-printer
-          - tmux
-          - tuned-switcher
-          - unrar-free
-          - w3m
-          - wayland-utils
-          - wev
-          - wireguard-tools
-          - wtype
-          - xlsclients
-          - yad
-          - yt-dlp
-          - zsh
-          - zsh-autosuggestions
-          - zsh-syntax-highlighting
-          - zstd
+  - type: dnf
+    install:
+      install-weak-deps: false
+      packages:
+      # base
+        - alsa-plugins-pulseaudio
+        - bat
+        - bolt
+        - btop
+        - fastfetch
+        - fd-find
+        - fedora-release
+        - fedora-release-ostree-desktop
+        - fish
+        - gnome-keyring-pam
+        - isync
+        - krb5-workstation
+        - ksshaskpass
+        - kvantum
+        - langpacks-ru
+        - libratbag-ratbagd
+        - light
+        - lm_sensors
+        - lzip
+        - micro
+        - mpv
+        - mutt
+        - neovim
+        - nmap-ncat
+        - openrgb-udev-rules
+        - pass
+        - pass-otp
+        - pinentry-gnome3
+        - powertop
+        - qt5ct
+        - qt6ct
+        - sane-frontends
+        - solaar-udev
+        - sox
+        - strace
+        - system-config-printer
+        - tmux
+        - tuned-switcher
+        - unrar-free
+        - w3m
+        - wayland-utils
+        - wev
+        - wireguard-tools
+        - wtype
+        - xlsclients
+        - yad
+        - yt-dlp
+        - zsh
+        - zsh-autosuggestions
+        - zsh-syntax-highlighting
+        - zstd
 
-        # apps
-          - geany
-          - geany-plugins-addons
-          - geany-plugins-git-changebar
-          - geany-plugins-markdown
-          - geany-plugins-overview
-          - geany-plugins-spellcheck
-          - geany-plugins-treebrowser
-          - geany-plugins-vimode
-          - gparted
-          - meld
+      # apps
+        - clapper
+        - deluge
+        - geany
+        - geany-plugins-addons
+        - geany-plugins-git-changebar
+        - geany-plugins-markdown
+        - geany-plugins-overview
+        - geany-plugins-spellcheck
+        - geany-plugins-treebrowser
+        - geany-plugins-vimode
+        - gparted
+        - meld
 
-        # fonts
-          - adobe-source-code-pro-fonts
-          - cascadia-code-fonts
-          - cascadia-code-nf-fonts
-          - fira-code-fonts
-          - jetbrains-mono-fonts
-          - powerline-fonts
+      # fonts
+        - adobe-source-code-pro-fonts
+        - cascadia-code-fonts
+        - cascadia-code-nf-fonts
+        - fira-code-fonts
+        - jetbrains-mono-fonts
+        - powerline-fonts
 
-        # Yubikey stuff
-          - pam-u2f
-          - pam_yubico
-          - pamu2fcfg
-          - yubikey-manager
+      # Yubikey stuff
+        - pam-u2f
+        - pam_yubico
+        - pamu2fcfg
+        - yubikey-manager
 
-    - type: dnf
-      repos:
-        files:
-          - https://packages.microsoft.com/yumrepos/vscode/config.repo
-        copr:
-          - scottames/ghostty
-      install:
-        install-weak-deps: false
-        packages:
-          - code
-          - ghostty
+  - type: dnf
+    repos:
+      files:
+        - https://packages.microsoft.com/yumrepos/vscode/config.repo
+      copr:
+        - atim/starship
+        - scottames/ghostty
+    install:
+      install-weak-deps: false
+      packages:
+        - code
+        - starship
+        - ghostty
 
-    - type: dnf
-      remove:
-        packages:
-          - fedora-third-party
-          - fedora-flathub-remote
-          - fedora-workstation-repositories
-          #- firefox
-          #- firefox-langpacks
-          - default-fonts-cjk-mono
-          - default-fonts-cjk-sans
-          - default-fonts-cjk-serif
-          - google-noto-sans-cjk-vf-fonts
-          - google-noto-sans-mono-cjk-vf-fonts
-          - google-noto-serif-cjk-vf-fonts
+  - type: dnf
+    remove:
+      packages:
+        - fedora-third-party
+        - fedora-flathub-remote
+        - fedora-workstation-repositories
+        - firefox
+        - firefox-langpacks
+        - default-fonts-cjk-mono
+        - default-fonts-cjk-sans
+        - default-fonts-cjk-serif
+        - google-noto-sans-cjk-vf-fonts
+        - google-noto-sans-mono-cjk-vf-fonts
+        - google-noto-serif-cjk-vf-fonts
+
+  - type: default-flatpaks
+    configurations:
+      - notify: true # Отправлять уведомление после завершения установки/удаления (true/false)
+        scope: system
+        repo:
+        # Вы можете переопределить заголовок, чтобы сделать включение как системных, так и пользовательских репозиториев более понятным
+          title: Flathub (system)
+        install: # Системные Flatpak-пакеты, которые мы хотим, чтобы были у всех пользователей и не удалялись
+          - org.gtk.Gtk3theme.adw-gtk3
+          - org.gtk.Gtk3theme.adw-gtk3-dark
+          - org.mozilla.firefox
+          - com.github.tchx84.Flatseal
+          - io.missioncenter.MissionCenter
+          - io.github.flattool.Warehouse
+      - scope: user # Также добавить пользовательский репозиторий Flathub
+        repo:
+          title: Flathub (user)
+        install:
+          - io.bassi.Amberol
+          - com.brave.Browser
+          - md.obsidian.Obsidian
+          - dev.zed.Zed
+          - app.zen_browser.zen

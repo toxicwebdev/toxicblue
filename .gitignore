@@ -1,6 +1,6 @@
-.vscode/*
 .idea
 cosign.key
+cosign.private
 .directory
 *.kate-swp
 Containerfile
