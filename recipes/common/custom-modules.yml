@@ -42,6 +42,9 @@ modules:
         - strace
         - system-config-printer
         - tmux
+        - tpm2-pkcs11
+        - tpm2-pkcs11-tools
+        - tpm2-tools
         - tuned-switcher
         - unrar-free
         - w3m
@@ -79,6 +82,7 @@ modules:
         - gparted
         - meld
         - qterminal
+        - rhythmbox
 
       # fonts
         - adobe-source-code-pro-fonts
@@ -131,14 +135,16 @@ modules:
         # Вы можете переопределить заголовок, чтобы сделать включение как системных, так и пользовательских репозиториев более понятным
           title: Flathub (system)
         install: # Системные Flatpak-пакеты, которые мы хотим, чтобы были у всех пользователей и не удалялись
+          - org.mozilla.firefox
+          - com.ranfdev.DistroShelf
           - com.github.tchx84.Flatseal
-          - io.bassi.Amberol
           - io.github.flattool.Warehouse
           - io.missioncenter.MissionCenter
           - it.mijorus.gearlever
           - org.localsend.localsend_app
-          - org.mozilla.firefox
+          - io.bassi.Amberol
           - org.onlyoffice.desktopeditors
+          - org.altlinux.Tuner
       - scope: user # Также добавить пользовательский репозиторий Flathub
         repo:
           title: Flathub (user)
