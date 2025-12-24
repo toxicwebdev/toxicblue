@@ -61,7 +61,7 @@ jobs:
           pubkey: 'https://github.com/toxicwebdev/toxicblue/raw/main/cosign.pub'
 
       - name: Build toxicblue main nvidia
-        uses: blue-build/github-action@f75115e12966070fc35d6be3aab528848c9c979f # v1.10.2
+        uses: blue-build/github-action@9ba737d93ffa82d7cd6826162c7bc3a2648ae73d # v1.10.3
         with:
           cli_version: v0.9.27 # если нужно использовать эту конкретную версию инструмента CLI
           recipe: ${{ matrix.recipe }}
