@@ -14,6 +14,7 @@ modules:
         - fedora-release-ostree-desktop
         - fish
         - gnome-keyring-pam
+        - haveged
         - isync
         - krb5-workstation
         - ksshaskpass
@@ -57,8 +58,13 @@ modules:
         - zstd
 
       # apps
+        - atril
+        - baobab
+        - chromium
         - clapper
+        - clipman
         - deluge
+        - engrampa
         - geany
         - geany-plugins-addons
         - geany-plugins-git-changebar
@@ -67,8 +73,12 @@ modules:
         - geany-plugins-spellcheck
         - geany-plugins-treebrowser
         - geany-plugins-vimode
+        - gnome-calculator
+        - gnome-calendar
+        - gnome-logs
         - gparted
         - meld
+        - qterminal
 
       # fonts
         - adobe-source-code-pro-fonts
@@ -121,18 +131,17 @@ modules:
         # Вы можете переопределить заголовок, чтобы сделать включение как системных, так и пользовательских репозиториев более понятным
           title: Flathub (system)
         install: # Системные Flatpak-пакеты, которые мы хотим, чтобы были у всех пользователей и не удалялись
-          - org.gtk.Gtk3theme.adw-gtk3
-          - org.gtk.Gtk3theme.adw-gtk3-dark
-          - org.mozilla.firefox
           - com.github.tchx84.Flatseal
-          - io.missioncenter.MissionCenter
+          - io.bassi.Amberol
           - io.github.flattool.Warehouse
+          - io.missioncenter.MissionCenter
+          - it.mijorus.gearlever
+          - org.localsend.localsend_app
+          - org.mozilla.firefox
+          - org.onlyoffice.desktopeditors
       - scope: user # Также добавить пользовательский репозиторий Flathub
         repo:
           title: Flathub (user)
         install:
-          - io.bassi.Amberol
           - com.brave.Browser
           - md.obsidian.Obsidian
-          - dev.zed.Zed
-          - app.zen_browser.zen

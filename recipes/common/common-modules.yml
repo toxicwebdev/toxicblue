@@ -92,6 +92,7 @@ modules:
 
         # file manager
           - thunar
+          - gtkhash-thunar
           - thunar-archive-plugin 
           - thunar-volman
           - xarchiver
