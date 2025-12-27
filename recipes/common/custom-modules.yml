@@ -13,6 +13,7 @@ modules:
         - fedora-release
         - fedora-release-ostree-desktop
         - fish
+        - gnome-keyring
         - gnome-keyring-pam
         - haveged
         - isync
@@ -29,6 +30,7 @@ modules:
         - mutt
         - neovim
         - nmap-ncat
+        - nm-connection-editor
         - openrgb-udev-rules
         - pass
         - pass-otp
@@ -61,13 +63,15 @@ modules:
         - zstd
 
       # apps
-        - atril
         - baobab
+        #- blueman-nautilus
         - chromium
         - clapper
         - clipman
         - deluge
-        - engrampa
+        - dropbox
+        - file-roller
+        #- file-roller-nautilus
         - geany
         - geany-plugins-addons
         - geany-plugins-git-changebar
@@ -80,9 +84,18 @@ modules:
         - gnome-calendar
         - gnome-logs
         - gparted
+        - kde-connect
+        #- kde-connect-nautilus
         - meld
-        - qterminal
+        - nautilus
+        #- nautilus-dropbox
+        #- nextcloud-client
+        #- nextcloud-client-nautilus
+        - papers
+        #- papers-nautilus
+        - ptyxis
         - rhythmbox
+        - sushi
 
       # fonts
         - adobe-source-code-pro-fonts
