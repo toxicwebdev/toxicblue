@@ -4,74 +4,39 @@ modules:
       install-weak-deps: false
       packages:
       # base
-        - alsa-plugins-pulseaudio
         - bat
-        - bolt
         - btop
+        - cava
         - fastfetch
         - fd-find
-        - fedora-release
-        - fedora-release-ostree-desktop
         - fish
-        - gnome-keyring
-        - gnome-keyring-pam
-        - haveged
+        - glibc-langpack-en
         - isync
         - krb5-workstation
-        - ksshaskpass
-        - kvantum
-        - langpacks-ru
         - libratbag-ratbagd
-        - light
-        - lm_sensors
-        - lzip
         - micro
+        - mpd
         - mpv
         - mutt
+        - ncmpcpp
         - neovim
         - nmap-ncat
-        - nm-connection-editor
-        - openrgb-udev-rules
-        - pass
-        - pass-otp
-        - pinentry-gnome3
-        - powertop
-        - qt5ct
-        - qt6ct
-        - sane-frontends
-        - solaar-udev
+        - restic
         - sox
         - strace
-        - system-config-printer
+        - syncthing
         - tmux
-        - tpm2-pkcs11
-        - tpm2-pkcs11-tools
-        - tpm2-tools
-        - tuned-switcher
-        - unrar-free
-        - w3m
-        - wayland-utils
-        - wev
         - wireguard-tools
         - wtype
-        - xlsclients
-        - yad
         - yt-dlp
-        - zsh
-        - zsh-autosuggestions
-        - zsh-syntax-highlighting
-        - zstd
 
       # apps
-        - baobab
-        #- blueman-nautilus
         - chromium
         - clapper
         - clipman
+        - codium
         - deluge
-        #- dropbox
         - file-roller
-        #- file-roller-nautilus
         - geany
         - geany-plugins-addons
         - geany-plugins-git-changebar
@@ -80,28 +45,29 @@ modules:
         - geany-plugins-spellcheck
         - geany-plugins-treebrowser
         - geany-plugins-vimode
+        - gnome-boxes
         - gnome-calculator
         - gnome-calendar
+        - gnome-chess
         - gnome-logs
         - gparted
         - kde-connect
-        #- kde-connect-nautilus
+        - keepassxc
+        - megasync
         - meld
-        - nautilus
-        #- nautilus-dropbox
-        #- nextcloud-client
-        #- nextcloud-client-nautilus
+        - nautilus-dropbox
+        - nextcloud-client
         - papers
-        #- papers-nautilus
         - ptyxis
         - rhythmbox
-        - sushi
+        - telegram-desktop
 
       # fonts
         - adobe-source-code-pro-fonts
         - cascadia-code-fonts
         - cascadia-code-nf-fonts
         - fira-code-fonts
+        - google-noto-emoji-color-fonts
         - jetbrains-mono-fonts
         - powerline-fonts
 
@@ -114,14 +80,14 @@ modules:
   - type: dnf
     repos:
       files:
-        - https://packages.microsoft.com/yumrepos/vscode/config.repo
+        #- https://packages.microsoft.com/yumrepos/vscode/config.repo
       copr:
         - atim/starship
         - scottames/ghostty
     install:
       install-weak-deps: false
       packages:
-        - code
+        #- code
         - starship
         - ghostty
 

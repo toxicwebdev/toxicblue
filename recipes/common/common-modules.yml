@@ -44,84 +44,106 @@ modules:
           - wofi
 
         # environment
-          - fzf
-          - tuned-ppd
-          - xorg-x11-server-Xwayland
-          - headsetcontrol
-          - mediainfo
-          - polkit
-          - xfce-polkit 
-          - fprintd-pam
-          - xdg-user-dirs
-          - dbus-tools
+          - bolt
           - dbus-daemon
-          - wl-clipboard
-          - pavucontrol
-          - playerctl
-          - qt5-qtwayland
-          - qt6-qtwayland
-          - vulkan-validation-layers
-          - vulkan-tools
-          - google-noto-emoji-fonts
-          - gnome-disk-utility
+          - dbus-tools
           - ddcutil
-          - openssl
-          - vim
-          - just
-          - alsa-firmware
-          - p7zip
           - distrobox
+          - fprintd-pam
+          - fzf
+          - git
+          - gnome-disk-utility
+          - gnome-keyring
+          - gnome-keyring-pam
+          - haveged
+          - headsetcontrol
+          - ksshaskpass
+          - langpacks-ru
+          - lm_sensors
+          - lzip
+          - mate-polkit
+          - mediainfo 
+          - openrgb-udev-rules
+          - openssl
+          - pass
+          - pass-otp
+          - pinentry-gnome3
+          - playerctl
+          - powertop
+          - qt5ct
+          - qt6ct
+          - qt6-qtwayland
+          - sane-frontends
+          - solaar-udev
           - steam-devices
+          - system-config-printer
+          - tpm2-pkcs11
+          - tpm2-pkcs11-tools
+          - tuned-ppd
+          - tuned-switcher
+          - unrar-free
+          - vim
+          - vulkan-tools
+          - vulkan-validation-layers
+          - w3m
+          - wayland-utils
+          - xdg-user-dirs
+          - xlsclients
+          - yad
+          - zsh
+          - zsh-autosuggestions
+          - zsh-syntax-highlighting
+          - zstd
           
         # sound
-          - wireplumber
-          - pipewire
+          - alsa-firmware
+          - alsa-plugins-pulseaudio
           - pamixer
-          - pulseaudio-utils
+          - pavucontrol
 
         # networking
+          - blueman
+          - bluez-tools
+          - firewall-config
           - network-manager-applet
-          - NetworkManager-openvpn
-          - NetworkManager-openvpn-gnome
           - NetworkManager-openconnect
           - NetworkManager-openconnect-gnome
-          - NetworkManager-wifi
-          - bluez
-          - bluez-tools
-          - blueman
-          - firewall-config
+          - NetworkManager-openvpn
+          - NetworkManager-openvpn-gnome
+          - nm-connection-editor
 
         # file manager
-          - thunar
+          - android-tools
           - gtkhash-thunar
+          - gvfs-archive
+          - gvfs-fuse
+          - gvfs-gphoto2
+          - gvfs-mtp
+          - gvfs-nfs
+          - gvfs-smb
+          - imv
+          - p7zip
+          - thunar
           - thunar-archive-plugin 
           - thunar-volman
           - xarchiver
-          - imv
-          - p7zip
-          - gvfs-mtp
-          - gvfs-gphoto2
-          - gvfs-smb
-          - gvfs-nfs
-          - gvfs-fuse
-          - gvfs-archive
-          - android-tools
 
         # screenshot
-          - slurp
           - grim
+          - slurp
 
         # display
-          - wlr-randr
-          - wlsunset
           - brightnessctl
           - kanshi
+          - light
+          - wlr-randr
+          - wlsunset
 
         # notifications
           - dunst
 
         # theme and GUI
-          - fontawesome-fonts-all
+          - fontawesome-fonts
           - gnome-themes-extra
           - papirus-icon-theme
       replace:
@@ -134,7 +156,6 @@ modules:
 
     - type: script
       scripts:
-        - installrpmfusion-free.sh
         - removeunusedrepos.sh
 
     - type: files
