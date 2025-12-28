@@ -69,7 +69,7 @@ modules:
         - clapper
         - clipman
         - deluge
-        - dropbox
+        #- dropbox
         - file-roller
         #- file-roller-nautilus
         - geany
