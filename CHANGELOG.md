@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.9.2](https://github.com/toxicwebdev/toxicblue/compare/v0.9.1...v0.9.2) (2025-12-29)
+
+
+### Bug Fixes
+
+* build failure main ([02f95e8](https://github.com/toxicwebdev/toxicblue/commit/02f95e8af82e7b32869106a53dfd39a20057503f))
+* Disable dropbox module in configuration ([5aadbf6](https://github.com/toxicwebdev/toxicblue/commit/5aadbf68cc5facb1c7c89d5a1f17fa30b823e4c4))
+* remove megasync ([e06bfc6](https://github.com/toxicwebdev/toxicblue/commit/e06bfc6c6ccc86cb0b57de075d8ba8270464823e))
+
 ## [0.9.1](https://github.com/toxicwebdev/toxicblue/compare/v0.9.0...v0.9.1) (2025-11-22)
 
 
