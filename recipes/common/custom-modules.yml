@@ -12,22 +12,19 @@ modules:
         - fish
         - glibc-langpack-en
         - isync
-        - krb5-workstation
-        - libratbag-ratbagd
         - micro
         - mpd
         - mpv
         - mutt
-        - ncmpcpp
+        #- ncmpcpp
         - neovim
         - nmap-ncat
         - restic
         - sox
         - strace
-        - syncthing
+        #- syncthing
         - tmux
         - wireguard-tools
-        - wtype
         - yt-dlp
 
       # apps
@@ -36,7 +33,7 @@ modules:
         - clipman
         - codium
         - deluge
-        - file-roller
+        #- file-roller
         - geany
         - geany-plugins-addons
         - geany-plugins-git-changebar
@@ -51,11 +48,11 @@ modules:
         - gnome-chess
         - gnome-logs
         - gparted
-        - kde-connect
-        - keepassxc
+        #- kde-connect
+        #- keepassxc
         - meld
-        - nautilus-dropbox
-        - nextcloud-client
+        #- nautilus-dropbox
+        #- nextcloud-client
         - papers
         - ptyxis
         - rhythmbox
@@ -66,7 +63,7 @@ modules:
         - cascadia-code-fonts
         - cascadia-code-nf-fonts
         - fira-code-fonts
-        - google-noto-emoji-color-fonts
+        #- google-noto-emoji-color-fonts
         - jetbrains-mono-fonts
         - powerline-fonts
 
@@ -81,14 +78,19 @@ modules:
       #files:
         #- https://packages.microsoft.com/yumrepos/vscode/config.repo
       copr:
-        - atim/starship
         - scottames/ghostty
+        - atim/starship
+        - gierth/tools-rust
     install:
       install-weak-deps: false
       packages:
+        - caligula
         #- code
-        - starship
+        - eza
         - ghostty
+        - starship
+        - yazi
+        - zellij
 
   - type: dnf
     remove:
@@ -120,12 +122,13 @@ modules:
           - io.missioncenter.MissionCenter
           - it.mijorus.gearlever
           - org.localsend.localsend_app
-          - io.bassi.Amberol
-          - org.onlyoffice.desktopeditors
           - org.altlinux.Tuner
       - scope: user # Также добавить пользовательский репозиторий Flathub
         repo:
           title: Flathub (user)
         install:
+          - io.bassi.Amberol
           - com.brave.Browser
           - md.obsidian.Obsidian
+          - org.onlyoffice.desktopeditors
+          - com.termius.Termius
