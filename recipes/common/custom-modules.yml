@@ -5,35 +5,64 @@ modules:
       packages:
       # base
         - bat
+        - bolt
         - btop
         - cava
         - fastfetch
         - fd-find
         - fish
+        - git
         - glibc-langpack-en
+        - gnome-keyring
+        - gnome-keyring-pam
+        - haveged
         - isync
+        - langpacks-ru
+        - lm_sensors
+        - lzip
         - micro
         - mpd
         - mpv
         - mutt
-        #- ncmpcpp
         - neovim
         - nmap-ncat
+        - openrgb-udev-rules
+        - pass
+        - pass-otp
+        - pinentry-gnome3
+        - powertop
+        - qt5ct
+        - qt6ct
         - restic
+        - sane-frontends
+        - solaar-udev
         - sox
         - strace
-        #- syncthing
+        - system-config-printer
         - tmux
+        - tpm2-pkcs11
+        - tpm2-pkcs11-tools
+        - tuned-switcher
+        - unrar-free
+        - w3m
+        - wayland-utils
         - wireguard-tools
+        - xlsclients
+        - yad
         - yt-dlp
+        - zsh
+        - zsh-autosuggestions
+        - zsh-syntax-highlighting
+        - zstd
 
       # apps
+        - atril
         - chromium
         - clapper
         - clipman
         - codium
         - deluge
-        #- file-roller
+        - engrampa
         - geany
         - geany-plugins-addons
         - geany-plugins-git-changebar
@@ -42,18 +71,9 @@ modules:
         - geany-plugins-spellcheck
         - geany-plugins-treebrowser
         - geany-plugins-vimode
-        - gnome-boxes
-        - gnome-calculator
-        - gnome-calendar
-        - gnome-chess
-        - gnome-logs
         - gparted
-        #- kde-connect
-        #- keepassxc
+        - mate-calc
         - meld
-        #- nautilus-dropbox
-        #- nextcloud-client
-        - papers
         - ptyxis
         - rhythmbox
         - telegram-desktop
@@ -63,7 +83,6 @@ modules:
         - cascadia-code-fonts
         - cascadia-code-nf-fonts
         - fira-code-fonts
-        #- google-noto-emoji-color-fonts
         - jetbrains-mono-fonts
         - powerline-fonts
 
@@ -75,8 +94,6 @@ modules:
 
   - type: dnf
     repos:
-      #files:
-        #- https://packages.microsoft.com/yumrepos/vscode/config.repo
       copr:
         - scottames/ghostty
         - atim/starship
@@ -85,7 +102,6 @@ modules:
       install-weak-deps: false
       packages:
         - caligula
-        #- code
         - eza
         - ghostty
         - starship

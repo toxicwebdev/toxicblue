@@ -44,56 +44,25 @@ modules:
           - wofi
 
         # environment
-          - bolt
           - dbus-daemon
           - dbus-tools
           - ddcutil
           - distrobox
           - fprintd-pam
           - fzf
-          - git
           - gnome-disk-utility
-          - gnome-keyring
-          - gnome-keyring-pam
-          - haveged
           - headsetcontrol
-          - ksshaskpass
-          - langpacks-ru
-          - lm_sensors
-          - lzip
           - mate-polkit
           - mediainfo 
-          - openrgb-udev-rules
           - openssl
-          - pass
-          - pass-otp
-          - pinentry-gnome3
           - playerctl
-          - powertop
-          - qt5ct
-          - qt6ct
           - qt6-qtwayland
-          - sane-frontends
-          - solaar-udev
           - steam-devices
-          - system-config-printer
-          - tpm2-pkcs11
-          - tpm2-pkcs11-tools
           - tuned-ppd
-          - tuned-switcher
-          - unrar-free
           - vim
           - vulkan-tools
           - vulkan-validation-layers
-          - w3m
-          - wayland-utils
           - xdg-user-dirs
-          - xlsclients
-          - yad
-          - zsh
-          - zsh-autosuggestions
-          - zsh-syntax-highlighting
-          - zstd
           
         # sound
           - alsa-firmware
@@ -144,8 +113,8 @@ modules:
 
         # theme and GUI
           - fontawesome-fonts
-          - gnome-themes-extra
-          - papirus-icon-theme
+          #- gnome-themes-extra
+          #- papirus-icon-theme
       replace:
         - from-repo: fedora
           packages:
