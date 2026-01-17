@@ -56,13 +56,13 @@ modules:
         - zstd
 
       # apps
-        - atril
-        - chromium
+        #- atril
+        #- chromium
         - clapper
         - clipman
         - codium
-        - deluge
-        - engrampa
+        #- deluge
+        #- engrampa
         - geany
         - geany-plugins-addons
         - geany-plugins-git-changebar
@@ -72,11 +72,11 @@ modules:
         - geany-plugins-treebrowser
         - geany-plugins-vimode
         - gparted
-        - mate-calc
-        - meld
+        #- mate-calc
+        #- meld
         - ptyxis
-        - rhythmbox
-        - telegram-desktop
+        #- rhythmbox
+        #- telegram-desktop
 
       # fonts
         - adobe-source-code-pro-fonts
@@ -101,12 +101,12 @@ modules:
     install:
       install-weak-deps: false
       packages:
-        - caligula
+        #- caligula
         - eza
         - ghostty
         - starship
-        - yazi
-        - zellij
+        #- yazi
+        #- zellij
 
   - type: dnf
     remove:
@@ -143,8 +143,8 @@ modules:
         repo:
           title: Flathub (user)
         install:
-          - io.bassi.Amberol
-          - com.brave.Browser
-          - md.obsidian.Obsidian
-          - org.onlyoffice.desktopeditors
-          - com.termius.Termius
+          #- io.bassi.Amberol
+          #- com.brave.Browser
+          #- md.obsidian.Obsidian
+          #- org.onlyoffice.desktopeditors
+          #- com.termius.Termius

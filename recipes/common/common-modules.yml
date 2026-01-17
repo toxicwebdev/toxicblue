@@ -52,7 +52,7 @@ modules:
           - fzf
           - gnome-disk-utility
           - headsetcontrol
-          - mate-polkit
+          - xfce-polkit
           - mediainfo 
           - openssl
           - playerctl
