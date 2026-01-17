@@ -143,8 +143,8 @@ modules:
         repo:
           title: Flathub (user)
         install:
-          #- io.bassi.Amberol
+          - io.bassi.Amberol
           #- com.brave.Browser
-          #- md.obsidian.Obsidian
+          - md.obsidian.Obsidian
           #- org.onlyoffice.desktopeditors
           #- com.termius.Termius
