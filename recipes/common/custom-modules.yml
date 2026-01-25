@@ -5,7 +5,7 @@ modules:
       packages:
       # base
         - bat
-        - bolt
+        #- bolt
         - btop
         - cava
         - fastfetch
@@ -13,8 +13,8 @@ modules:
         - fish
         - git
         - glibc-langpack-en
-        - gnome-keyring
-        - gnome-keyring-pam
+        #- gnome-keyring
+        #- gnome-keyring-pam
         - haveged
         - isync
         - langpacks-ru
@@ -23,27 +23,27 @@ modules:
         - micro
         - mpd
         - mpv
-        - mutt
+        #- mutt
         - neovim
         - nmap-ncat
-        - openrgb-udev-rules
+        #- openrgb-udev-rules
         - pass
         - pass-otp
-        - pinentry-gnome3
+        #- pinentry-gnome3
         - powertop
         - qt5ct
         - qt6ct
-        - restic
-        - sane-frontends
-        - solaar-udev
-        - sox
+        #- restic
+        #- sane-frontends
+        #- solaar-udev
+        #- sox
         - strace
-        - system-config-printer
+        #- system-config-printer
         - tmux
         - tpm2-pkcs11
         - tpm2-pkcs11-tools
-        - tuned-switcher
-        - unrar-free
+        #- tuned-switcher
+        #- unrar-free
         - w3m
         - wayland-utils
         - wireguard-tools
@@ -60,7 +60,6 @@ modules:
         #- chromium
         - clapper
         - clipman
-        - codium
         #- deluge
         #- engrampa
         - geany
@@ -94,6 +93,8 @@ modules:
 
   - type: dnf
     repos:
+      files:
+        - https://packages.microsoft.com/yumrepos/vscode/config.repo
       copr:
         - scottames/ghostty
         - atim/starship
@@ -102,6 +103,7 @@ modules:
       install-weak-deps: false
       packages:
         #- caligula
+        - code
         - eza
         - ghostty
         - starship
@@ -144,7 +146,5 @@ modules:
           title: Flathub (user)
         install:
           - io.bassi.Amberol
-          #- com.brave.Browser
           - md.obsidian.Obsidian
-          #- org.onlyoffice.desktopeditors
           #- com.termius.Termius

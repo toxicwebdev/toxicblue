@@ -51,27 +51,36 @@ modules:
           - fprintd-pam
           - fzf
           - gnome-disk-utility
+          - google-noto-emoji-fonts
           - headsetcontrol
-          - xfce-polkit
           - mediainfo 
           - openssl
+          - p7zip
           - playerctl
+          - polkit
+          - qt5-qtwayland
           - qt6-qtwayland
           - steam-devices
           - tuned-ppd
           - vim
           - vulkan-tools
           - vulkan-validation-layers
+          - wl-clipboard
           - xdg-user-dirs
+          - xfce-polkit
+          - xorg-x11-server-Xwayland
           
         # sound
           - alsa-firmware
           - alsa-plugins-pulseaudio
           - pamixer
           - pavucontrol
+          - pulseaudio-utils
+          - wireplumber
 
         # networking
           - blueman
+          - bluez
           - bluez-tools
           - firewall-config
           - network-manager-applet
@@ -91,7 +100,6 @@ modules:
           - gvfs-nfs
           - gvfs-smb
           - imv
-          - p7zip
           - thunar
           - thunar-archive-plugin 
           - thunar-volman
@@ -112,9 +120,12 @@ modules:
           - dunst
 
         # theme and GUI
-          - fontawesome-fonts
-          #- gnome-themes-extra
-          #- papirus-icon-theme
+          - breeze-icon-theme
+          - fontawesome-fonts-all
+          - gnome-icon-theme
+          - gnome-themes-extra
+          - paper-icon-theme
+          - papirus-icon-theme
       replace:
         - from-repo: fedora
           packages:
