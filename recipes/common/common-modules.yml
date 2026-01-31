@@ -41,7 +41,7 @@ modules:
         packages:
         # launcher
           - rofi-wayland
-          - wofi
+          #- wofi
 
         # environment
           - dbus-daemon
