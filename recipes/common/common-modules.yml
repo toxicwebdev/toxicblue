@@ -41,7 +41,6 @@ modules:
         packages:
         # launcher
           - rofi-wayland
-          #- wofi
 
         # environment
           - dbus-daemon
@@ -53,6 +52,7 @@ modules:
           - gnome-disk-utility
           - google-noto-emoji-fonts
           - headsetcontrol
+          - ksshaskpass
           - mediainfo 
           - openssl
           - p7zip

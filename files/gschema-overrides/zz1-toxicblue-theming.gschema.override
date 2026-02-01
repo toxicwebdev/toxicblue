@@ -1,4 +1,4 @@
 [org.gnome.desktop.interface]
-gtk-theme='Kali-Dark'
+gtk-theme='Flat-Remix-GTK-Blue-Dark'
 color-scheme='prefer-dark'
 icon-theme='Flat-Remix-Blue-Dark'
