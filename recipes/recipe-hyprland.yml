@@ -4,7 +4,7 @@ description: ublue images for wayland compositors
 
 base-image: ghcr.io/toxicwebdev/base-main
 
-image-version: latest
+image-version: br-testing-43
 
 modules:
   - from-file: common/hyprland-modules.yml

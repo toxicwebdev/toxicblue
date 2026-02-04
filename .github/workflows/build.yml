@@ -30,11 +30,6 @@ jobs:
       matrix:
         recipe:
           - recipe-hyprland.yml
-          - recipe-niri.yml
-          - recipe-qtile.yml
-          - recipe-river.yml
-          - recipe-sway.yml
-          - recipe-wayfire.yml
     steps:
       - name: Optimize build times
         shell: bash

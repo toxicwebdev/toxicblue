@@ -1,3 +1,0 @@
-docker:
-  ghcr.io/secureblue:
-    use-sigstore-attachments: true
