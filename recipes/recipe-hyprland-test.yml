@@ -1,4 +1,4 @@
-name: base-main
+name: hyprland-test
 
 description: ublue images for wayland compositors
 
@@ -9,5 +9,6 @@ image-version: 43
 modules:
   - from-file: common/sddm-modules.yml
   - from-file: common/common-modules.yml
-  - from-file: common/custom-modules.yml
+  #- from-file: common/custom-modules.yml
+  - from-file: common/hyprland-modules.yml
   - from-file: common/final-modules.yml

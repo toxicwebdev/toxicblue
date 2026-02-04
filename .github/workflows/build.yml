@@ -1,7 +1,7 @@
-name: build-toxicblue
+name: build-toxicblue-test
 on:
   schedule:
-    - cron: "00 06 * * 1" # Создается в 6:00 UTC по Понедельникам
+    - cron: "00 05 * * *" # Создается в 5:00 UTC каждый день
 
   push:
     branches-ignore: # Не перестраивать для dependabot
@@ -9,6 +9,7 @@ on:
     paths-ignore: # Не перестраивать, если изменилась только документация
     - "**.md"
 
+  pull_request:
   workflow_dispatch: # возможность запускать сборки вручную
 
 concurrency:
@@ -19,7 +20,7 @@ permissions: {}
 
 jobs:
   bluebuild:
-    name: Build toxicblue
+    name: Build toxicblue test
     runs-on: ubuntu-24.04
     permissions:
       contents: read # требуется для настройки прав доступа к репозиторию
@@ -29,7 +30,7 @@ jobs:
       fail-fast: false # запретить GH отменять все сборки матрицы, если одна не удалась
       matrix:
         recipe:
-          - recipe-hyprland.yml
+          - recipe-hyprland-test.yml
     steps:
       - name: Optimize build times
         shell: bash
@@ -58,10 +59,10 @@ jobs:
         uses: EyeCantCU/cosign-action/verify@58722a084c82190b57863002d494c91eabbe9e79 # v0.3.0
         with:
           containers: ${{ env.BASE_IMAGE_NAME }}:${{ env.IMAGE_MAJOR_VERSION }}
-          registry: 'ghcr.io/toxicwebdev'
-          pubkey: 'https://github.com/toxicwebdev/toxicblue/raw/main/cosign.pub'
+          registry: 'quay.io/fedora-ostree-desktops'
+          pubkey: 'https://gitlab.com/fedora/ostree/ci-test/-/raw/main/quay.io-fedora-ostree-desktops.pub'
 
-      - name: Build toxicblue
+      - name: Build toxicblue test
         uses: blue-build/github-action@3cd0c2835e691b87a7eb19261a6aee77a56169e2 # v1.11.0
         with:
           cli_version: v0.9.28 # если нужно использовать эту конкретную версию инструмента CLI
