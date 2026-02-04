@@ -1,4 +1,4 @@
-name: build-toxicblue-test
+name: build-toxicblue
 on:
   schedule:
     - cron: "00 05 * * *" # Создается в 5:00 UTC каждый день
@@ -20,7 +20,7 @@ permissions: {}
 
 jobs:
   bluebuild:
-    name: Build toxicblue test
+    name: Build toxicblue
     runs-on: ubuntu-24.04
     permissions:
       contents: read # требуется для настройки прав доступа к репозиторию
@@ -62,7 +62,7 @@ jobs:
           registry: 'quay.io/fedora-ostree-desktops'
           pubkey: 'https://gitlab.com/fedora/ostree/ci-test/-/raw/main/quay.io-fedora-ostree-desktops.pub'
 
-      - name: Build toxicblue test
+      - name: Build toxicblue
         uses: blue-build/github-action@3cd0c2835e691b87a7eb19261a6aee77a56169e2 # v1.11.0
         with:
           cli_version: v0.9.28 # если нужно использовать эту конкретную версию инструмента CLI

@@ -41,8 +41,10 @@ modules:
         packages:
         # launcher
           - rofi-wayland
+          - wofi
 
         # environment
+          - alsa-firmware
           - dbus-daemon
           - dbus-tools
           - ddcutil
@@ -52,10 +54,12 @@ modules:
           - gnome-disk-utility
           - google-noto-emoji-fonts
           - headsetcontrol
-          - ksshaskpass
+          - just
+          #- ksshaskpass
           - mediainfo 
           - openssl
           - p7zip
+          - pavucontrol
           - playerctl
           - polkit
           - qt5-qtwayland
@@ -71,10 +75,9 @@ modules:
           - xorg-x11-server-Xwayland
           
         # sound
-          - alsa-firmware
-          - alsa-plugins-pulseaudio
+          #- alsa-plugins-pulseaudio
           - pamixer
-          - pavucontrol
+          - pipewire
           - pulseaudio-utils
           - wireplumber
 
@@ -88,11 +91,11 @@ modules:
           - NetworkManager-openconnect-gnome
           - NetworkManager-openvpn
           - NetworkManager-openvpn-gnome
-          - nm-connection-editor
+          #- nm-connection-editor
 
         # file manager
           - android-tools
-          - gtkhash-thunar
+          #- gtkhash-thunar
           - gvfs-archive
           - gvfs-fuse
           - gvfs-gphoto2
@@ -100,6 +103,7 @@ modules:
           - gvfs-nfs
           - gvfs-smb
           - imv
+          - p7zip
           - thunar
           - thunar-archive-plugin 
           - thunar-volman
@@ -112,7 +116,7 @@ modules:
         # display
           - brightnessctl
           - kanshi
-          - light
+          #- light
           - wlr-randr
           - wlsunset
 
