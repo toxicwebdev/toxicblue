@@ -1,0 +1,13 @@
+modules:
+    - type: dnf
+      install:
+        install-weak-deps: false
+        packages:
+          - foot
+          - swaylock
+          - swayidle
+
+    - type: files
+      files:
+        - source: system/sway
+          destination: /
