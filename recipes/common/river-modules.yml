@@ -1,0 +1,21 @@
+modules:
+    - type: dnf
+      install:
+        install-weak-deps: false
+        packages:
+          - river
+          - waybar
+          - xdg-desktop-portal-wlr
+          - xdg-desktop-portal-gtk
+          - foot
+          - swaylock
+          - swayidle
+
+    - type: files
+      files:
+        - source: system/river
+          destination: /
+
+    - type: script
+      scripts:
+        - setriverwaybarmodules.sh

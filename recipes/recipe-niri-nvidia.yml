@@ -1,4 +1,4 @@
-name: niri-test
+name: niri-nvidia
 
 description: ublue images for wayland compositors
 
@@ -10,5 +10,6 @@ modules:
   - from-file: common/sddm-modules.yml
   - from-file: common/common-modules.yml
   - from-file: common/custom-modules.yml
+  - from-file: common/nvidia-modules.yml
   - from-file: common/niri-modules.yml
   - from-file: common/final-modules.yml

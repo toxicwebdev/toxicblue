@@ -31,9 +31,9 @@ jobs:
       matrix:
         recipe:
           - recipe-hyprland-test.yml
-          #- recipe-niri-test.yml
-          #- recipe-river-test.yml
-          #- recipe-sway-test.yml
+          #- recipe-niri.yml
+          #- recipe-river.yml
+          #- recipe-sway.yml
     steps:
       - name: Optimize build times
         shell: bash

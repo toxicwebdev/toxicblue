@@ -31,9 +31,9 @@ jobs:
       matrix:
         recipe:
           - recipe-hyprland-nvidia-test.yml
-          #- recipe-niri-nvidia-test.yml
-          #- recipe-river-nvidia-test.yml
-          #- recipe-sway-nvidia-test.yml
+          #- recipe-niri-nvidia.yml
+          #- recipe-river-nvidia.yml
+          #- recipe-sway-nvidia.yml
     steps:
       - name: Optimize build times
         shell: bash
