@@ -22,8 +22,8 @@ jobs:
       fail-fast: false 
       matrix:
         recipe:
-          - recipe-base-main.yml
-          - recipe-base-main-nvidia.yml
+          - recipe-hyprland-test.yml
+          #- recipe-hyprland-nvidia-test.yml
 
     steps:
       - name: Checkout repo

@@ -21,7 +21,7 @@ permissions: {}
 jobs:
   bluebuild:
     name: Build toxicblue
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     permissions:
       contents: read # требуется для настройки прав доступа к репозиторию
       packages: write # требуется для настройки прав доступа к репозиторию
@@ -31,6 +31,9 @@ jobs:
       matrix:
         recipe:
           - recipe-hyprland-test.yml
+          #- recipe-niri-test.yml
+          #- recipe-river-test.yml
+          #- recipe-sway-test.yml
     steps:
       - name: Optimize build times
         shell: bash

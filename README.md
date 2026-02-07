@@ -7,8 +7,6 @@
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/2503a44c1105456483517f793af75ee7)](https://app.codacy.com/gh/toxicwebdev/toxicblue/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 [![toxicblue](https://github.com/toxicwebdev/toxicblue/actions/workflows/build.yml/badge.svg)](https://github.com/toxicwebdev/toxicblue/actions/workflows/build.yml)
 [![toxicblue-nvidia](https://github.com/toxicwebdev/toxicblue/actions/workflows/build-nvidia.yml/badge.svg)](https://github.com/toxicwebdev/toxicblue/actions/workflows/build-nvidia.yml)
-[![toxicblue-main](https://github.com/toxicwebdev/toxicblue/actions/workflows/build-main.yml/badge.svg)](https://github.com/toxicwebdev/toxicblue/actions/workflows/build-main.yml)
-[![toxicblue-main-nvidia](https://github.com/toxicwebdev/toxicblue/actions/workflows/build-main-nvidia.yml/badge.svg)](https://github.com/toxicwebdev/toxicblue/actions/workflows/build-main-nvidia.yml)
 [![trivy](https://github.com/toxicwebdev/toxicblue/actions/workflows/trivy.yml/badge.svg)](https://github.com/toxicwebdev/toxicblue/actions/workflows/trivy.yml)
 
 ## Overview
@@ -16,11 +14,9 @@
 toxicblue is a project that leverages the [BlueBuild](https://blue-build.org/) template to create minimally-opinionated [Fedora Atomic](https://fedoraproject.org/atomic-desktops/) operating system images for various Wayland compositors. The project aims to provide ready-to-use images with sane defaults for the following compositors:
 
 - Hyprland (with waybar)
-- niri (with waybar)
-- Qtile (experimental)
+- Niri (with waybar)
 - River (with waybar)
 - Sway (with waybar)
-- Wayfire (with wf-shell)
 
 ## Features
 
@@ -50,14 +46,10 @@ For custom modifications, it's recommended to create a new repo using the [BlueB
 | `hyprland-nvidia`         | Hyprland   | Yes, open drivers   |
 | `niri`                    | Niri       | No                  |
 | `niri-nvidia`             | Niri       | Yes, open drivers   |
-| `qtile`                   | Qtile      | No                  |
-| `qtile-nvidia`            | Qtile      | Yes, open drivers   |
 | `river`                   | River      | No                  |
 | `river-nvidia`            | River      | Yes, open drivers   |
 | `sway`                    | Sway       | No                  |
 | `sway-nvidia`             | Sway       | Yes, open drivers   |
-| `wayfire`                 | Wayfire    | No                  |
-| `wayfire-nvidia`          | Wayfire    | Yes, open drivers   |
 
 ### Rebasing Process
 
