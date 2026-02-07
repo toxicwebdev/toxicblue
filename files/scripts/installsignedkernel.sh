@@ -30,4 +30,3 @@ else
     cp ./lib/modules/*/vmlinuz /usr/lib/modules/*/vmlinuz
     cd /
 fi
-
