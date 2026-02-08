@@ -12,3 +12,8 @@ rm -f /etc/yum.repos.d/rpmfusion-nonfree-nvidia-driver.repo
 rm -f /etc/yum.repos.d/rpmfusion-nonfree-nvidia-driver.repo.rpmsave
 rm -f /etc/yum.repos.d/nvidia-container-toolkit.repo
 rm -f /etc/yum.repos.d/fedora-cisco-openh264.repo
+
+rm -f /etc/yum.repos.d/rpmfusion-free-updates-testing.repo
+rm -f /etc/yum.repos.d/rpmfusion-nonfree-updates-testing.repo
+rm -f /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:solopasha:hyprland.repo
+rm -f /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:atim:starship.repo
