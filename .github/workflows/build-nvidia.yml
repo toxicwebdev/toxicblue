@@ -1,7 +1,7 @@
 name: build-toxicblue-nvidia
 on:
   schedule:
-    - cron: "00 05 * * *" # Создается в 5:00 UTC каждый день
+    - cron: "00 05 * * 1" # Создается в 5:00 UTC по Понедельникам
 
   push:
     branches-ignore: # Не перестраивать для dependabot
@@ -30,7 +30,7 @@ jobs:
       fail-fast: false # запретить GH отменять все сборки матрицы, если одна не удалась
       matrix:
         recipe:
-          - recipe-hyprland-nvidia-test.yml
+          - recipe-hyprland-nvidia.yml
           #- recipe-niri-nvidia.yml
           #- recipe-river-nvidia.yml
           #- recipe-sway-nvidia.yml

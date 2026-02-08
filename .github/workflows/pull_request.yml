@@ -15,15 +15,15 @@ permissions: {}
 jobs:
   bluebuild:
     name: PR build
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     permissions:
       contents: read # требуется для настройки прав доступа к репозиторию
     strategy:
       fail-fast: false 
       matrix:
         recipe:
-          - recipe-hyprland-test.yml
-          #- recipe-hyprland-nvidia-test.yml
+          - recipe-hyprland.yml
+          - recipe-hyprland-nvidia.yml
 
     steps:
       - name: Checkout repo

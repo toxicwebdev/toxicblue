@@ -55,7 +55,6 @@ modules:
           - google-noto-emoji-fonts
           - headsetcontrol
           - just
-          #- ksshaskpass
           - mediainfo 
           - openssl
           - p7zip
@@ -75,7 +74,6 @@ modules:
           - xorg-x11-server-Xwayland
           
         # sound
-          #- alsa-plugins-pulseaudio
           - pamixer
           - pipewire
           - pulseaudio-utils
@@ -91,11 +89,9 @@ modules:
           - NetworkManager-openconnect-gnome
           - NetworkManager-openvpn
           - NetworkManager-openvpn-gnome
-          #- nm-connection-editor
 
         # file manager
           - android-tools
-          #- gtkhash-thunar
           - gvfs-archive
           - gvfs-fuse
           - gvfs-gphoto2
@@ -116,7 +112,6 @@ modules:
         # display
           - brightnessctl
           - kanshi
-          #- light
           - wlr-randr
           - wlsunset
 
