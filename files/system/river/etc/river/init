@@ -14,7 +14,8 @@
 # Note: the "Super" modifier is also known as Logo, GUI, Windows, Mod4, etc.
 
 # Super+Shift+Return to start an instance of foot
-riverctl map normal Super+Shift Return spawn foot
+#riverctl map normal Super+Shift Return spawn foot
+riverctl map normal Super Return spawn kitty
 
 # launcher
 riverctl map normal Super D spawn "rofi -show drun"
@@ -43,7 +44,8 @@ riverctl map normal Super+Shift Period send-to-output next
 riverctl map normal Super+Shift Comma send-to-output previous
 
 # Super+Return to bump the focused view to the top of the layout stack
-riverctl map normal Super Return zoom
+#riverctl map normal Super Return zoom
+riverctl map normal Super+Shift F zoom
 
 # Super+H and Super+L to decrease/increase the main ratio of rivertile(1)
 riverctl map normal Super H send-layout-cmd rivertile "main-ratio -0.05"
