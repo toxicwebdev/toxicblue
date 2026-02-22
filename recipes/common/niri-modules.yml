@@ -1,4 +1,10 @@
 modules:
+#    - type: dnf
+#      remove:
+#        packages:
+#          - rofi-wayland
+#          - wofi
+
     - type: dnf
       install:
         install-weak-deps: false
@@ -7,9 +13,12 @@ modules:
           - waybar
           - xdg-desktop-portal-wlr
           - xdg-desktop-portal-gtk
+          - xdg-desktop-portal-kde
           - kitty
+          - fuzzel
           - swaylock
           - swayidle
+          - swaybg    
 
     - type: files
       files:

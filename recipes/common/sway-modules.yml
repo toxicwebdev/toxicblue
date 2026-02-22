@@ -3,7 +3,7 @@ modules:
       install:
         install-weak-deps: false
         packages:
-          - kitty
+          - foot
           - swaylock
           - swayidle
 

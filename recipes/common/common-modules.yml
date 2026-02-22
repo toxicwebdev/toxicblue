@@ -41,8 +41,10 @@ modules:
         packages:
         # launcher
           - rofi-wayland
+          - wofi
 
         # environment
+          - alsa-firmware
           - dbus-daemon
           - dbus-tools
           - ddcutil
@@ -52,10 +54,11 @@ modules:
           - gnome-disk-utility
           - google-noto-emoji-fonts
           - headsetcontrol
-          - ksshaskpass
+          - just
           - mediainfo 
           - openssl
           - p7zip
+          - pavucontrol
           - playerctl
           - polkit
           - qt5-qtwayland
@@ -71,10 +74,8 @@ modules:
           - xorg-x11-server-Xwayland
           
         # sound
-          - alsa-firmware
-          - alsa-plugins-pulseaudio
           - pamixer
-          - pavucontrol
+          - pipewire
           - pulseaudio-utils
           - wireplumber
 
@@ -88,11 +89,9 @@ modules:
           - NetworkManager-openconnect-gnome
           - NetworkManager-openvpn
           - NetworkManager-openvpn-gnome
-          - nm-connection-editor
 
         # file manager
           - android-tools
-          - gtkhash-thunar
           - gvfs-archive
           - gvfs-fuse
           - gvfs-gphoto2
@@ -100,6 +99,7 @@ modules:
           - gvfs-nfs
           - gvfs-smb
           - imv
+          - p7zip
           - thunar
           - thunar-archive-plugin 
           - thunar-volman
@@ -112,7 +112,6 @@ modules:
         # display
           - brightnessctl
           - kanshi
-          - light
           - wlr-randr
           - wlsunset
 
@@ -136,6 +135,7 @@ modules:
 
     - type: script
       scripts:
+        - installrpmfusion.sh
         - removeunusedrepos.sh
 
     - type: files
@@ -148,6 +148,10 @@ modules:
     - type: gschema-overrides
       include:
         - zz1-toxicblue-theming.gschema.override
+
+    - type: script
+      scripts:
+        - addbrewjustimport.sh
 
     - type: toxicblue-signing
       source: local

@@ -1,0 +1,15 @@
+[kdeglobals][General]
+ColorScheme=KaliLight
+
+[kwinrc][org.kde.kdecoration2]
+library=org.kali.kali
+theme=Kali
+
+[kdeglobals][Icons]
+Theme=Flat-Remix-Blue-Light
+
+[plasmarc][Theme]
+name=kali
+
+[Wallpaper]
+Image=KaliTiles

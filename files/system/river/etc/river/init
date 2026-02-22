@@ -1,9 +1,9 @@
 #!/bin/sh
 
-# This is the toxicblue configuration file for river.
+# This is the wayblue configuration file for river.
 # Remove this comment before customizing or your config will be overwritten.
 # 
-# ORIGIN: TOXICBLUE
+# ORIGIN: WAYBLUE
 
 # If you wish to edit this, you will probably want to copy it to
 # $XDG_CONFIG_HOME/river/init or $HOME/.config/river/init first.
@@ -14,7 +14,7 @@
 # Note: the "Super" modifier is also known as Logo, GUI, Windows, Mod4, etc.
 
 # Super+Shift+Return to start an instance of foot
-riverctl map normal Super+Shift Return spawn kitty
+riverctl map normal Super+Shift Return spawn foot
 
 # launcher
 riverctl map normal Super D spawn "rofi -show drun"
@@ -197,3 +197,4 @@ riverctl spawn nm-applet
 exec dbus-update-activation-environment --all
 exec gnome-keyring-daemon --start --components=secrets
 exec /usr/libexec/pam_kwallet_init
+

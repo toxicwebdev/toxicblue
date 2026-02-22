@@ -1,0 +1,17 @@
+{
+    "KPackageStructure": "Plasma/LookAndFeel",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "devel@kali.org",
+                "Name": "Kali Devel Team"
+            }
+        ],
+        "Category": "",
+        "Description": "Kali-Dark",
+        "Id": "org.kali.kalidark.desktop",
+        "License": "GPL-3.0+",
+        "Name": "Kali-Dark",
+        "Website": "https://www.kali.org"
+    }
+}

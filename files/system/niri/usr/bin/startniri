@@ -2,12 +2,12 @@
 
 set -oue pipefail
 
-toxicblue_origin_conf="/usr/etc/fuzzel/fuzzel.ini"
+wayblue_origin_conf="/usr/etc/fuzzel/fuzzel.ini"
 fuzzel_conf="${XDG_CONFIG_HOME:-$HOME/.config}/fuzzel/fuzzel.ini"
 
 # Replace the homedir conf if it's missing or of wayblue origin
-if [ ! -e "$fuzzel_conf" ] || grep -q "ORIGIN: TOXICBLUE" "$fuzzel_conf"; then
-    cp "$toxicblue_origin_conf" "$fuzzel_conf" || echo "Config location $fuzzel_conf is not writable. Skipping toxicblue config..."
+if [ ! -e "$fuzzel_conf" ] || grep -q "ORIGIN: WAYBLUE" "$fuzzel_conf"; then
+    cp "$wayblue_origin_conf" "$fuzzel_conf" || echo "Config location $fuzzel_conf is not writable. Skipping wayblue config..."
 fi
 
-exec niri
+exec niri-session
