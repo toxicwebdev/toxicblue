@@ -1,5 +1,27 @@
 # Changelog
 
+## [0.10.0](https://github.com/toxicwebdev/toxicblue/compare/v0.9.2...v0.10.0) (2026-02-22)
+
+
+### Features
+
+* add devcontainer ([1bb0d39](https://github.com/toxicwebdev/toxicblue/commit/1bb0d39c8e4fdc6e515a606d6e83327d8af6afbb))
+* add niri images ([e6cfc98](https://github.com/toxicwebdev/toxicblue/commit/e6cfc98a7ee6608baeffad5bea2d9c199899d4fe))
+* add river images ([2ea2b2f](https://github.com/toxicwebdev/toxicblue/commit/2ea2b2fad5f77b4f4d83de05b6e80b12d7196bd1))
+* add sway images ([5f6a21a](https://github.com/toxicwebdev/toxicblue/commit/5f6a21a6cbb23932938a9b9cc26bc130b11b37fc))
+* update look&feel ([2971182](https://github.com/toxicwebdev/toxicblue/commit/2971182bcd6503de456627189a92c60c320e7672))
+* update system files ([1819f92](https://github.com/toxicwebdev/toxicblue/commit/1819f92fe61d780f0843e6afba9697b361f7fc5b))
+* update system files ([f695b98](https://github.com/toxicwebdev/toxicblue/commit/f695b988e46717c8806e190db3f97e4c8f2b4e89))
+
+
+### Bug Fixes
+
+* edit thunar config ([e5237aa](https://github.com/toxicwebdev/toxicblue/commit/e5237aae89095ebba040680c7221761543d3d4d4))
+* **niri:** set gtk as default fallback portal ([eff1218](https://github.com/toxicwebdev/toxicblue/commit/eff1218aa4cbff7bc87edbb4d03f69e0bda24e20))
+* update system files ([f9d4d35](https://github.com/toxicwebdev/toxicblue/commit/f9d4d35a8e195294648b44cbf35be166fe4e9c1c))
+* update system files2 ([26a331d](https://github.com/toxicwebdev/toxicblue/commit/26a331d00af4e29fde3023f49d21a8626c0facf8))
+* update xdg files ([2e44ed8](https://github.com/toxicwebdev/toxicblue/commit/2e44ed84b3932b4b2bd94b6c4382c4d78b595048))
+
 ## [0.9.2](https://github.com/toxicwebdev/toxicblue/compare/v0.9.1...v0.9.2) (2025-12-29)
 
 
