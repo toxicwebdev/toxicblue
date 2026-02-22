@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.10.1](https://github.com/toxicwebdev/toxicblue/compare/v0.10.0...v0.10.1) (2026-02-22)
+
+
+### Bug Fixes
+
+* update system files ([713c978](https://github.com/toxicwebdev/toxicblue/commit/713c97865780ee3fad26e920de8048ba61768592))
+
 ## [0.10.0](https://github.com/toxicwebdev/toxicblue/compare/v0.9.2...v0.10.0) (2026-02-22)
 
 
