@@ -1,0 +1,22 @@
+[Default Applications]
+application/pdf=org.pwmt.zathura-pdf-poppler.desktop;
+image/jpeg=imv.desktop;
+image/png=imv.desktop;
+inode/directory=thunar.desktop;pcmanfm.desktop;ranger.desktop;
+
+x-scheme-handler/about=org.mozilla.firefox.desktop;
+x-scheme-handler/http=org.mozilla.firefox.desktop;
+x-scheme-handler/https=org.mozilla.firefox.desktop;
+x-scheme-handler/unknown=org.mozilla.firefox.desktop;
+
+[Added Associations]
+application/pdf=org.pwmt.zathura-pdf-poppler.desktop;
+application/x-shellscript=code.desktop;dev.zed.Zed.desktop;geany.desktop;
+application/json=code.desktop;dev.zed.Zed.desktop;geany.desktop;
+application/xml=code.desktop;dev.zed.Zed.desktop;geany.desktop;
+text/plain=dev.zed.Zed.desktop;geany.desktop;
+text/markdown=code.desktop;dev.zed.Zed.desktop;geany.desktop;
+text/x-python3=code.desktop;dev.zed.Zed.desktop;geany.desktop;
+text/x-python=code.desktop;dev.zed.Zed.desktop;geany.desktop;
+image/jpeg=imv.desktop;
+image/png=imv.desktop;
