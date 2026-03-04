@@ -1,0 +1,13 @@
+[Default Applications]
+application/pdf=org.pwmt.zathura-pdf-poppler.desktop;
+image/png=imv.desktop;
+inode/directory=thunar.desktop;pcmanfm.desktop;ranger.desktop;
+
+x-scheme-handler/about=org.mozilla.firefox.desktop;
+x-scheme-handler/http=org.mozilla.firefox.desktop;
+x-scheme-handler/https=org.mozilla.firefox.desktop;
+x-scheme-handler/unknown=org.mozilla.firefox.desktop;
+
+[Added Associations]
+application/pdf=org.pwmt.zathura-pdf-poppler.desktop;
+image/png=imv.desktop;
