@@ -1,0 +1,11 @@
+[Unit]
+Description=toxicblue secure boot update verification
+Wants=dbus.service
+After=dbus.service
+ConditionUser=!@system
+ConditionPathIsDirectory=/var/home/%u
+
+[Service]
+Type=oneshot
+ExecCondition=/usr/libexec/toxicblue/toxicbluecheckoutofdate
+ExecStart=/usr/libexec/toxicblue/toxicblueoutofdatenotify

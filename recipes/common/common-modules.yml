@@ -155,5 +155,13 @@ modules:
       scripts:
         - addbrewjustimport.sh
 
+    - type: systemd
+      user:
+        enabled:
+          - toxicblue-update-verification.service
+      system:
+        enabled:
+          - toxicblue-rpm-ostreed-conf.service
+
     - type: toxicblue-signing
       source: local
