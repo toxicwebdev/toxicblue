@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.11.0](https://github.com/toxicwebdev/toxicblue/compare/v0.10.1...v0.11.0) (2026-03-21)
+
+
+### Features
+
+* update notification QOL services from toxicblue ([f4d9e64](https://github.com/toxicwebdev/toxicblue/commit/f4d9e64b275825ac07433e192e034df8a984ff18))
+
+
+### Bug Fixes
+
+* **niri:** set gtk as default fallback portal ([ee2ed29](https://github.com/toxicwebdev/toxicblue/commit/ee2ed2932b6e15f3fb4f9549789e87fb09eded4f))
+* **rpm-ostree:** pin rpm-ostree to 2025.12-1 ([13955d0](https://github.com/toxicwebdev/toxicblue/commit/13955d0f10408480433a253b679be857a511a9ae))
+
 ## [0.10.1](https://github.com/toxicwebdev/toxicblue/compare/v0.10.0...v0.10.1) (2026-02-22)
 
 
