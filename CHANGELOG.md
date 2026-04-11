@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.12.0](https://github.com/toxicwebdev/toxicblue/compare/v0.11.0...v0.12.0) (2026-04-11)
+
+
+### Features
+
+* labwc image ([bf8535f](https://github.com/toxicwebdev/toxicblue/commit/bf8535f88b17863782dc4a6732b125d85faec6c9))
+
 ## [0.11.0](https://github.com/toxicwebdev/toxicblue/compare/v0.10.1...v0.11.0) (2026-03-21)
 
 
