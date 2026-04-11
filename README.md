@@ -14,6 +14,7 @@
 toxicblue is a project that leverages the [BlueBuild](https://blue-build.org/) template to create minimally-opinionated [Fedora Atomic](https://fedoraproject.org/atomic-desktops/) operating system images for various Wayland compositors. The project aims to provide ready-to-use images with sane defaults for the following compositors:
 
 - Hyprland (with waybar)
+- Labwc (with waybar)
 - Niri (with waybar)
 - River (with waybar)
 - Sway (with waybar)
@@ -44,6 +45,8 @@ For custom modifications, it's recommended to create a new repo using the [BlueB
 |---------------------------|------------|---------------------|
 | `hyprland`                | Hyprland   | No                  |
 | `hyprland-nvidia`         | Hyprland   | Yes, open drivers   |
+| `labwc`                   | Labwc      | No                  |
+| `labwc-nvidia`            | Labwc      | Yes, open drivers   |
 | `niri`                    | Niri       | No                  |
 | `niri-nvidia`             | Niri       | Yes, open drivers   |
 | `river`                   | River      | No                  |

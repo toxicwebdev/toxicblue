@@ -31,6 +31,7 @@ jobs:
       matrix:
         recipe:
           - recipe-hyprland.yml
+          - recipe-labwc.yml
           - recipe-niri.yml
           - recipe-river.yml
           - recipe-sway.yml

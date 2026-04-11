@@ -14,7 +14,7 @@ modules:
           - xdg-desktop-portal-wlr
           - xdg-desktop-portal-gtk
           - xdg-desktop-portal-kde
-          - kitty
+          - alacritty
           - fuzzel
           - swaylock
           - swayidle
