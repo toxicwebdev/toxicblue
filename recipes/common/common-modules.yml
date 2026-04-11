@@ -8,8 +8,6 @@ modules:
     - type: script
       scripts:
         - installsignedkernel.sh
-        # remove line below once rpm-ostree is fixed
-        - pinrpmostree.sh
 
     - type: dnf
       install:
@@ -159,9 +157,6 @@ modules:
       user:
         enabled:
           - toxicblue-update-verification.service
-      system:
-        enabled:
-          - toxicblue-rpm-ostreed-conf.service
 
     - type: toxicblue-signing
       source: local
