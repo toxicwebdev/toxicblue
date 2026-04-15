@@ -278,6 +278,11 @@ layout {
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "waybar"
 
+// To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
+// spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
+spawn-at-startup "kwalletd6"
+spawn-at-startup "/usr/lib/pam_kwallet_init"
+
 // Sets the background using swaybg.
 spawn-at-startup "swaybg" "-i" "/usr/share/backgrounds/default.jxl"
 
