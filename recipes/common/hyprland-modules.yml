@@ -3,8 +3,7 @@ modules:
       repos:
         copr:
           enable:
-            #- solopasha/hyprland
-            - lionheartp/hyprland
+            - solopasha/hyprland
       install:
         install-weak-deps: false
         packages:
