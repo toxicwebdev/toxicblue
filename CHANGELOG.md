@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.13.1](https://github.com/toxicwebdev/toxicblue/compare/v0.13.0...v0.13.1) (2026-05-09)
+
+
+### Bug Fixes
+
+* f44 build ([02d7b5d](https://github.com/toxicwebdev/toxicblue/commit/02d7b5d78f51747db602a75319397766a047a0a6))
+
 ## [0.13.0](https://github.com/toxicwebdev/toxicblue/compare/v0.12.0...v0.13.0) (2026-05-02)
 
 
