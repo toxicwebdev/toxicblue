@@ -62,7 +62,6 @@ modules:
             - old: libswscale-free
               new: libswscale
 
-
     - type: dnf
       install:
         install-weak-deps: false

@@ -122,8 +122,8 @@ modules:
           - breeze-icon-theme
           - fontawesome-fonts-all
           - gnome-icon-theme
-          - paper-icon-theme
-          #- papirus-icon-theme
+          #- paper-icon-theme
+          - papirus-icon-theme
       replace:
         - from-repo: fedora
           packages:
