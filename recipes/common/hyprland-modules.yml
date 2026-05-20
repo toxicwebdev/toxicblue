@@ -14,7 +14,7 @@ modules:
         - hyprpaper
         - hyprlock
         - hypridle
-        - hyprland-guiutils
+        - hyprland-qtutils
 
     - type: files
       files:
