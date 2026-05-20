@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.13.2](https://github.com/toxicwebdev/toxicblue/compare/v0.13.1...v0.13.2) (2026-05-20)
+
+
+### Bug Fixes
+
+* River Image Refresh ([cd45837](https://github.com/toxicwebdev/toxicblue/commit/cd4583726d71adfc771ee1694d0d56517ea2f8ba))
+
 ## [0.13.1](https://github.com/toxicwebdev/toxicblue/compare/v0.13.0...v0.13.1) (2026-05-09)
 
 
