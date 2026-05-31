@@ -61,12 +61,9 @@ modules:
         - zstd
 
       # apps
-        #- atril
         #- chromium
         - clapper
         - clipman
-        #- deluge
-        #- engrampa
         - geany
         - geany-plugins-addons
         - geany-plugins-git-changebar
@@ -76,8 +73,6 @@ modules:
         - geany-plugins-treebrowser
         - geany-plugins-vimode
         - gparted
-        #- mate-calc
-        #- meld
         - ptyxis
         #- rhythmbox
         #- telegram-desktop
@@ -139,7 +134,18 @@ modules:
           title: Flathub (system)
         install: # Системные Flatpak-пакеты, которые мы хотим, чтобы были у всех пользователей и не удалялись
           - org.mozilla.firefox
+          - io.bassi.Amberol
+          - org.gnome.Boxes
+          - org.gnome.Calculator
+          - org.gnome.Calendar
+          - org.gnome.Evolution
+          - org.gnome.Logs
+          - org.gnome.Loupe
+          - org.gnome.meld
+          - org.gnome.Papers
+          - com.tomjwatson.Emote
           - com.ranfdev.DistroShelf
+          - io.podman_desktop.PodmanDesktop
           - com.github.tchx84.Flatseal
           - io.github.flattool.Warehouse
           - io.missioncenter.MissionCenter
@@ -150,6 +156,9 @@ modules:
         repo:
           title: Flathub (user)
         install:
-          - io.bassi.Amberol
+          - app.zen_browser.zen
+          - com.brave.Browser
+          - com.discordapp.Discord
+          - dev.zed.Zed
           - md.obsidian.Obsidian
-          #- com.termius.Termius
+          - org.deluge_torrent.deluge
