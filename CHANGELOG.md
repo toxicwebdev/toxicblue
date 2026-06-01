@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.13.3](https://github.com/toxicwebdev/toxicblue/compare/v0.13.2...v0.13.3) (2026-05-31)
+
+
+### Bug Fixes
+
+* delete hyprland.conf ([55b9bfc](https://github.com/toxicwebdev/toxicblue/commit/55b9bfc04dad14167ed814897ffb638c3cee7272))
+* migrate hyprland.conf to hyprland.lua & use start-hyprland & update custom-modules ([923fb96](https://github.com/toxicwebdev/toxicblue/commit/923fb967c1fcbfb9e52d2d4341be8683e4595b9c))
+
 ## [0.13.2](https://github.com/toxicwebdev/toxicblue/compare/v0.13.1...v0.13.2) (2026-05-20)
 
 
