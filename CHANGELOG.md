@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.14.1](https://github.com/toxicwebdev/toxicblue/compare/v0.14.0...v0.14.1) (2026-08-09)
+
+
+### Bug Fixes
+
+* remove Requisite= from xdg-desktop-portal.service ([239b845](https://github.com/toxicwebdev/toxicblue/commit/239b8455e8450438b010d35403bca90deffcbacb))
+
 ## [0.14.0](https://github.com/toxicwebdev/toxicblue/compare/v0.13.3...v0.14.0) (2026-08-09)
 
 
